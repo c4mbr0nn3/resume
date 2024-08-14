@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Francesco Zorzi",
-    "label": "Programmer",
+    "label": "",
     "image": "",
     "email": "francesco.zorzi@gmail.com",
-    "phone": "(912) 555-4321",
+    "phone": "",
     "url": "https://francescozorzi.me/",
-    "summary": "A summary of John Doe…",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Milan",
+      "countryCode": "IT",
+      "region": "Italy"
     },
     "profiles": [{
       "network": "GitHub",
@@ -27,20 +27,21 @@
       "username": "francesco-zorzi",
       "url": "https://www.linkedin.com/in/francesco-zorzi/"
     }, {
-      "network": "Twitter",
+      "network": "X",
       "username": "j1mb0j1mm0",
       "url": "https://x.com/j1mb0j1mm0"
     }]
   },
   "work": [{
-    "name": "Company",
-    "position": "President",
-    "url": "https://company.com",
+    "name": "IasonLtd",
+    "position": "Financial Engineer",
+    "url": "https://www.iasonltd.com/",
     "startDate": "2013-01-01",
     "endDate": "2014-01-01",
     "summary": "Description…",
     "highlights": [
-      "Started the company"
+      "Started the company",
+      "Hired employees"
     ]
   }],
   "volunteer": [{
@@ -54,18 +55,38 @@
       "Awarded 'Volunteer of the Month'"
     ]
   }],
-  "education": [{
-    "institution": "University",
-    "url": "https://institution.com/",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
+  "education": [
+    {
+      "institution": "Università di Padova",
+      "url": "https://www.unipd.it/",
+      "area": "Financial Engineering",
+      "studyType": "Master",
+      "startDate": "Sep 2015",
+      "endDate": "Suspended",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "ESILV",
+      "url": "https://www.esilv.fr/",
+      "area": "Financial Engineering",
+      "studyType": "Erasmus",
+      "startDate": "Sep 2016",
+      "endDate": "Jan 2017",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Università di Padova",
+      "url": "https://www.unipd.it/",
+      "area": "Mechanical Engineering",
+      "studyType": "Bachelor",
+      "startDate": "Oct 2008",
+      "endDate": "Sep 2015",
+      "score": "",
+      "courses": []
+    }
+  ],
   "awards": [{
     "title": "Award",
     "date": "2014-11-01",
@@ -86,17 +107,52 @@
     "summary": "Description…"
   }],
   "skills": [{
-    "name": "Web Development",
-    "level": "Master",
+    "name": "Frontend",
+    "level": "",
     "keywords": [
+      "JavaScript",
+      "Vue.js",
+      "Vuetify",
       "HTML",
-      "CSS",
-      "JavaScript"
+      "CSS"
+    ]
+  }, {
+    "name": "Backend",
+    "level": "",
+    "keywords": [
+      "C#",
+      ".NET",
+      "Java"
+    ]
+  }, {
+    "name": "Database",
+    "level": "",
+    "keywords": [
+      "PostgreSQL"
+    ]
+  }, {
+    "name": "DevOps",
+    "level": "",
+    "keywords": [
+      "Docker",
+      "AWS",
+      "Kubernetes"
+    ]
+  }, {
+    "name": "Tools",
+    "level": "",
+    "keywords": [
+      "Git",
+      "GitLab",
+      "GitHub"
     ]
   }],
   "languages": [{
-    "language": "English",
+    "language": "Italian",
     "fluency": "Native speaker"
+  }, {
+    "language": "English",
+    "fluency": "Proficient"
   }],
   "interests": [{
     "name": "Wildlife",
