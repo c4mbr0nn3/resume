@@ -9,7 +9,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "commitmsg": "commitlint --edit $1"
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
@@ -18,6 +20,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.25.1",
-    "eslint": "^9.9.0"
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.4"
   }
 }
