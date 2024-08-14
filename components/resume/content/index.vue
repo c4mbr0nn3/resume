@@ -1,7 +1,7 @@
 <template>
-  <section class="grid grid-cols-2 gap-5">
+  <section class="grid grid-cols-2 gap-8">
     <div>
-      Col 1
+      <ResumeContentWork />
     </div>
     <div>
       <ResumeContentEducation />

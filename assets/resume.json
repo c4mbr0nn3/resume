@@ -33,15 +33,30 @@
     }]
   },
   "work": [{
-    "name": "IasonLtd",
-    "position": "Financial Engineer",
-    "url": "https://www.iasonltd.com/",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description…",
+    "name": "Technesthai",
+    "position": "Software Engineer",
+    "url": "https://www.technesthai.com/",
+    "startDate": "Jan 2024",
+    "endDate": "Present",
+    "summary": "Some random text about my job. Just add some text to make it longer.",
     "highlights": [
-      "Started the company",
-      "Hired employees"
+      "I develop using Vue.js with Vuetify, and C# with .NET and Entity Framework, alongside PostgreSQL.",
+      "I oversee IT activities, define priorities and deadlines, draft specification definitions and estimations.",
+      "I manage infrastructure, handle DevOps activities, deploy software via GitLab pipelines, and maintain the company’s GitLab instance.",
+      "I manage recruitment and mentor junior staff"
+    ]
+  }, {
+    "name": "IasonLtd",
+    "position": "Financial Engineer / Manager",
+    "url": "https://www.iasonltd.com/",
+    "startDate": "Jun 2017",
+    "endDate": "Dec 2023",
+    "summary": "Some random text about my job. Just add some text to make it longer.",
+    "highlights": [
+      "As a **Manager**, I managed an eight-person IT team, oversaw budgeting, recruitment, and project deadlines. I led the migration of a legacy ATS (Applicant Tracking System) application to VueJs and Vuetify and developed SaaS applications. I also deployed GitLab with Docker for optimized CI/CD.",
+      "As a **Senior Consultant**, I led two teams in Counterparty Credit Risk (CCR) and Market Data. I focused on SA-CCR and FRTB KPI GUI refactoring, implemented features end-to-end, and mentored junior team members.",
+      "As a **Consultant**, I led a four-person team, prioritized tasks, and managed team economics. I implemented updates to the CCR application to meet regulatory requirements and served as a functional analyst for SA-CCR.",
+      "As a **Junior Consultant**, I worked as a Financial Engineer, enhancing the CCR application, fixing bugs, and improving internal tools. I specialized in CCR exposure calculation."
     ]
   }],
   "volunteer": [{
