@@ -1,16 +1,23 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "resume",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.25.1",
+    "eslint": "^9.9.0"
   }
 }
