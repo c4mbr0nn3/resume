@@ -23,7 +23,7 @@ const copyright = computed(() => {
     </div>
     <div class="text-xs mt-2">
       Thanks to
-      <NuxtLink to="https://nathanfriend.io" class="text-emerald-600 hover:text-orange-600 transition-allte">
+      <NuxtLink to="https://nathanfriend.io" class="text-emerald-600 hover:text-orange-600 transition-all">
         Nathan Friend
       </NuxtLink>
       for the inspiration!
