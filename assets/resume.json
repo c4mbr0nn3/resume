@@ -170,7 +170,7 @@
     "name": "PodCats",
     "startDate": "2022",
     "endDate": "Ongoing",
-    "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, multi-user support, RSS feed import, automatic updates via cron jobs, and universal search. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
+    "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, **multi-user support**, **RSS feed import**, **automatic feed updates** via cron jobs, and universal search. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
     "highlights": [
       "Vue.js",
       "Vuetify",
@@ -183,7 +183,7 @@
     "name": "HomeLab",
     "startDate": "2020",
     "endDate": "Ongoing",
-    "description": "I started my HomeLab by chance with a Raspberry Pi, and now I'm totally down the rabbit hole. DAMN!",
+    "description": "I started my HomeLab by chance with a Raspberry Pi and the almighty [Pi-Hole](https://pi-hole.net/), now I'm totally down the rabbit hole. DAMN!",
     "highlights": [
       "Linux",
       "Bash",
