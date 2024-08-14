@@ -6,6 +6,7 @@
     <div>
       <ResumeContentEducation />
       <ResumeContentSkills />
+      <ResumeContentProjects />
     </div>
   </section>
 </template>

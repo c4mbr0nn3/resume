@@ -9,10 +9,12 @@ export default function useResume() {
 
   const skills = computed(() => resume.value.skills)
 
+  const projects = computed(() => resume.value.projects)
+
   async function fetch() {
     const data = await import('~/assets/resume.json')
     resume.value = data
   }
 
-  return { resume, education, work, skills, fetch }
+  return { resume, education, work, skills, projects, fetch }
 }

@@ -12,11 +12,11 @@ const { education } = useResume()
             {{ item.institution }}
           </NuxtLink>
         </h3>
-        <p class="text-sm font-light text-slate-500">
+        <p class="text-sm font-mono text-slate-500">
           {{ item.startDate }} - {{ item.endDate }}
         </p>
       </div>
-      <p class="font-light">
+      <p class="font-light text-slate-600">
         {{ item.studyType }} in {{ item.area }}
       </p>
     </div>
