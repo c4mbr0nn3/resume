@@ -22,14 +22,14 @@ const compiledMarkdown = computed(() => {
 <style scoped>
 .md-body :deep(a){
     font-weight: bolder;
-    color: theme('colors.emerald.600');
+    color: theme('colors.orange.600');
     text-decoration: none;
     transition: color 0.2s;
 }
  .md-body :deep(a:hover){
-    color: theme('colors.orange.600');
+    color: theme('colors.emerald.600');
 }
  .md-body :deep(strong){
-    color: theme('colors.emerald.600');
+    color: theme('colors.orange.600');
 }
 </style>

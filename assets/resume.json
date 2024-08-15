@@ -15,6 +15,10 @@
       "region": "Italy"
     },
     "profiles": [{
+      "network": "LinkedIn",
+      "username": "francesco-zorzi",
+      "url": "https://www.linkedin.com/in/francesco-zorzi/"
+    }, {
       "network": "GitHub",
       "username": "c4mbr0nn3",
       "url": "https://github.com/c4mbr0nn3"
@@ -22,14 +26,6 @@
       "network": "GitLab",
       "username": "j1mm0",
       "url": "https://gitlab.com/j1mm0"
-    }, {
-      "network": "LinkedIn",
-      "username": "francesco-zorzi",
-      "url": "https://www.linkedin.com/in/francesco-zorzi/"
-    }, {
-      "network": "X",
-      "username": "j1mb0j1mm0",
-      "url": "https://x.com/j1mb0j1mm0"
     }]
   },
   "work": [{
@@ -37,7 +33,7 @@
     "position": "Software Engineer",
     "url": "https://www.technesthai.com/",
     "startDate": "Jan 2024",
-    "endDate": "Present",
+    "endDate": "Ongoing",
     "summary": "Some random text about my job. Just add some text to make it longer.",
     "highlights": [
       "I develop using Vue.js with Vuetify, and C# with .NET and Entity Framework, alongside PostgreSQL.",
@@ -150,17 +146,11 @@
     "level": "",
     "keywords": [
       "Docker",
-      "AWS",
-      "Kubernetes"
-    ]
-  }, {
-    "name": "Tools",
-    "level": "",
-    "keywords": [
       "Bash",
       "Git",
       "GitLab",
-      "GitHub"
+      "GitHub",
+      "AWS"
     ]
   }],
   "languages": [{
@@ -168,7 +158,7 @@
     "fluency": "Native speaker"
   }, {
     "language": "English",
-    "fluency": "Proficient"
+    "fluency": "Work Proficient"
   }],
   "interests": [{
     "name": "Wildlife",
@@ -198,7 +188,7 @@
     "name": "HomeLab",
     "startDate": "2020",
     "endDate": "Ongoing",
-    "description": "I started my HomeLab by chance with a Raspberry Pi and the almighty [Pi-Hole](https://pi-hole.net/), now I'm totally down the rabbit hole. DAMN!",
+    "description": "I started my HomeLab by chance with a Raspberry Pi and the almighty [Pi-Hole](https://pi-hole.net/), and now I'm totally down the rabbit hole. It's addictive! I've since expanded to managing a [Proxmox](https://www.proxmox.com/en/) node, complete with a dedicated [pfSense](https://www.pfsense.org/) virtual machine serving as my home firewall. The complexity keeps growing, but so does the excitement!",
     "highlights": [
       "Linux",
       "Bash",
