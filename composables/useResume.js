@@ -3,6 +3,8 @@ import { useState } from '#imports'
 export default function useResume() {
   const resume = useState('resume')
 
+  const basics = computed(() => resume.value.basics)
+
   const education = computed(() => resume.value.education)
 
   const work = computed(() => resume.value.work)
@@ -18,5 +20,5 @@ export default function useResume() {
     resume.value = data
   }
 
-  return { resume, education, work, skills, projects, languages, fetch }
+  return { basics, education, work, skills, projects, languages, fetch }
 }

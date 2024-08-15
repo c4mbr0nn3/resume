@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Francesco Zorzi",
-    "label": "",
+    "label": "Software Engineer",
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
     "phone": "",
@@ -33,7 +33,7 @@
     "position": "Software Engineer",
     "url": "https://www.technesthai.com/",
     "startDate": "Jan 2024",
-    "endDate": "Ongoing",
+    "endDate": "Present",
     "summary": "Some random text about my job. Just add some text to make it longer.",
     "highlights": [
       "I develop using Vue.js with Vuetify, and C# with .NET and Entity Framework, alongside PostgreSQL.",
@@ -174,7 +174,7 @@
   "projects": [{
     "name": "PodCats",
     "startDate": "2022",
-    "endDate": "Ongoing",
+    "endDate": "Present",
     "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, **multi-user support**, **RSS feed import**, **automatic feed updates** via cron jobs, and universal search. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
     "highlights": [
       "Vue.js",
@@ -187,7 +187,7 @@
   }, {
     "name": "HomeLab",
     "startDate": "2020",
-    "endDate": "Ongoing",
+    "endDate": "Present",
     "description": "I started my HomeLab by chance with a Raspberry Pi and the almighty [Pi-Hole](https://pi-hole.net/), and now I'm totally down the rabbit hole. It's addictive! I've since expanded to managing a [Proxmox](https://www.proxmox.com/en/) node, complete with a dedicated [pfSense](https://www.pfsense.org/) virtual machine serving as my home firewall. The complexity keeps growing, but so does the excitement!",
     "highlights": [
       "Linux",

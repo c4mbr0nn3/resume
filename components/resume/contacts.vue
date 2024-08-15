@@ -1,10 +1,10 @@
 <script setup>
-const { resume } = useResume()
+const { basics } = useResume()
 
 const { social: icons } = useIcons()
 
 const contacts = computed(() => {
-  const { email, url, profiles } = resume.value.basics
+  const { email, url, profiles } = basics.value
   const emailData = {
     icon: 'carbon:email',
     to: `mailto:${email}`,
