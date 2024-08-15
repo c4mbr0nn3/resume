@@ -16,12 +16,12 @@
   "dependencies": {
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/icon": "^1.4.5",
-    "@nuxt/image": "^1.7.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vueuse/core": "^10.11.1",
     "@vueuse/nuxt": "^10.11.1",
     "marked": "^14.0.0",
     "nuxt": "^3.12.4",
+    "nuxt-security": "^2.0.0-rc.9",
     "vue": "latest",
     "vue-dompurify-html": "^5.1.0"
   },
