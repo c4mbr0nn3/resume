@@ -18,6 +18,9 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'Francesco Zorzi - Resume' },
       ],
+      htmlAttrs: {
+        lang: 'en',
+      },
     },
   },
 
