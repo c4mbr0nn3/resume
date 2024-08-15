@@ -175,7 +175,7 @@
     "name": "PodCats",
     "startDate": "2022",
     "endDate": "Present",
-    "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, **multi-user support**, **RSS feed import**, **automatic feed updates** via cron jobs, and universal search. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
+    "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, **multi-user support**, **RSS feed import**, **automatic feed updates** via cron jobs, and **universal search**. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
     "highlights": [
       "Vue.js",
       "Vuetify",

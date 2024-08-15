@@ -8,8 +8,8 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink class="flex items-center gap-2 group" :to="item.to" target="_blank">
-    <Icon :name="item.icon" class="w-5 h-5 text-emerald-600 group-hover:text-orange-600 transition-colors" />
-    <span class="font-light text-slate-600 group-hover:text-orange-600 transition-colors">{{ item.label }}</span>
+  <NuxtLink class="flex items-center gap-2 text-slate-500 hover:text-orange-500 transition-colors" :to="item.to" target="_blank">
+    <Icon :name="item.icon" class="w-5 h-5 " />
+    <span class="font-light ">{{ item.label }}</span>
   </NuxtLink>
 </template>
