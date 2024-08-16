@@ -29,7 +29,7 @@ const contacts = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 | sm:flex-row sm:flex-wrap lg:gap-6">
+  <div class="flex flex-col gap-2 | sm:flex-row sm:flex-wrap sm:gap-3 lg:gap-6">
     <BadgeContact v-for="item in contacts" :key="item.to" :item="item" />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container sm:p-20">
+  <div class="container | sm:p-10 lg:p-20">
     <TheResume />
     <TheFooter />
   </div>

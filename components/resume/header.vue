@@ -11,7 +11,7 @@ const location = computed(() => {
 
 <template>
   <section>
-    <h1 class="text-5xl font-serif tracking-tight text-emerald-600 pb-1">
+    <h1 class="text-5xl font-serif tracking-tight text-emerald-600 pb-1 | sm:text-6xl">
       {{ name }}
     </h1>
     <div class="flex gap-2 font-serif text-slate-500 pb-3">
