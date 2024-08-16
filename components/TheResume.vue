@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full bg-white rounded-xl shadow-lg">
-    <div class="p-10 flex flex-col gap-10">
+  <div class="w-full bg-white | sm:rounded-xl sm:shadow-lg">
+    <div class="flex flex-col gap-5 p-5 | sm:p-10 sm:gap-10">
       <ResumeHeader />
       <ResumeContent />
     </div>
