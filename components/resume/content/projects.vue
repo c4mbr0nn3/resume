@@ -16,10 +16,12 @@ const { projects } = useResume()
           {{ item.startDate }} - {{ item.endDate }}
         </p>
       </div>
-      <p class="font-light text-slate-600 mb-2 mt-1">
+      <p class="mb-2 mt-1">
         <Markdown :content="item.description" />
       </p>
-      <ListSkill :items="item.highlights" />
+      <p>
+        <ListSkill :items="item.highlights" />
+      </p>
     </div>
   </section>
 </template>

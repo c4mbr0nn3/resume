@@ -1,22 +1,17 @@
 <script setup>
-import { marked } from 'marked'
-
-const props = defineProps({
+defineProps({
   content: {
     type: String,
     required: true,
   },
 })
-
-const compiledMarkdown = computed(() => {
-  return marked(props.content)
-})
 </script>
 
 <template>
-  <ClientOnly>
-    <div v-dompurify-html="compiledMarkdown" class="md-body" />
-  </ClientOnly>
+  <div
+    class="md-body font-light text-slate-600"
+    v-html="$mdRenderer.render(content)"
+  />
 </template>
 
 <style scoped>

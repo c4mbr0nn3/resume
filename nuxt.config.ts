@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/fonts',
     '@nuxt/icon',
-    'nuxt-security',
   ],
 
   app: {

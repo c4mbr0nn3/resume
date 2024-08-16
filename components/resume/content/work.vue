@@ -21,12 +21,12 @@ const { work } = useResume()
       <p class="text-sm font-serif text-slate-500 font-medium">
         {{ item.position }}
       </p>
-      <p class="font-light text-slate-600 mb-2 mt-1">
+      <p class="mb-2 mt-1">
         <Markdown :content="item.summary" />
       </p>
-      <div class="text-slate-600 font-light">
+      <p>
         <ResumeContentWorkHighlight v-for="(content, j) in item.highlights" :key="j" :content="content" class="mb-2" />
-      </div>
+      </p>
     </div>
   </section>
 </template>
