@@ -19,9 +19,7 @@ const { projects } = useResume()
       <p class="font-light text-slate-600 mb-2 mt-1">
         <Markdown :content="item.description" />
       </p>
-      <div class="flex items-center gap-1">
-        <BadgeSkill v-for="skill in item.highlights" :key="skill" :skill="skill" />
-      </div>
+      <ListSkill :items="item.highlights" />
     </div>
   </section>
 </template>
