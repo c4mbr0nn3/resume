@@ -1,17 +1,7 @@
-<script setup>
-const copyright = computed(() => {
-  const year = new Date().getFullYear()
-  const date = new Date()
-  // TODO: get the last commit date from the git repository
-  const month = date.toLocaleString('default', { month: 'long' })
-  return `Last update: ${month} ${year}`
-})
-</script>
-
 <template>
   <footer class=" text-center text-slate-500 font-light py-10 | sm:pb-10">
     <div class="flex flex-col items-center justify-center gap-1 | sm:flex-row sm:gap-3">
-      <p>{{ copyright }} </p>
+      <p>Last update: September 2024</p>
       <span class="hidden | sm:block">-</span>
       <p class="flex items-center">
         You can find the source code on&nbsp;
