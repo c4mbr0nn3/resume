@@ -22,7 +22,7 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.3",
+    "@antfu/eslint-config": "^3.0.0",
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
     "@iconify-json/carbon": "^1.2.1",
