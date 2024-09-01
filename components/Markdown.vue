@@ -21,10 +21,15 @@ defineProps({
     text-decoration: none;
     transition: color 0.2s;
 }
- .md-body :deep(a:hover){
+.md-body :deep(a:hover){
     color: theme('colors.emerald.600');
 }
- .md-body :deep(strong){
+.md-body :deep(strong){
     color: theme('colors.orange.600');
+}
+.md-body :deep(em){
+    color: theme('colors.emerald.600');
+    font-style: normal;
+    font-weight: bolder;
 }
 </style>
