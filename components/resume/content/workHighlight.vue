@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="flex gap-2">
     <div class="mb-auto">
-      <Icon name="carbon:checkmark-outline" class="text-emerald-600 mt-1" />
+      <Icon name="carbon:software-resource-cluster" class="text-emerald-600 mt-1" />
     </div>
     <Markdown :content="content" />
   </div>
