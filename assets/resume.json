@@ -49,10 +49,10 @@
     "endDate": "Dec 2023",
     "summary": "Managed and led IT and consulting teams in financial industry.",
     "highlights": [
-      "As a **Manager**, I led an eight-person IT team, overseeing budgeting, recruitment, and project deadlines. I executed the migration of a legacy ATS (Applicant Tracking System) application to Vue.js and Vuetify, enhancing its functionality and user experience. Additionally, I developed new features to streamline HR processes, closely collaborating with the product manager to meet evolving business needs and improve overall efficiency.",
-      "As a **Senior Consultant**, I led two teams in Counterparty Credit Risk (CCR) and Market Data. I focused on SA-CCR and FRTB KPI GUI refactoring, implemented features end-to-end, and mentored junior team members.",
-      "As a **Consultant**, I led a four-person team, prioritized tasks, and managed team economics. I implemented updates to the CCR application to meet regulatory requirements and served as a functional analyst for SA-CCR.",
-      "As a **Junior Consultant**, I worked as a Financial Engineer, enhancing the CCR application, fixing bugs, and improving internal tools. I specialized in CCR exposure calculation."
+      "*Manager:* Led an eight-person IT team, overseeing budgeting, recruitment, and project deadlines. I executed the migration of a legacy ATS (Applicant Tracking System) application to **Vue.js** and **Vuetify**, enhancing its functionality and user experience. Additionally, I developed new features on both the **.NET** backend and **Vue.js** frontend to streamline HR processes, closely collaborating with the product manager to meet evolving business needs and improve overall efficiency.",
+      "*Senior Consultant:* Led two teams in Counterparty Credit Risk (CCR) and Market Data. I focused on SA-CCR and FRTB KPI GUI refactor, following the IT team as a functional analyst, providing guidance and support to the development team. ",
+      "*Consultant:* Led a four-person team, overseeing project organization, defining priorities, and managing overall team projects. I implemented updates to the CCR application using **Java** to meet regulatory requirements and served as a functional analyst for SA-CCR.",
+      "*Junior Consultant:* Worked as a Financial Engineer, enhancing the CCR application, fixing bugs, and improving internal tools using **Java** as the primary language. I specialized in CCR exposure calculation."
     ]
   }],
   "volunteer": [{
