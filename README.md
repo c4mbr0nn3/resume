@@ -1,75 +1,38 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Resume
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal resume built with Nuxt.js and Tailwind CSS. It is hosted on Netlify and can be viewed [here](https://resume.francescozorzi.me/).
 
-## Setup
+If you would like to use this as a template for your own resume, feel free to fork this repository and customize it to your liking.
 
-Make sure to install the dependencies:
+The resume structure is based on the JSON Resume schema with markdown capabilities for project and work descriptions.
 
-```bash
-# npm
-npm install
+I only implemented the following sections of JSON Resume:
 
-# pnpm
-pnpm install
+- Basics
+- Work
+- Education
+- Skills
+- Languages
+- Projects
 
-# yarn
-yarn install
+You can find the JSON Resume schema [here](https://jsonresume.org/schema/).
 
-# bun
-bun install
-```
+## Getting Started
 
-## Development Server
+1. Fork this repository
+2. Clone the repository
+3. Install dependencies with `npm install`
+4. Customize the resume data in `assets/resume.json`
+5. Run the development server with `npm run dev`
+6. Build the project with `npm run build`
+7. Deploy the project to Netlify or your preferred hosting service
 
-Start the development server on `http://localhost:3000`:
+## License
 
-```bash
-# npm
-npm run dev
+Data in `assets/resume.json` is my personal data and should not be used without my permission.
 
-# pnpm
-pnpm run dev
+Other than that, this project is open source and available under the MIT License. Feel free to use this project as a template for your own resume.
 
-# yarn
-yarn dev
+## Acknowledgements
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Thanks to [Nathan Friend](https://nathanfriend.io/) who inspired me with his project [Nuxt Résumé](https://gitlab.com/nfriend/nuxt-resume). I wanted to reproduce a similar look and feel without looking at the source code of his project, just a visual reference. Also, my project is much simpler since it doesn't include all Ruby generation and deployment scripts.
