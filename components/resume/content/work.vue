@@ -1,6 +1,4 @@
 <script setup>
-import WorkHighlight from './workHighlight.vue'
-
 const { work } = useResume()
 </script>
 
