@@ -8,7 +8,7 @@ const { education } = useResume()
     <div v-for="(item, i) in education" :key="i" class="mb-5">
       <div class="flex flex-col justify-between | sm:flex-row sm:items-center">
         <h3 class="text-lg font-semibold">
-          <NuxtLink :to="item.url" class="text-emerald-600 hover:text-orange-600 transition-all">
+          <NuxtLink :to="item.url" class="text-emerald-600 hover:text-orange-600 transition-all" target="_blank" rel="noopener noreferrer">
             {{ item.institution }}
           </NuxtLink>
         </h3>
