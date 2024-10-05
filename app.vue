@@ -1,7 +1,7 @@
 <script setup>
 const { fetch } = useResume()
 
-const description = 'Software Engineer Manager leading development team, overseeing IT projects. Expertise in Vue.js, .NET, PostgreSQL. Manages workload, recruits talent, sets coding standards.'
+const description = 'Software Engineer Manager leading dev team, overseeing IT projects. Expertise in Vue.js, .NET, PostgreSQL. Manages workload, recruits talent, sets standards.'
 const title = 'Francesco Zorzi - Resume'
 
 useSeoMeta({
