@@ -18,7 +18,7 @@ defineProps({
 .md-body :deep(a){
     font-weight: bolder;
     color: theme('colors.orange.600');
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.2s;
 }
 .md-body :deep(a:hover){
