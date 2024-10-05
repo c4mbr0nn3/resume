@@ -55,17 +55,6 @@
       "*Junior Consultant:* Worked as a Financial Engineer, enhancing the CCR application, fixing bugs, and improving internal tools using **Java** as the primary language. I specialized in CCR exposure calculation."
     ]
   }],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
   "education": [
     {
       "institution": "Università di Padova",
@@ -98,25 +87,6 @@
       "courses": []
     }
   ],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
   "skills": [{
     "name": "Frontend",
     "level": "",
@@ -159,17 +129,6 @@
   }, {
     "language": "English",
     "fluency": "Work Proficient"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
   }],
   "projects": [{
     "name": "PodCats",
