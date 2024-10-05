@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
@@ -13,13 +13,6 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Francesco Zorzi - Resume',
-      meta: [
-        { name: 'description', content: 'Francesco Zorzi - Resume' },
-      ],
-      htmlAttrs: {
-        lang: 'en',
-      },
     },
   },
 
