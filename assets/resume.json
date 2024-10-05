@@ -30,16 +30,16 @@
   },
   "work": [{
     "name": "Technesthai",
-    "position": "Software Engineer",
+    "position": "Software Engineer Manager",
     "url": "https://www.technesthai.com/",
     "startDate": "Jan 2024",
     "endDate": "Present",
-    "summary": "Some random text about my job. Just add some text to make it longer.",
+    "summary": "As a Software Engineer Manager, I lead a team of developers and oversee IT activities. Focused on developing and maintaining the company's software solutions, I work closely with the CTO and other stakeholders to ensure the successful delivery of projects.",
     "highlights": [
-      "I develop using Vue.js with Vuetify, and C# with .NET and Entity Framework, alongside PostgreSQL.",
-      "I oversee IT activities, define priorities and deadlines, draft specification definitions and estimations.",
-      "I manage infrastructure, handle DevOps activities, deploy software via GitLab pipelines, and maintain the company’s GitLab instance.",
-      "I manage recruitment and mentor junior staff"
+      "Actively involved in the development of the company's core product, working with technologies such as **Vue.js**, **Vuetify**, **.NET**,**PostgreSQL**, and **Docker**.",
+      "Responsible for managing the team's workload, defining priorities with CTO and stakeholders, and ensuring that projects are delivered on time given the available resources.",
+      "Involved in the recruitment process, including defining job descriptions, conducting interviews with CTO and HR, and onboarding new team members.",
+      "Collaborating with the CTO to **define company coding standards**, **best practices**, and **development processes**, ensuring that the team follows them."
     ]
   }, {
     "name": "IasonLtd",
@@ -47,7 +47,7 @@
     "url": "https://www.iasonltd.com/",
     "startDate": "Jun 2017",
     "endDate": "Dec 2023",
-    "summary": "Managed and led IT and consulting teams in financial industry.",
+    "summary": "As Financial Engineer and then Manager, I worked on Counterparty Credit Risk (CCR) and Market Data projects. I led teams, managed projects, and developed new features on client applications.",
     "highlights": [
       "*Manager:* Led an eight-person IT team, overseeing budgeting, recruitment, and project deadlines. I executed the migration of a legacy ATS (Applicant Tracking System) application to **Vue.js** and **Vuetify**, enhancing its functionality and user experience. Additionally, I developed new features on both the **.NET** backend and **Vue.js** frontend to streamline HR processes, closely collaborating with the product manager to meet evolving business needs and improve overall efficiency.",
       "*Senior Consultant:* Led two teams in Counterparty Credit Risk (CCR) and Market Data. I focused on SA-CCR and FRTB KPI GUI refactor, following the IT team as a functional analyst, providing guidance and support to the development team. ",
