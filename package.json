@@ -14,24 +14,24 @@
     "commitmsg": "commitlint --edit $1"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.10.0",
-    "@nuxt/icon": "^1.5.6",
+    "@nuxt/fonts": "^0.10.2",
+    "@nuxt/icon": "^1.6.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vueuse/core": "^11.0.0",
-    "@vueuse/nuxt": "^11.1.0",
+    "@vueuse/nuxt": "^11.2.0",
     "vue": "latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@iconify-json/carbon": "^1.2.3",
+    "@iconify-json/carbon": "^1.2.4",
     "@iconify-json/nonicons": "^1.2.1",
-    "@iconify-json/simple-icons": "^1.2.8",
+    "@iconify-json/simple-icons": "^1.2.10",
     "@types/markdown-it": "^14.1.2",
-    "eslint": "^9.13.0",
+    "eslint": "^9.14.0",
     "husky": "^9.1.6",
     "markdown-it": "^14.1.0",
-    "nuxt": "^3.13.2"
+    "nuxt": "^3.14.0"
   }
 }
