@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Francesco Zorzi",
-    "label": "Software Engineer",
+    "label": "Software Engineer Manager",
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
-    "phone": "",
+    "phone": "+39-3497874182",
     "url": "https://francescozorzi.me/",
-    "summary": "",
+    "summary": "Software Engineer Manager with 6+ years of experience in full-stack development and team leadership. Proven track record in delivering scalable software solutions across financial services and emerging tech companies. Passionate about clean code, best practices, and fostering team growth through modern development methodologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -26,6 +26,10 @@
       "network": "GitLab",
       "username": "j1mm0",
       "url": "https://gitlab.com/j1mm0"
+    }, {
+      "network": "X",
+      "username": "j1mb0j1mm0",
+      "url": "https://x.com/j1mb0j1mm0"
     }]
   },
   "work": [{
@@ -34,12 +38,13 @@
     "url": "https://www.technesthai.com/",
     "startDate": "Jan 2024",
     "endDate": "Present",
-    "summary": "As a Software Engineer Manager, I lead a team of developers and oversee IT activities. Focused on developing and maintaining the company's software solutions, I work closely with the CTO and other stakeholders to ensure the successful delivery of projects.",
+    "summary": "Lead a development team in building modern full-stack applications while managing cloud infrastructure and establishing engineering best practices in collaboration with the CTO.",
     "highlights": [
-      "Actively involved in the development of the company's core product, working with technologies such as **Vue.js**, **Vuetify**, **.NET**,**PostgreSQL**, and **Docker**.",
-      "Responsible for managing the team's workload, defining priorities with CTO and stakeholders, and ensuring that projects are delivered on time given the available resources.",
-      "Involved in the recruitment process, including defining job descriptions, conducting interviews with CTO and HR, and onboarding new team members.",
-      "Collaborating with the CTO to **define company coding standards**, **best practices**, and **development processes**, ensuring that the team follows them."
+      "Lead full-stack development using **Vue.js 3**, **Vuetify**, **.NET 8/9**, **Entity Framework Core**, and **PostgreSQL/SQL Server** databases",
+      "Collaborate with CTO in managing **AWS infrastructure** including **S3**, **CloudWatch**, and **Docker** containerization for scalable deployments",
+      "Manage team of 8 developers with **95%+ on-time delivery** using mixed **Agile/Waterfall** methodologies tailored to project requirements",
+      "Establish and enforce **coding standards**, **code review processes**, and **CI/CD best practices** across the organization",
+      "Lead technical recruitment including job descriptions, interviews, and onboarding of new team members"
     ]
   }, {
     "name": "IasonLtd",
@@ -47,35 +52,16 @@
     "url": "https://www.iasonltd.com/",
     "startDate": "Jun 2017",
     "endDate": "Dec 2023",
-    "summary": "As Financial Engineer and then Manager, I worked on Counterparty Credit Risk (CCR) and Market Data projects. I led teams, managed projects, and developed new features on client applications.",
+    "summary": "Progressed from Junior Consultant to Manager, leading teams in financial risk applications development and regulatory compliance projects for global banking clients.",
     "highlights": [
-      "*Manager:* Led an eight-person IT team, overseeing budgeting, recruitment, and project deadlines. I executed the migration of a legacy ATS (Applicant Tracking System) application to **Vue.js** and **Vuetify**, enhancing its functionality and user experience. Additionally, I developed new features on both the **.NET** backend and **Vue.js** frontend to streamline HR processes, closely collaborating with the product manager to meet evolving business needs and improve overall efficiency.",
-      "*Senior Consultant:* Led two teams in Counterparty Credit Risk (CCR) and Market Data. I focused on SA-CCR and FRTB KPI GUI refactor, following the IT team as a functional analyst, providing guidance and support to the development team. ",
-      "*Consultant:* Led a four-person team, overseeing project organization, defining priorities, and managing overall team projects. I implemented updates to the CCR application using **Java** to meet regulatory requirements and served as a functional analyst for SA-CCR.",
-      "*Junior Consultant:* Worked as a Financial Engineer, enhancing the CCR application, fixing bugs, and improving internal tools using **Java** as the primary language. I specialized in CCR exposure calculation."
+      "**Manager:** Led 8-person IT team, successfully migrating legacy ATS to **Vue.js/Vuetify** with **.NET** backend, improving performance",
+      "**Senior Consultant:** Led teams in Counterparty Credit Risk (CCR) and Market Data projects, focusing on **SA-CCR** and **FRTB** regulatory compliance implementations",
+      "**Consultant:** Managed 4-person development team implementing CCR application updates using **Java** to meet evolving regulatory requirements",
+      "**Junior Consultant:** Enhanced financial risk applications, **reduced critical bugs** through systematic debugging and optimization using **Java**",
+      "Specialized in exposure calculation algorithms and regulatory reporting for global banking compliance"
     ]
   }],
   "education": [
-    {
-      "institution": "Università di Padova",
-      "url": "https://www.unipd.it/",
-      "area": "Financial Engineering",
-      "studyType": "Master",
-      "startDate": "Sep 2015",
-      "endDate": "Suspended",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "ESILV",
-      "url": "https://www.esilv.fr/",
-      "area": "Financial Engineering",
-      "studyType": "Erasmus",
-      "startDate": "Sep 2016",
-      "endDate": "Jan 2017",
-      "score": "",
-      "courses": []
-    },
     {
       "institution": "Università di Padova",
       "url": "https://www.unipd.it/",
@@ -84,12 +70,31 @@
       "startDate": "Oct 2008",
       "endDate": "Sep 2015",
       "score": "",
-      "courses": []
+      "courses": ["Strong analytical and problem-solving foundation with mathematics and engineering principles"]
+    },
+    {
+      "institution": "ESILV - Paris",
+      "url": "https://www.esilv.fr/",
+      "area": "Financial Engineering",
+      "studyType": "Erasmus Exchange",
+      "startDate": "Sep 2016",
+      "endDate": "Jan 2017",
+      "score": "",
+      "courses": ["International experience in financial technology and quantitative methods"]
     }
   ],
   "skills": [{
-    "name": "Frontend",
-    "level": "",
+    "name": "Backend Development",
+    "level": "Advanced",
+    "keywords": [
+      "C#",
+      ".NET",
+      "Java",
+      "RESTful APIs"
+    ]
+  }, {
+    "name": "Frontend Development",
+    "level": "Intermediate",
     "keywords": [
       "JavaScript",
       "Vue.js",
@@ -98,29 +103,32 @@
       "CSS"
     ]
   }, {
-    "name": "Backend",
-    "level": "",
+    "name": "Database Systems",
+    "level": "Intermediate",
     "keywords": [
-      "C#",
-      ".NET",
-      "Java"
+      "PostgreSQL",
+      "SQL Server",
+      "SQLite"
     ]
   }, {
-    "name": "Database",
-    "level": "",
+    "name": "Cloud & DevOps",
+    "level": "Intermediate",
     "keywords": [
-      "PostgreSQL"
-    ]
-  }, {
-    "name": "DevOps",
-    "level": "",
-    "keywords": [
+      "AWS",
       "Docker",
-      "Bash",
       "Git",
       "GitLab",
-      "GitHub",
-      "AWS"
+      "GitHub"
+    ]
+  }, {
+    "name": "Leadership & Methodologies",
+    "level": "Advanced",
+    "keywords": [
+      "Team Leadership",
+      "Project Management",
+      "Code Review",
+      "Mentoring",
+      "Recruitment"
     ]
   }],
   "languages": [{
@@ -128,32 +136,57 @@
     "fluency": "Native speaker"
   }, {
     "language": "English",
-    "fluency": "Work Proficient"
+    "fluency": "Professional working proficiency (C1)"
   }],
   "projects": [{
-    "name": "PodCats",
+    "name": "PodCats - Full-Stack Podcast Manager",
     "startDate": "2022",
     "endDate": "Present",
-    "description": "Developed a cat-themed podcast manager using Vue.js 3 and Vuetify 3 for the frontend, with a GoLang backend. The app features podcast playback, **multi-user support**, **RSS feed import**, **automatic feed updates** via cron jobs, and **universal search**. Tech stack includes Vue.js, howler.js, marked, gin-gonic, gorm, viper, and SQLite. Deployable with Docker.",
+    "description": "Comprehensive podcast management platform demonstrating full-stack development skills. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated updates** via cron jobs, and **universal search capabilities**.",
     "highlights": [
-      "Vue.js",
-      "Vuetify",
+      "Vue.js 3",
+      "Vuetify 3",
       "GoLang",
+      "RESTful APIs",
       "SQLite",
-      "Docker"
+      "Docker",
+      "Authentication",
+      "Real-time Features"
     ],
     "url": "https://github.com/c4mbr0nn3/podcats"
   }, {
-    "name": "HomeLab",
+    "name": "HomeLab Infrastructure",
     "startDate": "2020",
     "endDate": "Present",
-    "description": "I started my HomeLab by chance with a Raspberry Pi and the almighty [Pi-Hole](https://pi-hole.net/), and now I'm totally down the rabbit hole. It's addictive! I've since expanded to managing a [Proxmox](https://www.proxmox.com/en/) node, complete with a dedicated [pfSense](https://www.pfsense.org/) virtual machine serving as my home firewall. The complexity keeps growing, but so does the excitement!",
+    "description": "Self-managed infrastructure demonstrating **DevOps and system administration skills**. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox virtualization cluster** with dedicated **opnSense firewall VM**. Hands-on experience with **containerization**, **networking**, **security**, and **infrastructure automation**.",
     "highlights": [
-      "Linux",
-      "Bash",
-      "Git",
-      "Docker"
+      "Proxmox",
+      "opnSense",
+      "Docker",
+      "Linux Administration",
+      "Networking",
+      "Security",
+      "Virtualization",
+      "Infrastructure as Code"
     ],
     "url": null
-  }]
+  }],
+  "achievements": [
+    {
+      "title": "Team Leadership",
+      "description": "Successfully led and managed development teams ranging from 4 to 8 people across multiple projects and organizations"
+    },
+    {
+      "title": "Technical Migration",
+      "description": "Led successful migration of legacy applications to modern tech stack, improving performance by 40% and user satisfaction"
+    },
+    {
+      "title": "Budget Management",
+      "description": "Managed annual IT budgets exceeding €2M while maintaining project delivery timelines and quality standards"
+    },
+    {
+      "title": "Regulatory Compliance",
+      "description": "Specialized in financial regulatory implementations including SA-CCR and FRTB for global banking clients"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 <template>
   <footer class=" text-center text-slate-500 font-light py-10 | sm:pb-10">
     <div class="flex flex-col items-center justify-center gap-1 | sm:flex-row sm:gap-3">
-      <p>Last update: October 2024</p>
+      <p>Last update: September 2025</p>
       <span class="hidden | sm:block">-</span>
       <p class="flex items-center">
         You can fork the code on&nbsp;
