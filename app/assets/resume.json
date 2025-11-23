@@ -135,22 +135,8 @@
     "fluency": "Proficient (C1)"
   }],
   "projects": [{
-    "name": "PodCats",
-    "startDate": "2022",
-    "endDate": "Present",
-    "description": "Comprehensive podcast management platform. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
-    "highlights": [
-      "Vue.js",
-      "Vuetify",
-      "JavaScript",
-      "GoLang",
-      "SQLite",
-      "Docker"
-    ],
-    "url": "https://github.com/c4mbr0nn3/podcats"
-  }, {
     "name": "SplitDuo",
-    "startDate": "September 2025",
+    "startDate": "Sep 2025",
     "endDate": "Present",
     "description": "A lightweight, open-source expense splitting application written in **.NET 9**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
     "highlights": [
@@ -162,6 +148,20 @@
       "Tailwind CSS"
     ],
     "url": "https://gitlab.com/j1mm0/splitduo"
+  }, {
+    "name": "PodCats",
+    "startDate": "Nov 2022",
+    "endDate": "Present",
+    "description": "Comprehensive podcast management platform, but with cats 🐱. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
+    "highlights": [
+      "Vue.js",
+      "Vuetify",
+      "JavaScript",
+      "GoLang",
+      "SQLite",
+      "Docker"
+    ],
+    "url": "https://github.com/c4mbr0nn3/podcats"
   }, {
     "name": "HomeLab Infrastructure",
     "startDate": "2020",
