@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify-static',
   },
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
