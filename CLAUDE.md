@@ -40,6 +40,21 @@ npm run lint:fix     # Auto-fix ESLint issues
 - **Icon system**: Uses `@nuxt/icon` with Iconify (Carbon, Nonicons, Simple Icons libraries). Icon mappings are defined in `app/composables/useIcons.js`.
 - **Composables**: Auto-imported from `app/composables/` directory
 
+## Color Palette
+
+The project uses Tailwind CSS color classes with a minimal, professional palette:
+
+- **Emerald** (Primary accent):
+  - `emerald-600` - Main headings (h1 name), links, company/project titles
+  - `emerald-700` - Contact badges
+- **Orange** (Hover/interaction):
+  - `orange-500` - Contact link hover state
+  - `orange-600` - General link hover state
+- **Slate** (Neutrals):
+  - `slate-100` - Page background (`app.vue`), skill badge hover
+  - `slate-500` - Secondary text (section titles, dates, positions, footer)
+- **White** - Resume card background (`TheResume.vue`)
+
 ## Code Style
 
 - ESLint with `@antfu/eslint-config` (strict, no Prettier)
