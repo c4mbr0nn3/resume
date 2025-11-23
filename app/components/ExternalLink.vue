@@ -22,5 +22,5 @@ defineProps({
     <span>{{ label }}</span>
     <Icon name="carbon:launch" class="w-3.5 h-3.5" />
   </NuxtLink>
-  <span v-else>{{ label }}</span>
+  <span v-else class="text-teal-600">{{ label }}</span>
 </template>
