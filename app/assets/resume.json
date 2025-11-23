@@ -6,7 +6,7 @@
     "email": "francesco.zorzi.1@gmail.com",
     "phone": "+39-3497874182",
     "url": "https://francescozorzi.me/",
-    "summary": "Software Engineer Manager with 5+ years of experience in .NET development and modern web technologies. Proven track record leading development teams and delivering scalable software solutions in financial services and emerging tech companies. Expertise in C#, .NET 8, Entity Framework Core, and full-stack development with strong focus on code quality and agile methodologies.",
+    "summary": "**Software Engineer Manager** with *5+ years of experience* in **.NET development** and **modern web technologies**. Proven track record leading development teams and delivering scalable software solutions in *financial services* and *emerging tech companies*. Expertise in **C#**, **.NET 8**, **Entity Framework Core**, and **full-stack development** with strong focus on code quality and agile methodologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,7 +30,7 @@
   },
   "work": [{
     "name": "Technesthai",
-    "position": "Software Engineer / Manager",
+    "position": "Software Engineer Manager",
     "url": "https://www.technesthai.com/",
     "startDate": "Jan 2024",
     "endDate": "Present",
@@ -43,7 +43,7 @@
       "**Code Quality:** Established and enforce **coding standards**, **code review processes**, and **CI/CD best practices**, resulting in improved code quality and reduced technical debt"
     ]
   }, {
-    "name": "IasonLtd",
+    "name": "iason",
     "position": "Financial Engineer / Manager",
     "url": "https://www.iasonltd.com/",
     "startDate": "Jun 2017",
@@ -125,7 +125,7 @@
     "fluency": "Proficient (C1)"
   }],
   "projects": [{
-    "name": "PodCats - Podcast Manager with Cats",
+    "name": "PodCats",
     "startDate": "2022",
     "endDate": "Present",
     "description": "Comprehensive podcast management platform. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
