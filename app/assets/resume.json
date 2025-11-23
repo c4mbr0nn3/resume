@@ -38,7 +38,7 @@
     "highlights": [
       "*Backend:* Actively develop and maintain applications using **.NET 8**, **C#** and **Entity Framework Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
       "*Frontend:* Build responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
-      "*AWS Cloud:* Collaborate with CTO in managing AWS infrastructure, daily operations with **S3 storage**, **CloudWatch monitoring**, and deployment orchestration using **Docker containers**",
+      "*Infrastructure:* Collaborate with CTO in managing AWS infrastructure, daily operations with **S3 storage**, **CloudWatch monitoring**, and deployment orchestration using **Docker containers**",
       "*Team Leadership:* Manage team workload, define project priorities with stakeholders, and ensure **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology approach tailored to project requirements",
       "*Code Quality:* Established and enforce **coding standards**, **code review processes**, and **CI/CD best practices**, resulting in improved code quality and reduced technical debt"
     ]
