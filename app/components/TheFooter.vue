@@ -5,12 +5,12 @@
       <span class="hidden | sm:block">-</span>
       <p class="flex items-center">
         You can fork the code on&nbsp;
-        <NuxtLink to="https://gitlab.com/j1mm0/resume" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-emerald-600 hover:text-orange-600 transition-all">
+        <NuxtLink to="https://gitlab.com/j1mm0/resume" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-teal-600 hover:text-teal-700 transition-all">
           GitLab
           <Icon name="simple-icons:gitlab" />
         </NuxtLink>
         &nbsp;or on&nbsp;
-        <NuxtLink to="https://github.com/c4mbr0nn3/resume" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-emerald-600 hover:text-orange-600 transition-all">
+        <NuxtLink to="https://github.com/c4mbr0nn3/resume" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-teal-600 hover:text-teal-700 transition-all">
           GitHub
           <Icon name="simple-icons:github" />
         </NuxtLink>
@@ -18,7 +18,7 @@
     </div>
     <div class="text-xs mt-3 | sm:mt-2">
       Thanks to
-      <NuxtLink to="https://nathanfriend.io" target="_blank" rel="noopener noreferrer" class="text-emerald-600 hover:text-orange-600 transition-all">
+      <NuxtLink to="https://nathanfriend.io" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:text-teal-700 transition-all">
         Nathan Friend
       </NuxtLink>
       for the inspiration!

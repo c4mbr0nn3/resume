@@ -41,6 +41,6 @@ await fetch()
 
 <style>
 body{
-  background-color: theme("colors.slate.100");
+  background-color: theme("colors.slate.50");
 }
 </style>

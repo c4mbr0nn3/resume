@@ -42,18 +42,21 @@ npm run lint:fix     # Auto-fix ESLint issues
 
 ## Color Palette
 
-The project uses Tailwind CSS color classes with a minimal, professional palette:
+The project uses Tailwind CSS color classes with a modern, minimal teal palette:
 
-- **Emerald** (Primary accent):
-  - `emerald-600` - Main headings (h1 name), links, company/project titles
-  - `emerald-700` - Contact badges
-- **Orange** (Hover/interaction):
-  - `orange-500` - Contact link hover state
-  - `orange-600` - General link hover state
+- **Teal** (Primary accent):
+  - `teal-600` - Main headings (h1 name), links, bold text in markdown (skills/achievements)
+  - `teal-700` - Hover states
 - **Slate** (Neutrals):
-  - `slate-100` - Page background (`app.vue`), skill badge hover
+  - `slate-50` - Page background (`app.vue`)
   - `slate-500` - Secondary text (section titles, dates, positions, footer)
+  - `slate-600` - Body text in markdown
 - **White** - Resume card background (`TheResume.vue`)
+
+### Markdown Styling
+In `Markdown.vue`, text emphasis is styled:
+- **Bold** (`**text**`) → `teal-600` - Used for skills, technologies, achievements
+- **Italic** (`*text*`) → `slate-700` + italic style + medium weight (500) - Used for category labels like *Backend:*, *Manager:*
 
 ## Code Style
 
