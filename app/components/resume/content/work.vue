@@ -8,9 +8,7 @@ const { work } = useResume()
     <div v-for="(item, i) in work" :key="i" class="mb-5">
       <div class="flex justify-between items-center">
         <h3 class="text-lg font-semibold">
-          <NuxtLink :to="item.url" class="text-teal-600  transition-all" :class="{ 'hover:text-teal-700': !!item.url }" target="_blank" rel="noopener noreferrer">
-            {{ item.name }}
-          </NuxtLink>
+          <ExternalLink :href="item.url" :label="item.name" />
         </h3>
         <p class="text-sm font-mono text-slate-500">
           {{ item.startDate }} - {{ item.endDate }}
