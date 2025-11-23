@@ -50,7 +50,7 @@
     "endDate": "Dec 2023",
     "summary": "Progressed from Junior Consultant to Manager, leading teams in Counterparty Credit Risk (CCR) and Market Data projects. Developed and maintained financial applications using .NET technologies and Java for global banking clients.",
     "highlights": [
-      "*Manager:* Led 8-person IT team. Successfully migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
+      "*Manager:* Led 5-people IT team. Successfully migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
       "*Senior Consultant:* Led CCR and Market Data teams focusing on **SA-CCR** and **FRTB compliance**. Served as functional analyst providing technical guidance for regulatory implementations using **Java**",
       "*Consultant:* Managed 4-person development team, implementing CCR application updates using **Java** to meet evolving regulatory requirements. Acted as functional analyst for SA-CCR calculations and risk metrics",
       "*Junior Consultant:* Developed and enhanced CCR applications, **reduced critical bugs** through systematic debugging and code optimization using **Java**. Specialized in exposure calculation algorithms for financial risk management"
