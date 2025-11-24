@@ -29,6 +29,7 @@ export default function useIcons() {
     'networking': 'i-carbon-network-4',
     'security': 'i-carbon-security',
     'virtualization': 'i-carbon-virtual-machine',
+    'backup strategy': 'i-carbon-ibm-cloud-backup-service-vpc',
   })
 
   const social = ref({
