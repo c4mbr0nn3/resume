@@ -6,7 +6,7 @@ const { social: icons } = useIcons()
 const contacts = computed(() => {
   const { email, url, profiles } = basics.value
   const emailData = {
-    icon: 'carbon:email',
+    icon: 'i-carbon-at',
     to: `mailto:${email}`,
     label: email,
   }
