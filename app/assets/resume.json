@@ -44,16 +44,29 @@
     ]
   }, {
     "name": "iason",
-    "position": "Financial Engineer / Manager",
+    "position": "Software Engineer",
+    "url": "https://www.iasonltd.com/",
+    "startDate": "Jan 2020",
+    "endDate": "Dec 2023",
+    "summary": "Led development of financial applications and modernization initiatives using .NET and Vue.js technologies for global banking clients.",
+    "highlights": [
+      "Migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
+      "Led 5-person development team, managing technical delivery and code quality",
+      "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java** for regulatory compliance (**SA-CCR**, **FRTB**)",
+      "Served as functional analyst bridging business requirements and technical implementation"
+    ]
+  }, {
+    "name": "iason",
+    "position": "Financial Engineer",
     "url": "https://www.iasonltd.com/",
     "startDate": "Jun 2017",
-    "endDate": "Dec 2023",
-    "summary": "Progressed from Junior Consultant to Manager, leading teams in Counterparty Credit Risk (CCR) and Market Data projects. Developed and maintained financial applications using .NET technologies and Java for global banking clients.",
+    "endDate": "Dec 2019",
+    "summary": "Progressed from Junior Consultant to Consultant, specializing in Counterparty Credit Risk calculations and regulatory implementations.",
     "highlights": [
-      "*Manager:* Led 5-people IT team. Successfully migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
-      "*Senior Consultant:* Led CCR and Market Data teams focusing on **SA-CCR** and **FRTB compliance**. Served as functional analyst providing technical guidance for regulatory implementations using **Java**",
-      "*Consultant:* Managed 4-person development team, implementing CCR application updates using **Java** to meet evolving regulatory requirements. Acted as functional analyst for SA-CCR calculations and risk metrics",
-      "*Junior Consultant:* Developed and enhanced CCR applications, **reduced critical bugs** through systematic debugging and code optimization using **Java**. Specialized in exposure calculation algorithms for financial risk management"
+      "Developed and enhanced CCR applications using **Java**, focusing on exposure calculation algorithms for financial risk management",
+      "Managed 4-person team implementing application updates for evolving regulatory requirements",
+      "Reduced critical bugs through systematic debugging and code optimization",
+      "Specialized in **SA-CCR** calculations and risk metrics as functional analyst"
     ]
   }],
   "education": [
