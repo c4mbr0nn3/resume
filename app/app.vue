@@ -28,6 +28,13 @@ useHead({
       href: '/favicon.ico',
     },
   ],
+  script: [
+    {
+      src: 'https://analytics.zorygo.ovh/js/pa-rZeXMBjHeyBgH948AJs7u.js',
+      async: true,
+    },
+    { innerHTML: 'window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()' },
+  ],
 })
 
 await fetch()
