@@ -32,13 +32,21 @@ npm run lint:fix     # Auto-fix ESLint issues
 ### Component Structure
 - `app/pages/index.vue` - Single page container
 - `app/components/TheResume.vue` - Main resume wrapper
-- `app/components/resume/` - Resume sections (header, contacts, content/)
+- `app/components/resume/` - Resume sections (header, contacts, summary, content/)
 - `app/components/resume/content/` - Individual sections (work, education, skills, projects, languages)
 
 ### Key Patterns
 - **Markdown rendering**: Work and project descriptions support markdown via `markdown-it` plugin (`app/plugins/markdown-it.js`). The `Markdown.vue` component renders content using the injected `$mdRenderer`.
-- **Icon system**: Uses `@nuxt/icon` with Iconify (Carbon, Nonicons, Simple Icons libraries). Icon mappings are defined in `app/composables/useIcons.js`.
+- **Icon system**: Uses `@nuxt/icon` with Iconify (Carbon, Nonicons, Simple Icons, Devicon Plain libraries). Icon mappings are defined in `app/composables/useIcons.js`.
 - **Composables**: Auto-imported from `app/composables/` directory
+
+### Styling Setup (Tailwind CSS v4)
+- **CSS Entry Point**: `app/assets/css/main.css` - Main CSS file with Tailwind v4 import
+- **Configuration**: CSS-first approach using `@theme` directive for custom theme values
+- **Vite Integration**: Uses `@tailwindcss/vite` plugin configured in `nuxt.config.ts`
+- **Custom Fonts**: Defined in CSS via `--font-serif`, `--font-sans`, `--font-mono` variables
+- **Container Utility**: Centered containers using `@utility container` with `margin-inline: auto`
+- **CSS Variables**: Component styles use CSS variables (e.g., `var(--color-teal-600)`) instead of `theme()` function
 
 ## Color Palette
 
@@ -47,6 +55,8 @@ The project uses Tailwind CSS color classes with a modern, minimal teal palette:
 - **Teal** (Primary accent):
   - `teal-600` - Main headings (h1 name), links, bold text in markdown (skills/achievements)
   - `teal-700` - Hover states
+- **Emerald** (Accents):
+  - `emerald-600` - Work highlight bullet icons
 - **Slate** (Neutrals):
   - `slate-50` - Page background (`app.vue`)
   - `slate-500` - Secondary text (section titles, dates, positions, footer)
@@ -67,9 +77,10 @@ In `Markdown.vue`, text emphasis is styled:
 
 ## Deployment
 
-- Platform: Netlify with `netlify-static` preset
+- Platform: Netlify with `netlify-static` preset (configured in `nuxt.config.ts`)
 - Triggered by push to main branch
-- Static generation via `npm run build`
+- Build command: `npm run build` (standard build)
+- Static generation: `npm run generate` (creates static output for deployment)
 
 ## Data Updates
 
