@@ -13,61 +13,71 @@
       "countryCode": "IT",
       "region": "Italy"
     },
-    "profiles": [{
-      "network": "LinkedIn",
-      "username": "francesco-zorzi",
-      "url": "https://www.linkedin.com/in/francesco-zorzi/"
-    }, {
-      "network": "GitHub",
-      "username": "c4mbr0nn3",
-      "url": "https://github.com/c4mbr0nn3"
-    }, {
-      "network": "GitLab",
-      "username": "j1mm0",
-      "url": "https://gitlab.com/j1mm0"
-    }]
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "francesco-zorzi",
+        "url": "https://www.linkedin.com/in/francesco-zorzi/"
+      },
+      {
+        "network": "GitHub",
+        "username": "c4mbr0nn3",
+        "url": "https://github.com/c4mbr0nn3"
+      },
+      {
+        "network": "GitLab",
+        "username": "j1mm0",
+        "url": "https://gitlab.com/j1mm0"
+      }
+    ]
   },
-  "work": [{
-    "name": "Technesthai",
-    "position": "Software Engineer Manager",
-    "url": "https://www.technesthai.com/",
-    "startDate": "Jan 2024",
-    "endDate": "Present",
-    "summary": "Lead a team of developers in full-stack development using modern .NET technologies and cloud infrastructure. Collaborate closely with CTO to deliver scalable software solutions and establish development best practices.",
-    "highlights": [
-      "*Backend:* Actively develop and maintain applications using **.NET 8**, **C#** and **Entity Framework Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
-      "*Frontend:* Build responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
-      "*Infrastructure:* Collaborate with CTO in managing AWS infrastructure, daily operations with **S3 storage**, **CloudWatch monitoring**, and deployment orchestration using **Docker containers**",
-      "*Team Leadership:* Manage team workload, define project priorities with stakeholders, and ensure **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology approach tailored to project requirements",
-      "*Architecture & Testing:* Introduced **dependency injection** and incrementally restructured legacy codebase toward **clean architecture**. Integrated **unit tests** using **xUnit**, **NSubstitute**, and **Bogus** with **coverage reports** in GitLab CI pipelines"
-    ]
-  }, {
-    "name": "iason",
-    "position": "Software Engineer",
-    "url": "https://www.iasonltd.com/",
-    "startDate": "Jan 2020",
-    "endDate": "Dec 2023",
-    "summary": "Led development of financial applications and modernization initiatives using .NET and Vue.js technologies for global banking clients.",
-    "highlights": [
-      "Migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
-      "Led 5-person development team, managing technical delivery and code quality",
-      "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java** for regulatory compliance (**SA-CCR**, **FRTB**)",
-      "Served as functional analyst bridging business requirements and technical implementation"
-    ]
-  }, {
-    "name": "iason",
-    "position": "Financial Engineer",
-    "url": "https://www.iasonltd.com/",
-    "startDate": "Jun 2017",
-    "endDate": "Dec 2019",
-    "summary": "Progressed from Junior Consultant to Consultant, specializing in Counterparty Credit Risk calculations and regulatory implementations.",
-    "highlights": [
-      "Developed and enhanced CCR applications using **Java**, focusing on exposure calculation algorithms for financial risk management",
-      "Managed 4-person team implementing application updates for evolving regulatory requirements",
-      "Reduced critical bugs through systematic debugging and code optimization",
-      "Specialized in **SA-CCR** calculations and risk metrics as functional analyst"
-    ]
-  }],
+  "work": [
+    {
+      "name": "Technesthai",
+      "position": "Software Engineer Manager",
+      "url": "https://www.technesthai.com/",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "summary": "Lead a team of developers in full-stack development using modern .NET technologies and cloud infrastructure. Collaborate closely with CTO to deliver scalable software solutions and establish development best practices.",
+      "highlights": [
+        "*Backend:* Actively develop and maintain applications using **.NET 8**, **C#** and **Entity Framework Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
+        "*Frontend:* Build responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
+        "*Security:* Implemented secure authentication flows using **OAuth / OIDC**, integrating frontend token retrieval with backend validation strategies",
+        "*Infrastructure:* Collaborate with CTO in managing AWS infrastructure, daily operations with **S3 storage**, **CloudWatch monitoring**, and deployment orchestration using **Docker containers**",
+        "*Team Leadership:* Manage team workload, define project priorities with stakeholders, and ensure **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology approach tailored to project requirements",
+        "*Architecture & Testing:* Introduced **dependency injection** and incrementally restructured legacy codebase toward **clean architecture**. Integrated **unit tests** using **xUnit**, **NSubstitute**, and **Bogus** with **coverage reports** in GitLab CI pipelines"
+      ]
+    },
+    {
+      "name": "iason",
+      "position": "Software Engineer",
+      "url": "https://www.iasonltd.com/",
+      "startDate": "Jan 2020",
+      "endDate": "Dec 2023",
+      "summary": "Led development of financial applications and modernization initiatives using .NET and Vue.js technologies for global banking clients.",
+      "highlights": [
+        "Migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
+        "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
+        "Led 5-person development team, managing technical delivery and code quality",
+        "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java** for regulatory compliance (**SA-CCR**, **FRTB**)",
+        "Served as functional analyst bridging business requirements and technical implementation"
+      ]
+    },
+    {
+      "name": "iason",
+      "position": "Financial Engineer",
+      "url": "https://www.iasonltd.com/",
+      "startDate": "Jun 2017",
+      "endDate": "Dec 2019",
+      "summary": "Progressed from Junior Consultant to Consultant, specializing in Counterparty Credit Risk calculations and regulatory implementations.",
+      "highlights": [
+        "Developed and enhanced CCR applications using **Java**, focusing on exposure calculation algorithms for financial risk management",
+        "Managed 4-person team implementing application updates for evolving regulatory requirements",
+        "Reduced critical bugs through systematic debugging and code optimization",
+        "Specialized in **SA-CCR** calculations and risk metrics as functional analyst"
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "Università di Padova",
@@ -77,7 +87,9 @@
       "startDate": "Oct 2008",
       "endDate": "Sep 2015",
       "score": "",
-      "courses": ["Strong analytical and problem-solving foundation with mathematics and engineering principles"]
+      "courses": [
+        "Strong analytical and problem-solving foundation with mathematics and engineering principles"
+      ]
     },
     {
       "institution": "ESILV - Paris",
@@ -87,116 +99,133 @@
       "startDate": "Sep 2016",
       "endDate": "Jan 2017",
       "score": "",
-      "courses": ["International experience in financial technology and engineering"]
+      "courses": [
+        "International experience in financial technology and engineering"
+      ]
     }
   ],
-  "skills": [{
-    "name": "Backend Development",
-    "level": "Advanced",
-    "keywords": [
-      "C#",
-      ".NET",
-      "EF Core",
-      "Java",
-      "GoLang"
-    ]
-  }, {
-    "name": "Frontend Development",
-    "level": "Intermediate",
-    "keywords": [
-      "Vue.js",
-      "Nuxt",
-      "Vuetify",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS"
-    ]
-  }, {
-    "name": "Database Systems",
-    "level": "Intermediate",
-    "keywords": [
-      "PostgreSQL",
-      "SQL Server",
-      "SQLite"
-    ]
-  }, {
-    "name": "Cloud & DevOps",
-    "level": "Intermediate",
-    "keywords": [
-      "AWS",
-      "Docker",
-      "Git",
-      "GitLab",
-      "GitHub"
-    ]
-  }, {
-    "name": "Testing",
-    "level": "Basic",
-    "keywords": [
-      "xUnit",
-      "NSubstitute",
-      "Bogus"
-    ]
-  }, {
-    "name": "Infrastructure",
-    "level": "Basic",
-    "keywords": [
-      "Proxmox",
-      "opnSense",
-      "Linux"
-    ]
-  }],
-  "languages": [{
-    "language": "Italian",
-    "fluency": "Native speaker"
-  }, {
-    "language": "English",
-    "fluency": "Proficient (C1)"
-  }],
-  "projects": [{
-    "name": "SplitDuo",
-    "startDate": "Sep 2025",
-    "endDate": "Present",
-    "description": "A lightweight, open-source expense splitting application written in **.NET 9**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
-    "highlights": [
-      ".NET",
-      "Nuxt",
-      "JavaScript",
-      "PostgreSQL",
-      "Docker",
-      "Tailwind CSS"
-    ],
-    "url": "https://github.com/c4mbr0nn3/splitduo"
-  }, {
-    "name": "PodCats",
-    "startDate": "Nov 2022",
-    "endDate": "Present",
-    "description": "Comprehensive podcast management platform, but with cats 🐱. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
-    "highlights": [
-      "Vue.js",
-      "Vuetify",
-      "JavaScript",
-      "GoLang",
-      "SQLite",
-      "Docker"
-    ],
-    "url": "https://github.com/c4mbr0nn3/podcats"
-  }, {
-    "name": "HomeLab Infrastructure",
-    "startDate": "2020",
-    "endDate": "Present",
-    "description": "Self-managed infrastructure. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox node** with dedicated **opnSense firewall VM**. Hands-on experience with **containerization**, **networking**, **security**, and **backup strategies**.",
-    "highlights": [
-      "Proxmox",
-      "opnSense",
-      "Docker",
-      "Linux",
-      "Networking",
-      "Security",
-      "Virtualization",
-      "Backup Strategy"
-    ],
-    "url": null
-  }]
+  "skills": [
+    {
+      "name": "Backend Development",
+      "level": "Advanced",
+      "keywords": [
+        "C#",
+        ".NET",
+        "EF Core",
+        "OAuth / OIDC",
+        "Java",
+        "GoLang"
+      ]
+    },
+    {
+      "name": "Frontend Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Vue.js",
+        "Nuxt",
+        "Vuetify",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Database Systems",
+      "level": "Intermediate",
+      "keywords": [
+        "PostgreSQL",
+        "SQL Server",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Intermediate",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Git",
+        "GitLab",
+        "GitHub"
+      ]
+    },
+    {
+      "name": "Testing",
+      "level": "Basic",
+      "keywords": [
+        "xUnit",
+        "NSubstitute",
+        "Bogus"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "Basic",
+      "keywords": [
+        "Proxmox",
+        "opnSense",
+        "Linux"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Proficient (C1)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SplitDuo",
+      "startDate": "Sep 2025",
+      "endDate": "Present",
+      "description": "A lightweight, open-source expense splitting application written in **.NET 9**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
+      "highlights": [
+        ".NET",
+        "Nuxt",
+        "JavaScript",
+        "PostgreSQL",
+        "Docker",
+        "Tailwind CSS"
+      ],
+      "url": "https://github.com/c4mbr0nn3/splitduo"
+    },
+    {
+      "name": "PodCats",
+      "startDate": "Nov 2022",
+      "endDate": "Present",
+      "description": "Comprehensive podcast management platform, but with cats 🐱. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
+      "highlights": [
+        "Vue.js",
+        "Vuetify",
+        "JavaScript",
+        "GoLang",
+        "SQLite",
+        "Docker"
+      ],
+      "url": "https://github.com/c4mbr0nn3/podcats"
+    },
+    {
+      "name": "HomeLab Infrastructure",
+      "startDate": "2020",
+      "endDate": "Present",
+      "description": "Self-managed infrastructure. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox node** with dedicated **opnSense firewall VM**. Hands-on experience with **containerization**, **networking**, **security**, and **backup strategies**.",
+      "highlights": [
+        "Proxmox",
+        "opnSense",
+        "Docker",
+        "Linux",
+        "Networking",
+        "Security",
+        "Virtualization",
+        "Backup Strategy"
+      ],
+      "url": null
+    }
+  ]
 }
