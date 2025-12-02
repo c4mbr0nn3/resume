@@ -47,7 +47,7 @@ await fetch()
 </template>
 
 <style>
-body{
-  background-color: theme("colors.slate.50");
+body {
+  background-color: var(--color-slate-50);
 }
 </style>

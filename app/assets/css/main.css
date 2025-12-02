@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Configuration */
+  --font-serif: "Merriweather", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+}
+
+/* Container Utility - Centered with Auto Margins */
+@utility container {
+  margin-inline: auto;
+}

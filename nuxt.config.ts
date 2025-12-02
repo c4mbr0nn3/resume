@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   nitro: {
     preset: 'netlify-static',
@@ -6,7 +8,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxt/fonts',
     '@nuxt/icon',
@@ -19,20 +20,13 @@ export default defineNuxtConfig({
     },
   },
 
-  tailwindcss: {
-    config: {
-      theme: {
-        container: {
-          center: true,
-        },
-        extend: {
-          fontFamily: {
-            serif: ['Merriweather', 'serif'],
-            sans: ['Inter', 'sans-serif'],
-            mono: ['Source Code Pro', 'monospace'],
-          },
-        },
-      },
-    },
+  css: [
+    '~/assets/css/main.css',
+  ],
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 })

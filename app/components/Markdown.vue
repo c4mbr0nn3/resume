@@ -15,21 +15,24 @@ defineProps({
 </template>
 
 <style scoped>
-.md-body :deep(a){
-    font-weight: bolder;
-    color: theme('colors.teal.600');
-    text-decoration: underline;
-    transition: color 0.2s;
+.md-body :deep(a) {
+  font-weight: bolder;
+  color: var(--color-teal-600);
+  text-decoration: underline;
+  transition: color 0.2s;
 }
-.md-body :deep(a:hover){
-    color: theme('colors.teal.700');
+
+.md-body :deep(a:hover) {
+  color: var(--color-teal-700);
 }
-.md-body :deep(strong){
-    color: theme('colors.teal.600');
+
+.md-body :deep(strong) {
+  color: var(--color-teal-600);
 }
-.md-body :deep(em){
-    color: theme('colors.slate.700');
-    font-style: italic;
-    font-weight: 500;
+
+.md-body :deep(em) {
+  color: var(--color-slate-700);
+  font-style: italic;
+  font-weight: 500;
 }
 </style>
