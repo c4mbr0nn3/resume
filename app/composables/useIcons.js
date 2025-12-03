@@ -30,6 +30,7 @@ export default function useIcons() {
     'security': 'i-carbon-security',
     'virtualization': 'i-carbon-virtual-machine',
     'backup strategy': 'i-carbon-ibm-cloud-backup-service-vpc',
+    'python': 'simple-icons:python',
   })
 
   const social = ref({

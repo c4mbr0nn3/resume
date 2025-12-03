@@ -112,9 +112,9 @@
         "C#",
         ".NET",
         "EF Core",
-        "OAuth / OIDC",
         "Java",
-        "GoLang"
+        "GoLang",
+        "Python"
       ]
     },
     {
@@ -156,7 +156,8 @@
       "keywords": [
         "xUnit",
         "NSubstitute",
-        "Bogus"
+        "Bogus",
+        "Vitest"
       ]
     },
     {
@@ -166,6 +167,18 @@
         "Proxmox",
         "opnSense",
         "Linux"
+      ]
+    },
+    {
+      "name": "Architecture & Concepts",
+      "level": "Advanced",
+      "keywords": [
+        "SOLID",
+        "Clean Architecture",
+        "Dependency Injection",
+        "RESTful APIs",
+        "OAuth / OIDC",
+        "CI/CD Pipelines"
       ]
     }
   ],
