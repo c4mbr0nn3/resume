@@ -59,7 +59,7 @@
         "Migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
         "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
         "Led 5-person development team, managing technical delivery and code quality",
-        "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java** for regulatory compliance (**SA-CCR**, **FRTB**)",
+        "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java 8** for regulatory compliance (**SA-CCR**, **FRTB**)",
         "Served as functional analyst bridging business requirements and technical implementation"
       ]
     },
@@ -71,7 +71,7 @@
       "endDate": "Dec 2019",
       "summary": "Progressed from Junior Consultant to Consultant, specializing in Counterparty Credit Risk calculations and regulatory implementations.",
       "highlights": [
-        "Developed and enhanced CCR applications using **Java**, focusing on exposure calculation algorithms for financial risk management",
+        "Developed and enhanced CCR applications using **Java 8**, focusing on exposure calculation algorithms for financial risk management",
         "Managed 4-person team implementing application updates for evolving regulatory requirements",
         "Reduced critical bugs through systematic debugging and code optimization",
         "Specialized in **SA-CCR** calculations and risk metrics as functional analyst"
