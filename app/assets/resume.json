@@ -73,8 +73,7 @@
       "highlights": [
         "Developed and enhanced CCR applications using **Java 8**, focusing on exposure calculation algorithms for financial risk management",
         "Managed 4-person team implementing application updates for evolving regulatory requirements",
-        "Reduced critical bugs through systematic debugging and code optimization",
-        "Specialized in **SA-CCR** calculations and risk metrics as functional analyst"
+        "Reduced critical bugs through systematic debugging and code optimization"
       ]
     }
   ],
@@ -224,7 +223,7 @@
       "url": "https://github.com/c4mbr0nn3/podcats"
     },
     {
-      "name": "HomeLab Infrastructure",
+      "name": "Private CloudInfrastructure",
       "startDate": "2020",
       "endDate": "Present",
       "description": "Self-managed infrastructure. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox node** with dedicated **opnSense firewall VM**. Hands-on experience with **containerization**, **networking**, **security**, and **backup strategies**.",
