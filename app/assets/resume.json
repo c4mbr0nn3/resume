@@ -193,6 +193,22 @@
   ],
   "projects": [
     {
+      "name": "Digital Signature POC",
+      "startDate": "Nov 2025",
+      "endDate": "Nov 2025",
+      "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features a zero-knowledge security model where **private keys never leave the client unencrypted**, using **Web Crypto API** for key generation and **AES-GCM encryption** with **PBKDF2 key derivation**. Includes complete key rotation workflow while maintaining historical signature verification.",
+      "highlights": [
+        ".NET",
+        "Nuxt",
+        "TypeScript",
+        "Vue.js",
+        "Tailwind CSS",
+        "SQLite",
+        "EF Core"
+      ],
+      "url": "https://github.com/c4mbr0nn3/digital-signature-poc"
+    },
+    {
       "name": "SplitDuo",
       "startDate": "Sep 2025",
       "endDate": "Present",

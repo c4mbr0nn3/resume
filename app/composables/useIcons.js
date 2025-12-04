@@ -1,6 +1,7 @@
 export default function useIcons() {
   const skill = ref({
     'javascript': 'simple-icons:javascript',
+    'typescript': 'devicon-plain:typescript',
     'vue.js': 'simple-icons:vuedotjs',
     'vuetify': 'simple-icons:vuetify',
     'nuxt': 'i-simple-icons-nuxt',
