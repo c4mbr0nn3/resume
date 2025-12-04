@@ -9,7 +9,7 @@ export default function useIcons() {
     'tailwind css': 'simple-icons:tailwindcss',
     'java': 'nonicons:java-16',
     'c#': 'nonicons:c-sharp-16',
-    '.net': 'simple-icons:dotnet',
+    '.net': 'devicon-plain:dot-net',
     'ef core': 'i-devicon-plain-entityframeworkcore',
     'restful api': 'i-carbon-api',
     'postgresql': 'simple-icons:postgresql',
