@@ -199,12 +199,11 @@
       "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features a zero-knowledge security model where **private keys never leave the client unencrypted**, using **Web Crypto API** for key generation and **AES-GCM encryption** with **PBKDF2 key derivation**. Includes complete key rotation workflow while maintaining historical signature verification.",
       "highlights": [
         ".NET",
+        "EF Core",
         "Nuxt",
         "TypeScript",
-        "Vue.js",
         "Tailwind CSS",
-        "SQLite",
-        "EF Core"
+        "SQLite"
       ],
       "url": "https://github.com/c4mbr0nn3/digital-signature-poc"
     },
@@ -215,6 +214,7 @@
       "description": "A lightweight, open-source expense splitting application written in **.NET 9**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
       "highlights": [
         ".NET",
+        "EF Core",
         "Nuxt",
         "JavaScript",
         "PostgreSQL",
