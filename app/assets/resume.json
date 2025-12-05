@@ -224,6 +224,19 @@
       "url": "https://github.com/c4mbr0nn3/splitduo"
     },
     {
+      "name": "Markdown to PDF Microservice",
+      "startDate": "Jul 2025",
+      "endDate": "Jul 2025",
+      "description": "Designed a scalable **microservice** that converts Markdown archives into branded PDFs. Built the **RESTful API** using **Python (FastAPI)** and **Uvicorn**, featuring stateless design for horizontal scaling. Implemented **AI-assisted development** workflows (using **Claude Code**) to accelerate the implementation of complex CSS paging logic and error handling. Containerized the full stack (**Vue 3** frontend + FastAPI backend) using **Docker Compose** and **Nginx** for production-ready deployment.",
+      "highlights": [
+        "Python",
+        "FastAPI",
+        "Vue.js",
+        "Docker"
+      ],
+      "url": "https://github.com/c4mbr0nn3/markdown-to-pdf"
+    },
+    {
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Present",

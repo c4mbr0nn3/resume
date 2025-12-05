@@ -32,6 +32,7 @@ export default function useIcons() {
     'virtualization': 'i-carbon-virtual-machine',
     'backup strategy': 'i-carbon-ibm-cloud-backup-service-vpc',
     'python': 'simple-icons:python',
+    'fastapi': 'devicon-plain:fastapi',
   })
 
   const social = ref({
