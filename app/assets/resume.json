@@ -173,6 +173,7 @@
       "level": "Advanced",
       "keywords": [
         "SOLID",
+        "DRY",
         "Clean Architecture",
         "Dependency Injection",
         "RESTful APIs",
