@@ -6,7 +6,7 @@ const { projects } = useResume()
   <section>
     <ResumeContentTitle title="Projects" />
     <div v-for="(item, i) in projects" :key="i" class="mb-5">
-      <div class="flex justify-between items-center">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-center">
         <h3 class="text-lg font-semibold">
           <ExternalLink :href="item.url" :label="item.name" />
         </h3>
