@@ -53,15 +53,18 @@ const description = 'Software Engineer leading dev team, overseeing IT projects.
       <TheFooter t={t} currentLocale="en" />
     </div>
     <script is:inline>
-      if (!localStorage.getItem('resume-locale')) {
-        var lang = (navigator.language || navigator.userLanguage || '').slice(0, 2)
-        if (lang === 'it') {
-          localStorage.setItem('resume-locale', 'it')
+      (function () {
+        var m = document.cookie.match(/(?:^|; )locale=([^;]*)/)
+        var saved = m ? decodeURIComponent(m[1]) : null
+        if (!saved) {
+          var lang = (navigator.language || '').slice(0, 2)
+          var locale = lang === 'it' ? 'it' : 'en'
+          document.cookie = 'locale=' + locale + '; max-age=31536000; path=/; SameSite=Lax; Secure'
+          if (locale === 'it') location.replace('/it/')
+        } else if (saved === 'it') {
           location.replace('/it/')
-        } else {
-          localStorage.setItem('resume-locale', 'en')
         }
-      }
+      })()
     </script>
   </body>
 </html>

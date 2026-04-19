@@ -53,7 +53,7 @@ const description = 'Software Engineer con esperienza nella guida di team di svi
       <TheFooter t={t} currentLocale="it" />
     </div>
     <script is:inline>
-      localStorage.setItem('resume-locale', 'it')
+      document.cookie = 'locale=it; max-age=31536000; path=/; SameSite=Lax; Secure'
     </script>
   </body>
 </html>
