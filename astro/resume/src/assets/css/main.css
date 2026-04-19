@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Font Family Configuration */
   --font-serif: "Merriweather", serif;
@@ -11,3 +13,15 @@
 @utility container {
   margin-inline: auto;
 }
+
+/* Theme toggle icon visibility */
+#theme-toggle span { display: none; }
+#theme-toggle[data-state="light"]  span[data-for="light"]  { display: block; }
+#theme-toggle[data-state="dark"]   span[data-for="dark"]   { display: block; }
+#theme-toggle[data-state="system"] span[data-for="system"] { display: block; }
+
+/* Markdown dark mode overrides (targets set:html rendered content) */
+.dark .md-body strong { color: var(--color-teal-400); }
+.dark .md-body em { color: var(--color-slate-300); }
+.dark .md-body a { color: var(--color-teal-400); }
+.dark .md-body a:hover { color: var(--color-teal-300); }

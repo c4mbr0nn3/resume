@@ -4,17 +4,61 @@ import { Icon } from 'astro-icon/components'
 const { currentLocale } = Astro.props
 ---
 
-<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-slate-400">
+<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500">
+  <button
+    id="theme-toggle"
+    data-state="system"
+    aria-label="Toggle color theme"
+    class="w-4 h-4 hover:text-slate-600 dark:hover:text-slate-300 transition-colors cursor-pointer"
+  >
+    <span data-for="light"><Icon name="carbon:sun" /></span>
+    <span data-for="dark"><Icon name="carbon:moon" /></span>
+    <span data-for="system"><Icon name="carbon:screen" /></span>
+  </button>
+  <span class="text-slate-300 dark:text-slate-600 select-none">|</span>
   <Icon name="carbon:translate" class="w-4 h-4" />
   <a
     href="/"
-    class={currentLocale === 'en' ? 'text-teal-600 font-medium' : 'hover:text-slate-600 transition-colors'}
+    class={currentLocale === 'en' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
   <span>/</span>
   <a
     href="/it/"
-    class={currentLocale === 'it' ? 'text-teal-600 font-medium' : 'hover:text-slate-600 transition-colors'}
+    class={currentLocale === 'it' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
 </div>
+
+<script>
+  const btn = document.getElementById('theme-toggle') as HTMLButtonElement
+  const STATES = ['system', 'light', 'dark'] as const
+  type ThemeState = typeof STATES[number]
+
+  function getCookie(name: string): string | null {
+    const m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'))
+    return m ? decodeURIComponent(m[1]) : null
+  }
+
+  function setTheme(state: ThemeState) {
+    btn.dataset.state = state
+    document.cookie = `theme=${state}; max-age=31536000; path=/; SameSite=Lax; Secure`
+    const isDark = state === 'dark' || (state === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    document.documentElement.classList.toggle('dark', isDark)
+  }
+
+  const saved = getCookie('theme') as ThemeState | null
+  btn.dataset.state = saved ?? 'system'
+
+  btn.addEventListener('click', () => {
+    const current = btn.dataset.state as ThemeState
+    const next = STATES[(STATES.indexOf(current) + 1) % STATES.length]
+    setTheme(next)
+  })
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (btn.dataset.state === 'system') {
+      document.documentElement.classList.toggle('dark', e.matches)
+    }
+  })
+</script>
