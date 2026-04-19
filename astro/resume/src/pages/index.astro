@@ -41,7 +41,7 @@ const description = 'Software Engineer leading dev team, overseeing IT projects.
   <body class="bg-slate-50">
     <div class="container sm:p-10 lg:p-20">
       <TheResume basics={basics} work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} currentLocale="en" />
-      <TheFooter />
+      <TheFooter t={t} />
     </div>
     <script is:inline>
       if (!localStorage.getItem('resume-locale')) {

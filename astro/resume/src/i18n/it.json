@@ -3,5 +3,7 @@
   "projects": "Progetti",
   "skills": "Competenze",
   "education": "Istruzione",
-  "languages": "Lingue"
+  "languages": "Lingue",
+  "footer.lastUpdate": "Ultimo aggiornamento: novembre 2025",
+  "footer.forkText": "Puoi fare il fork del codice su"
 }
