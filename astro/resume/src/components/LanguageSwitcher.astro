@@ -1,0 +1,20 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { currentLocale } = Astro.props
+---
+
+<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-slate-400">
+  <Icon name="carbon:translate" class="w-4 h-4" />
+  <a
+    href="/"
+    class={currentLocale === 'en' ? 'text-teal-600 font-medium' : 'hover:text-slate-600 transition-colors'}
+    aria-current={currentLocale === 'en' ? 'page' : undefined}
+  >EN</a>
+  <span>/</span>
+  <a
+    href="/it/"
+    class={currentLocale === 'it' ? 'text-teal-600 font-medium' : 'hover:text-slate-600 transition-colors'}
+    aria-current={currentLocale === 'it' ? 'page' : undefined}
+  >IT</a>
+</div>

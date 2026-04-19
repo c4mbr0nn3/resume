@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components'
+import { skillIcons } from '../../lib/icons.js'
+
+const { skill } = Astro.props
+const icon = skillIcons[skill.toLowerCase()]
+---
+
+<div class="flex items-center gap-1 p-2 rounded border border-slate-200 text-slate-500 hover:bg-slate-100 transition-colors text-sm">
+  {icon && <Icon name={icon} class="w-4 h-4" />}
+  {skill}
+</div>

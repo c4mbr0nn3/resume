@@ -1,0 +1,21 @@
+---
+import Work from './Work.astro'
+import Projects from './Projects.astro'
+import Skills from './Skills.astro'
+import Languages from './Languages.astro'
+import Education from './Education.astro'
+
+const { work, education, skills, projects, languages, t } = Astro.props
+---
+
+<section class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+  <div class="lg:col-span-2">
+    <Work work={work} t={t} />
+    <Projects projects={projects} t={t} />
+  </div>
+  <div class="lg:col-span-1">
+    <Skills skills={skills} t={t} />
+    <Languages languages={languages} t={t} />
+    <Education education={education} t={t} />
+  </div>
+</section>
