@@ -19,12 +19,14 @@ const { currentLocale } = Astro.props
   <Icon name="carbon:translate" class="w-4 h-4" />
   <a
     href="/"
+    data-locale="en"
     class={currentLocale === 'en' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
   <span>/</span>
   <a
     href="/it/"
+    data-locale="it"
     class={currentLocale === 'it' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
@@ -60,5 +62,11 @@ const { currentLocale } = Astro.props
     if (btn.dataset.state === 'system') {
       document.documentElement.classList.toggle('dark', e.matches)
     }
+  })
+
+  document.querySelectorAll<HTMLAnchorElement>('a[data-locale]').forEach((link) => {
+    link.addEventListener('click', () => {
+      document.cookie = `locale=${link.dataset.locale}; max-age=31536000; path=/; SameSite=Lax; Secure`
+    })
   })
 </script>
