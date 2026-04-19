@@ -2,11 +2,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-  /* Font Family Configuration */
-  --font-serif: "Merriweather", serif;
-  --font-sans: "Inter", sans-serif;
-  --font-mono: "Source Code Pro", monospace;
+@theme inline {
+  --font-serif: var(--font-merriweather);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-source-code-pro);
 }
 
 /* Container Utility - Centered with Auto Margins */

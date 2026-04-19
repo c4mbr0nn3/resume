@@ -3,7 +3,7 @@ import resumeData from '../assets/resume.en.json'
 import TheFooter from '../components/TheFooter.astro'
 import TheResume from '../components/TheResume.astro'
 import { useTranslations } from '../i18n/utils'
-import '../assets/css/main.css'
+import BaseLayout from '../layouts/BaseLayout.astro'
 
 const t = useTranslations('en')
 const { basics, work, education, skills, projects, languages } = resumeData
@@ -12,59 +12,21 @@ const title = 'Francesco Zorzi | Software Engineer | Resume'
 const description = 'Software Engineer leading dev team, overseeing IT projects. Expertise in Vue.js, .NET, PostgreSQL. Manages workload, recruits talent, sets standards.'
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://picsum.photos/id/988/1200/630" />
-    <meta property="og:url" content="https://resume.francescozorzi.me/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://picsum.photos/id/988/1200/630" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet" />
-    <script defer src="https://analytics.zorygo.ovh/js/pa-rZeXMBjHeyBgH948AJs7u.js"></script>
-    <script is:inline>
-      window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }
-      plausible.init = plausible.init || function (i) { plausible.o = i || {} }
-      plausible.init()
-    </script>
-    <script is:inline>
-      (function () {
-        var m = document.cookie.match(/(?:^|; )theme=([^;]*)/)
-        var theme = m ? decodeURIComponent(m[1]) : 'system'
-        if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark')
-        }
-      })()
-    </script>
-  </head>
-  <body class="bg-zinc-100 dark:bg-zinc-950">
-    <div class="container sm:p-10 lg:p-20">
-      <TheResume basics={basics} work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} currentLocale="en" />
-      <TheFooter t={t} currentLocale="en" />
-    </div>
-    <script is:inline>
-      (function () {
-        var m = document.cookie.match(/(?:^|; )locale=([^;]*)/)
-        var saved = m ? decodeURIComponent(m[1]) : null
-        if (!saved) {
-          var lang = (navigator.language || '').slice(0, 2)
-          var locale = lang === 'it' ? 'it' : 'en'
-          document.cookie = 'locale=' + locale + '; max-age=31536000; path=/; SameSite=Lax; Secure'
-          if (locale === 'it') location.replace('/it/')
-        } else if (saved === 'it') {
-          location.replace('/it/')
-        }
-      })()
-    </script>
-  </body>
-</html>
+<BaseLayout title={title} description={description} ogUrl="https://resume.francescozorzi.me/" lang="en">
+  <TheResume basics={basics} work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} currentLocale="en" />
+  <TheFooter t={t} currentLocale="en" />
+  <script slot="body-scripts" is:inline>
+    (function () {
+      var m = document.cookie.match(/(?:^|; )locale=([^;]*)/)
+      var saved = m ? decodeURIComponent(m[1]) : null
+      if (!saved) {
+        var lang = (navigator.language || '').slice(0, 2)
+        var locale = lang === 'it' ? 'it' : 'en'
+        document.cookie = 'locale=' + locale + '; max-age=31536000; path=/; SameSite=Lax; Secure'
+        if (locale === 'it') location.replace('/it/')
+      } else if (saved === 'it') {
+        location.replace('/it/')
+      }
+    })()
+  </script>
+</BaseLayout>
