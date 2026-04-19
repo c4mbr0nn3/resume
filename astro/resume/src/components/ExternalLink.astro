@@ -4,7 +4,8 @@ import { Icon } from 'astro-icon/components'
 const { href, label } = Astro.props
 ---
 
-{href ? (
+{href
+? (
   <a
     href={href}
     class="inline-flex items-center gap-1 text-teal-600 hover:text-teal-700 transition-colors"
@@ -14,6 +15,7 @@ const { href, label } = Astro.props
     <span>{label}</span>
     <Icon name="carbon:launch" class="w-3.5 h-3.5" />
   </a>
-) : (
+)
+: (
   <span class="text-teal-600">{label}</span>
 )}
