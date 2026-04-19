@@ -15,11 +15,11 @@ const { work, t } = Astro.props
         <h3 class="text-lg font-semibold">
           <ExternalLink href={item.url} label={item.name} />
         </h3>
-        <p class="text-sm font-mono text-slate-500">
+        <p class="text-sm font-mono text-zinc-400 dark:text-zinc-500">
           {item.startDate} - {item.endDate}
         </p>
       </div>
-      <p class="text-sm font-serif text-slate-500 font-medium">{item.position}</p>
+      <p class="text-sm font-serif text-zinc-500 dark:text-zinc-400 font-medium">{item.position}</p>
       <p class="mb-2 mt-1">
         <Markdown content={item.summary} />
       </p>

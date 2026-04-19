@@ -13,11 +13,11 @@ const { education, t } = Astro.props
         <h3 class="text-lg font-semibold">
           <ExternalLink href={item.url} label={item.institution} />
         </h3>
-        <p class="text-sm font-mono text-slate-500">
+        <p class="text-sm font-mono text-zinc-400 dark:text-zinc-500">
           {item.startDate} - {item.endDate}
         </p>
       </div>
-      <p class="font-light text-slate-600">{item.studyType} in {item.area}</p>
+      <p class="font-light text-zinc-600 dark:text-zinc-400">{item.studyType} in {item.area}</p>
     </div>
   ))}
 </section>
