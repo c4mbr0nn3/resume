@@ -4,30 +4,30 @@ import { Icon } from 'astro-icon/components'
 const { currentLocale } = Astro.props
 ---
 
-<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500">
+<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
   <button
     id="theme-toggle"
     data-state="system"
     aria-label="Toggle color theme"
-    class="w-4 h-4 hover:text-slate-600 dark:hover:text-slate-300 transition-colors cursor-pointer"
+    class="w-4 h-4 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors cursor-pointer"
   >
     <span data-for="light"><Icon name="carbon:sun" /></span>
     <span data-for="dark"><Icon name="carbon:moon" /></span>
     <span data-for="system"><Icon name="carbon:screen" /></span>
   </button>
-  <span class="text-slate-300 dark:text-slate-600 select-none">|</span>
+  <span class="text-zinc-300 dark:text-zinc-600 select-none">|</span>
   <Icon name="carbon:translate" class="w-4 h-4" />
   <a
     href="/"
     data-locale="en"
-    class={currentLocale === 'en' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
+    class={currentLocale === 'en' ? 'text-indigo-600 dark:text-indigo-400 font-medium' : 'hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors'}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
   <span>/</span>
   <a
     href="/it/"
     data-locale="it"
-    class={currentLocale === 'it' ? 'text-teal-600 dark:text-teal-400 font-medium' : 'hover:text-slate-600 dark:hover:text-slate-300 transition-colors'}
+    class={currentLocale === 'it' ? 'text-indigo-600 dark:text-indigo-400 font-medium' : 'hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors'}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
 </div>

@@ -5,26 +5,26 @@ const { content } = Astro.props
 const html = renderMarkdown(content)
 ---
 
-<div class="md-body font-light text-slate-600 dark:text-slate-300" set:html={html} />
+<div class="md-body font-light text-zinc-600 dark:text-zinc-300" set:html={html} />
 
 <style>
   .md-body :global(a) {
     font-weight: bolder;
-    color: var(--color-teal-600);
+    color: var(--color-indigo-600);
     text-decoration: underline;
     transition: color 0.2s;
   }
 
   .md-body :global(a:hover) {
-    color: var(--color-teal-700);
+    color: var(--color-indigo-700);
   }
 
   .md-body :global(strong) {
-    color: var(--color-teal-600);
+    color: var(--color-indigo-600);
   }
 
   .md-body :global(em) {
-    color: var(--color-slate-700);
+    color: var(--color-violet-600);
     font-style: italic;
     font-weight: 500;
   }
