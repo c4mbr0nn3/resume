@@ -1,0 +1,17 @@
+---
+import Title from './Title.astro'
+
+const { languages, t } = Astro.props
+---
+
+<section>
+  <Title title={t.languages} />
+  <div class="flex flex-col flex-wrap gap-3 mb-5">
+    {languages.map((item: any) => (
+      <div class="flex items-center gap-1">
+        <h3 class="font-medium text-emerald-600">{item.language}:</h3>
+        <span class="font-light text-slate-600">{item.fluency}</span>
+      </div>
+    ))}
+  </div>
+</section>

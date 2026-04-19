@@ -1,0 +1,9 @@
+---
+import SkillBadge from '../badge/Skill.astro'
+
+const { items } = Astro.props
+---
+
+<div class="flex flex-wrap items-center gap-1">
+  {items.map((item: string) => <SkillBadge skill={item} />)}
+</div>

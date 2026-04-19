@@ -1,0 +1,11 @@
+---
+import Markdown from '../Markdown.astro'
+
+const { basics } = Astro.props
+---
+
+{basics.summary && (
+  <section>
+    <Markdown content={basics.summary} />
+  </section>
+)}

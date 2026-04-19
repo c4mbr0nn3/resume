@@ -1,0 +1,16 @@
+---
+import Title from './Title.astro'
+import SkillList from '../../list/Skill.astro'
+
+const { skills, t } = Astro.props
+---
+
+<section>
+  <Title title={t.skills} />
+  {skills.map((item: any) => (
+    <div class="mb-5">
+      <h3 class="text-lg font-semibold text-emerald-600 mb-1">{item.name}</h3>
+      <SkillList items={item.keywords} />
+    </div>
+  ))}
+</section>

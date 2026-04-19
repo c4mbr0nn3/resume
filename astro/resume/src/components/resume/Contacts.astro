@@ -1,0 +1,21 @@
+---
+import Contact from '../badge/Contact.astro'
+import { socialIcons } from '../../lib/icons.js'
+
+const { basics } = Astro.props
+const { email, url, profiles } = basics
+
+const contacts = [
+  { icon: 'carbon:at', to: `mailto:${email}`, label: email },
+  { icon: 'carbon:link', to: url, label: new URL(url).hostname },
+  ...profiles.map((p: any) => ({
+    icon: socialIcons[p.network.toLowerCase() as keyof typeof socialIcons],
+    to: p.url,
+    label: p.username,
+  })),
+]
+---
+
+<div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-3 lg:gap-6">
+  {contacts.map(item => <Contact item={item} />)}
+</div>
