@@ -4,6 +4,7 @@
   "skills": "Competenze",
   "education": "Istruzione",
   "languages": "Lingue",
-  "footer.lastUpdate": "Ultimo aggiornamento: novembre 2025",
-  "footer.forkText": "Puoi fare il fork del codice su"
+  "footer.lastUpdate": "Ultimo aggiornamento:",
+  "footer.forkText": "Puoi fare il fork del codice su",
+  "footer.or": "o su"
 }
