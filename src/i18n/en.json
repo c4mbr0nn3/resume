@@ -6,5 +6,7 @@
   "languages": "Languages",
   "footer.lastUpdate": "Last update:",
   "footer.forkText": "You can fork the code on",
-  "footer.or": "or on"
+  "footer.or": "or on",
+  "footer.thanks": "Thanks to",
+  "footer.inspiration": "for the inspiration!"
 }
