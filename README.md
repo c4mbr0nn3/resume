@@ -32,3 +32,7 @@ You can find the JSON Resume schema [here](https://jsonresume.org/schema/).
 Data in `src/assets/resume.en.json` and `src/assets/resume.it.json` is my personal data and should not be used without my permission.
 
 Other than that, this project is open source and available under the [MIT License](LICENSE). Feel free to use this project as a template for your own resume.
+
+## Acknowledgements
+
+Thanks to [Nathan Friend](https://nathanfriend.io/) who inspired me with his project [Nuxt Résumé](https://gitlab.com/nfriend/nuxt-resume). I wanted to reproduce a similar look and feel without looking at the source code of his project, just a visual reference.

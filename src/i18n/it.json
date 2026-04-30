@@ -6,5 +6,7 @@
   "languages": "Lingue",
   "footer.lastUpdate": "Ultimo aggiornamento:",
   "footer.forkText": "Puoi fare il fork del codice su",
-  "footer.or": "o su"
+  "footer.or": "o su",
+  "footer.thanks": "Grazie a",
+  "footer.inspiration": "per l'ispirazione!"
 }
