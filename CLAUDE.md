@@ -16,6 +16,8 @@ Package manager: **pnpm** (not npm/yarn). Node >=22.12.0 required.
 
 Commits must follow Conventional Commits (enforced by commitlint + husky).
 
+Commits must be one line, no body.
+
 ## Architecture
 
 Astro 6 site with Tailwind CSS v4, deployed to Netlify.
@@ -37,3 +39,22 @@ Astro 6 site with Tailwind CSS v4, deployed to Netlify.
 ## Resume content
 
 To update resume content, edit `src/assets/resume.en.json` and `src/assets/resume.it.json`. The schema follows [JSON Resume](https://jsonresume.org/schema/) — only `basics`, `work`, `education`, `skills`, `languages`, and `projects` sections are implemented.
+
+## Available MCP Tools
+
+| Tool | When to use |
+|------|-------------|
+| `Astro_docs_search_astro_docs` | Questions about Astro framework APIs, config, routing, i18n, or integrations |
+| `context7_resolve-library-id` + `context7_query-docs` | Need up-to-date docs/code examples for any JS/TS library (React, Tailwind, etc.) |
+
+## Available Skills
+
+| Skill | When to use |
+|-------|-------------|
+| `caveman` | Ultra-token-efficient responses; invoke with `/caveman [lite\|full\|ultra]` |
+| `caveman-commit` | Generate Conventional Commits; invoke with `/commit` |
+| `impeccable` | Frontend/UI design review, polish, animation, accessibility, theming, layout, responsive, UX critique |
+
+## Design Context
+
+Brand register: **Precise · Warm · Confident**. See `PRODUCT.md` for strategy and `DESIGN.md` for visual system (colors, typography, components). Both files live at the project root. Run `node .agents/skills/impeccable/scripts/load-context.mjs` from project root to load them into session context.
