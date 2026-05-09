@@ -25,6 +25,7 @@ export const skillIcons = {
   'bash': 'simple-icons:gnubash',
   'linux': 'simple-icons:linux',
   'proxmox': 'simple-icons:proxmox',
+  'proxmox backup server': 'simple-icons:proxmox',
   'opnsense': 'simple-icons:opnsense',
   'networking': 'carbon:network-4',
   'security': 'carbon:security',
