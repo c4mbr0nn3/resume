@@ -224,7 +224,7 @@
       "name": "SplitDuo",
       "startDate": "Set 2025",
       "endDate": "Presente",
-      "description": "Applicazione open-source leggera per la divisione delle spese, scritta in **.NET 9**, **Nuxt 4** e **NuxtUI 4**, pensata per coppie e nuclei familiari di due persone. SplitDuo è una **alternativa self-hosted a soluzioni esistenti come Splitwise e Cospend**.",
+      "description": "Applicazione open-source leggera per la divisione delle spese, scritta in **.NET 10**, **Nuxt 4** e **NuxtUI 4**, pensata per coppie e nuclei familiari di due persone. SplitDuo è una **alternativa self-hosted a soluzioni esistenti come Splitwise e Cospend**.",
       "highlights": [
         ".NET",
         "EF Core",
