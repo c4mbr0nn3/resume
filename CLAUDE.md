@@ -20,6 +20,8 @@ Commits must follow Conventional Commits (enforced by commitlint + husky).
 
 Commits must be one line, no body.
 
+Always ask for explicit user confirmation before committing and pushing.
+
 ## Architecture
 
 Astro 6 site with Tailwind CSS v4, deployed to Netlify.
