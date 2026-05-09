@@ -20,7 +20,7 @@
 #theme-toggle[data-state="system"] span[data-for="system"] { display: block; }
 
 /* Markdown dark mode overrides (targets set:html rendered content) */
-.dark .md-body strong { color: var(--color-indigo-400); }
+.dark .md-body strong { color: var(--color-orange-400); }
 .dark .md-body em { color: var(--color-amber-400); }
-.dark .md-body a { color: var(--color-indigo-400); }
-.dark .md-body a:hover { color: var(--color-indigo-300); }
+.dark .md-body a { color: var(--color-orange-400); }
+.dark .md-body a:hover { color: var(--color-orange-300); }
