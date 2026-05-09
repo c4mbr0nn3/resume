@@ -224,7 +224,7 @@
       "name": "SplitDuo",
       "startDate": "Sep 2025",
       "endDate": "Present",
-      "description": "A lightweight, open-source expense splitting application written in **.NET 9**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
+      "description": "A lightweight, open-source expense splitting application written in **.NET 10**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
       "highlights": [
         ".NET",
         "EF Core",
