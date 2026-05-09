@@ -108,7 +108,7 @@ Dark: no shadow — `ring-1 ring-stone-700/50` replaces it.
 ## Components
 
 ### Badge / Skill
-Border + background fill (`border-orange-200 bg-orange-50` light, `border-orange-800 bg-orange-950` dark). Hover shifts background. Optional skill icon (16px) left-aligned.
+Inline text with icon in accent color with hover transition. No container, no border, no background fill.
 
 ### Badge / Contact
 Inline link with icon. No container, no border. Text + icon in accent color, underline on hover via `transition-colors`.
