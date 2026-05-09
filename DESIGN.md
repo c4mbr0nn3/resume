@@ -22,7 +22,7 @@ OKLCH values. Dark-mode variants maintain the same relative hierarchy.
 | Surface | `oklch(0.98 0.005 275)` | zinc-50 → white | Card background |
 | Page bg | `oklch(0.96 0.008 270)` | zinc-100 | Outer page background |
 | Body text | `oklch(0.37 0.015 270)` | zinc-600 → zinc-700 | Paragraphs, descriptions |
-| Muted text | `oklch(0.55 0.015 275)` | zinc-400 → zinc-500 | Labels, dates, meta |
+| Muted text | `oklch(0.55 0.015 275)` | zinc-600 (dark: zinc-400) | Labels, dates, meta |
 | Heading | `oklch(0.25 0.02 270)` | indigo-700 | Name, primary headings |
 | Accent | `oklch(0.45 0.15 275)` | indigo-600 | Links, interactive elements |
 | Accent strong | `oklch(0.4 0.18 270)` | indigo-700 | Hover states |
@@ -66,9 +66,9 @@ The resume renders on a rounded white card (`border-radius: 0.5rem` / `sm`) with
 
 - **Name (h1):** `text-5xl` → `lg:text-6xl` / font-bold font-serif / tracking-tight (light: indigo-700, dark: indigo-400)
 - **Subtitle (h2):** `text-base` → `lg:text-lg` / font-serif / text-zinc-500 (dark: zinc-400)
-- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-zinc-400 (dark: zinc-500), `tracking-widest`, bottom border (`border-b border-zinc-200 dark:border-zinc-700 pb-1`)
+- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-zinc-600 (dark: zinc-400), `tracking-widest`, bottom border (`border-b border-zinc-200 dark:border-zinc-700 pb-1`)
 - **Item title (h3):** `text-lg`, font-semibold, `text-balance`
-- **Date labels:** `text-sm`, font-mono, text-zinc-400 (dark: zinc-500)
+- **Date labels:** `text-sm`, font-mono, text-zinc-600 (dark: zinc-400)
 - **Position / meta:** `text-sm`, font-serif, font-medium, text-zinc-500 (dark: zinc-400)
 - **Body / description:** font-light, text-zinc-600 (dark: zinc-300), `leading-relaxed`, `text-pretty`
 - **Badge text:** `text-sm`
