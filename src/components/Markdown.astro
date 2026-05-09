@@ -5,7 +5,7 @@ const { content } = Astro.props
 const html = renderMarkdown(content)
 ---
 
-<div class="md-body font-light text-zinc-600 dark:text-zinc-300" set:html={html} />
+<div class="md-body font-light text-zinc-600 dark:text-zinc-300 leading-relaxed text-pretty" set:html={html} />
 
 <style>
   .md-body :global(a) {

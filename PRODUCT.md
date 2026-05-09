@@ -36,7 +36,7 @@ The site should feel like a well-made printed CV that happens to be on screen �
 
 2. **Warm professionalism.** Approachable, not sterile. The indigo palette leans warm; the serif type brings human texture. Avoids cold corporate blues and grays.
 
-3. **Typography-forward identity.** Merriweather (serif) carries the personality — it's the hero. Inter (sans) provides structure. Let type contrast and scale do the layout work. Hierarchy through weight and scale, not boxes.
+3. **Typography-forward identity.** Spectral (serif) carries the personality — it's the hero. Work Sans (sans) provides structure. Let type contrast and scale do the layout work. Hierarchy through weight and scale, not boxes.
 
 4. **Confidence through restraint.** The site doesn't need to shout. No big numbers, no stats, no hero metrics. A tight composition with generous white space communicates more than any embellishment.
 

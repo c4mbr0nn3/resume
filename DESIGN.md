@@ -57,20 +57,20 @@ The resume renders on a rounded white card (`border-radius: 0.5rem` / `sm`) with
 ### Font stack
 
 | Role | Family | CSS var | Weights |
-|---|---|---|---|
-| Display / Serif | Merriweather | `--font-merriweather` | 400, 700 |
-| UI / Sans | Inter | `--font-inter` | 300, 400, 500, 600 |
+|---|---|---|---|---|
+| Display / Serif | Spectral | `--font-spectral` | 400, 700 |
+| UI / Sans | Work Sans | `--font-work-sans` | 300, 400, 500, 600 |
 | Mono | Source Code Pro | `--font-source-code-pro` | 400 |
 
 ### Scale
 
-- **Name (h1):** `text-5xl` → `lg:text-6xl` / font-serif / tracking-tight (light: indigo-700, dark: indigo-400)
-- **Subtitle (h2):** `text-base` / font-serif / text-zinc-500 (dark: zinc-400)
-- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-zinc-400 (dark: zinc-500), `border-l-2` accent
-- **Item title (h3):** `text-lg`, font-semibold
+- **Name (h1):** `text-5xl` → `lg:text-6xl` / font-bold font-serif / tracking-tight (light: indigo-700, dark: indigo-400)
+- **Subtitle (h2):** `text-base` → `lg:text-lg` / font-serif / text-zinc-500 (dark: zinc-400)
+- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-zinc-400 (dark: zinc-500), `tracking-widest`, bottom border (`border-b border-zinc-200 dark:border-zinc-700 pb-1`)
+- **Item title (h3):** `text-lg`, font-semibold, `text-balance`
 - **Date labels:** `text-sm`, font-mono, text-zinc-400 (dark: zinc-500)
 - **Position / meta:** `text-sm`, font-serif, font-medium, text-zinc-500 (dark: zinc-400)
-- **Body / description:** font-light, text-zinc-600 (dark: zinc-300)
+- **Body / description:** font-light, text-zinc-600 (dark: zinc-300), `leading-relaxed`, `text-pretty`
 - **Badge text:** `text-sm`
 
 ### Line length
@@ -114,7 +114,7 @@ Border + background fill (`border-indigo-200 bg-indigo-50` light, `border-indigo
 Inline link with icon. No container, no border. Text + icon in accent color, underline on hover via `transition-colors`.
 
 ### Section title
-Uppercase serif label with `border-l-2` left accent (indigo). Minimal height — just enough to anchor the section.
+Uppercase serif label with `tracking-widest` and a full bottom border (`border-b border-zinc-200 dark:border-zinc-700`). Minimal height — just enough to anchor the section.
 
 ### WorkHighlight
 Icon (carbon:software-resource-cluster, violet-500) + markdown content in a flex row. The icon sits at the top of the content, not centered.
@@ -153,7 +153,7 @@ Icons are always `w-4 h-4` to `w-5 h-5`, never decorative alone — they accompa
 
 ## Resources
 
-- **Source fonts:** Fontsource via Astro's font provider (Inter, Merriweather, Source Code Pro)
+- **Source fonts:** Fontsource via Astro's font provider (Spectral, Work Sans, Source Code Pro)
 - **Icons:** Carbon Design System, Simple Icons, Devicon, Nonicons
 - **Markdown:** markdown-it with default renderer
 - **Analytics:** Plausible (self-hosted, privacy-friendly)
