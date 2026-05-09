@@ -10,7 +10,7 @@ A hiring manager opens the link on a laptop during work hours — bright room or
 
 ### Color strategy: Restrained
 
-Tinted neutrals (warm zinc) with a single indigo accent.
+Warm stone neutrals with a single rust/terra cotta accent.
 
 ### Color palette
 
@@ -19,38 +19,38 @@ OKLCH values. Dark-mode variants maintain the same relative hierarchy.
 **Light mode:**
 | Role | OKLCH | Tailwind | Usage |
 |---|---|---|---|
-| Surface | `oklch(0.98 0.005 275)` | zinc-50 → white | Card background |
-| Page bg | `oklch(0.96 0.008 270)` | zinc-100 | Outer page background |
-| Body text | `oklch(0.37 0.015 270)` | zinc-600 → zinc-700 | Paragraphs, descriptions |
-| Muted text | `oklch(0.55 0.015 275)` | zinc-600 (dark: zinc-400) | Labels, dates, meta |
-| Heading | `oklch(0.25 0.02 270)` | indigo-700 | Name, primary headings |
-| Accent | `oklch(0.45 0.15 275)` | indigo-600 | Links, interactive elements |
-| Accent strong | `oklch(0.4 0.18 270)` | indigo-700 | Hover states |
-| Accent light | `oklch(0.85 0.04 280)` | indigo-200 | Badge borders |
-| Accent fill | `oklch(0.92 0.03 280)` | indigo-50 | Badge background |
-| Mark strong | `oklch(0.45 0.15 275)` | indigo-600 | Markdown `strong` |
+| Surface | `oklch(0.98 0.005 70)` | stone-50 → white | Card background |
+| Page bg | `oklch(0.96 0.008 65)` | stone-100 | Outer page background |
+| Body text | `oklch(0.37 0.015 60)` | stone-600 → stone-700 | Paragraphs, descriptions |
+| Muted text | `oklch(0.55 0.015 65)` | stone-600 (dark: stone-400) | Labels, dates, meta |
+| Heading | `oklch(0.35 0.08 50)` | orange-700 | Name, primary headings |
+| Accent | `oklch(0.5 0.12 50)` | orange-600 | Links, interactive elements |
+| Accent strong | `oklch(0.45 0.14 48)` | orange-700 | Hover states |
+| Accent light | `oklch(0.85 0.04 50)` | orange-200 | Badge borders |
+| Accent fill | `oklch(0.92 0.03 55)` | orange-50 | Badge background |
+| Mark strong | `oklch(0.5 0.12 50)` | orange-600 | Markdown `strong` |
 | Mark em | `oklch(0.5 0.14 70)` | amber-600 | Markdown `em` |
 
 **Dark mode:**
 | Role | OKLCH | Tailwind | Usage |
 |---|---|---|---|
-| Surface | `oklch(0.2 0.01 270)` | zinc-900 | Card background |
-| Page bg | `oklch(0.15 0.01 270)` | zinc-950 | Outer page |
-| Body text | `oklch(0.7 0.015 265)` | zinc-300 | Paragraphs |
-| Muted text | `oklch(0.45 0.015 270)` | zinc-500 | Labels, dates |
-| Heading | `oklch(0.7 0.1 270)` | indigo-400 | Name, headings |
-| Accent | `oklch(0.65 0.12 270)` | indigo-400 | Links, interactive |
-| Accent strong | `oklch(0.7 0.12 265)` | indigo-300 | Hover states |
-| Accent light | `oklch(0.25 0.04 275)` | indigo-800 | Badge borders |
-| Accent fill | `oklch(0.15 0.04 275)` | indigo-950 | Badge background |
-| Mark strong | `oklch(0.65 0.12 270)` | indigo-400 | Markdown `strong` |
-| Mark em | `oklch(0.65 0.14 70)` | amber-500 | Markdown `em` |
+| Surface | `oklch(0.2 0.01 65)` | stone-900 | Card background |
+| Page bg | `oklch(0.15 0.01 65)` | stone-950 | Outer page |
+| Body text | `oklch(0.7 0.015 60)` | stone-300 | Paragraphs |
+| Muted text | `oklch(0.45 0.015 65)` | stone-500 | Labels, dates |
+| Heading | `oklch(0.7 0.1 50)` | orange-400 | Name, headings |
+| Accent | `oklch(0.65 0.12 50)` | orange-400 | Links, interactive |
+| Accent strong | `oklch(0.7 0.12 48)` | orange-300 | Hover states |
+| Accent light | `oklch(0.25 0.05 50)` | orange-800 | Badge borders |
+| Accent fill | `oklch(0.15 0.04 55)` | orange-950 | Badge background |
+| Mark strong | `oklch(0.65 0.12 50)` | orange-400 | Markdown `strong` |
+| Mark em | `oklch(0.65 0.14 70)` | amber-400 | Markdown `em` |
 
-Neutrals are tinted with a warm-indigo hue (chroma 0.005–0.01) — never pure gray. The accent sits at chroma ~0.15, restrained enough for body use, vivid enough for clear interactivity.
+Neutrals are tinted warm (hue ~60–65 at chroma 0.005–0.01) — never pure gray. The accent sits at a warm rust hue (hue ~50, chroma ~0.12), restrained enough for body use, vivid enough for clear interactivity.
 
 ### Surface
 
-The resume renders on a rounded white card (`border-radius: 0.5rem` / `sm`) with a subtle shadow (`shadow-xl`). In dark mode the shadow disappears and a thin inset ring (`ring-1 ring-zinc-700/50`) defines the boundary. No card nesting — single flat composition.
+The resume renders on a rounded white card (`border-radius: 0.5rem` / `sm`) with a subtle shadow (`shadow-xl`). In dark mode the shadow disappears and a thin inset ring (`ring-1 ring-stone-700/50`) defines the boundary. No card nesting — single flat composition.
 
 ## Typography
 
@@ -64,13 +64,13 @@ The resume renders on a rounded white card (`border-radius: 0.5rem` / `sm`) with
 
 ### Scale
 
-- **Name (h1):** `text-5xl` → `lg:text-6xl` / font-bold font-serif / tracking-tight (light: indigo-700, dark: indigo-400)
-- **Subtitle (h2):** `text-base` → `lg:text-lg` / font-serif / text-zinc-500 (dark: zinc-400)
-- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-zinc-600 (dark: zinc-400), `tracking-widest`, bottom border (`border-b border-zinc-200 dark:border-zinc-700 pb-1`)
+- **Name (h1):** `text-5xl` → `lg:text-6xl` / font-bold font-serif / tracking-tight (light: orange-700, dark: orange-400)
+- **Subtitle (h2):** `text-base` → `lg:text-lg` / font-serif / text-stone-500 (dark: stone-400)
+- **Section headings:** uppercase, `text-sm`, font-semibold, font-serif, text-stone-600 (dark: stone-400), `tracking-widest`, bottom border (`border-b border-stone-200 dark:border-stone-700 pb-1`)
 - **Item title (h3):** `text-lg`, font-semibold, `text-balance`
-- **Date labels:** `text-sm`, font-mono, text-zinc-600 (dark: zinc-400)
-- **Position / meta:** `text-sm`, font-serif, font-medium, text-zinc-500 (dark: zinc-400)
-- **Body / description:** font-light, text-zinc-600 (dark: zinc-300), `leading-relaxed`, `text-pretty`
+- **Date labels:** `text-sm`, font-mono, text-stone-600 (dark: stone-400)
+- **Position / meta:** `text-sm`, font-serif, font-medium, text-stone-500 (dark: stone-400)
+- **Body / description:** font-light, text-stone-600 (dark: stone-300), `leading-relaxed`, `text-pretty`
 - **Badge text:** `text-sm`
 
 ### Line length
@@ -98,7 +98,7 @@ Mobile: single column.
 ### Elevation
 
 Light: `shadow-xl` on the resume card. No additional shadows on inner elements.
-Dark: no shadow — `ring-1 ring-zinc-700/50` replaces it.
+Dark: no shadow — `ring-1 ring-stone-700/50` replaces it.
 
 ### Border radius
 
@@ -108,16 +108,16 @@ Dark: no shadow — `ring-1 ring-zinc-700/50` replaces it.
 ## Components
 
 ### Badge / Skill
-Border + background fill (`border-indigo-200 bg-indigo-50` light, `border-indigo-800 bg-indigo-950` dark). Hover shifts background. Optional skill icon (16px) left-aligned.
+Border + background fill (`border-orange-200 bg-orange-50` light, `border-orange-800 bg-orange-950` dark). Hover shifts background. Optional skill icon (16px) left-aligned.
 
 ### Badge / Contact
 Inline link with icon. No container, no border. Text + icon in accent color, underline on hover via `transition-colors`.
 
 ### Section title
-Uppercase serif label with `tracking-widest` and a full bottom border (`border-b border-zinc-200 dark:border-zinc-700`). Minimal height — just enough to anchor the section.
+Uppercase serif label with `tracking-widest` and a full bottom border (`border-b border-stone-200 dark:border-stone-700`). Minimal height — just enough to anchor the section.
 
 ### WorkHighlight
-Icon (carbon:software-resource-cluster, amber-600/amber-400) + markdown content in a flex row. The icon sits at the top of the content, not centered.
+Icon (carbon:chevron-right, amber-600/amber-400) + markdown content in a flex row. The icon sits at the top of the content, not centered.
 
 ### Links (ExternalLink)
 Inline accent-colored link with a `carbon:launch` suffix icon. Underline on hover. If no URL, renders as plain accent text without icon.
@@ -140,7 +140,7 @@ Centered, smaller (`text-xs` for attribution). Build date, GitLab/GitHub links, 
 
 ## Iconography
 
-Icons from Carbon Design System (via `@iconify-json/carbon`) for UI elements (at, link, launch, sun, moon, screen, translate, software-resource-cluster), plus Simple Icons (`@iconify-json/simple-icons`) for brand logos (GitLab, GitHub), Devicon (`@iconify-json/devicon-plain`) for skill icons, and Nonicons (`@iconify-json/nonicons`) as fallback.
+Icons from Carbon Design System (via `@iconify-json/carbon`) for UI elements (at, link, launch, sun, moon, screen, translate, chevron-right), plus Simple Icons (`@iconify-json/simple-icons`) for brand logos (GitLab, GitHub), Devicon (`@iconify-json/devicon-plain`) for skill icons, and Nonicons (`@iconify-json/nonicons`) as fallback.
 
 Icons are always `w-4 h-4` to `w-5 h-5`, never decorative alone — they accompany text.
 
