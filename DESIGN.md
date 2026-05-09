@@ -29,7 +29,7 @@ OKLCH values. Dark-mode variants maintain the same relative hierarchy.
 | Accent light | `oklch(0.85 0.04 280)` | indigo-200 | Badge borders |
 | Accent fill | `oklch(0.92 0.03 280)` | indigo-50 | Badge background |
 | Mark strong | `oklch(0.45 0.15 275)` | indigo-600 | Markdown `strong` |
-| Mark em | `oklch(0.5 0.18 300)` | violet-600 | Markdown `em` |
+| Mark em | `oklch(0.5 0.14 70)` | amber-600 | Markdown `em` |
 
 **Dark mode:**
 | Role | OKLCH | Tailwind | Usage |
@@ -44,7 +44,7 @@ OKLCH values. Dark-mode variants maintain the same relative hierarchy.
 | Accent light | `oklch(0.25 0.04 275)` | indigo-800 | Badge borders |
 | Accent fill | `oklch(0.15 0.04 275)` | indigo-950 | Badge background |
 | Mark strong | `oklch(0.65 0.12 270)` | indigo-400 | Markdown `strong` |
-| Mark em | `oklch(0.65 0.18 295)` | violet-400 | Markdown `em` |
+| Mark em | `oklch(0.65 0.14 70)` | amber-500 | Markdown `em` |
 
 Neutrals are tinted with a warm-indigo hue (chroma 0.005–0.01) — never pure gray. The accent sits at chroma ~0.15, restrained enough for body use, vivid enough for clear interactivity.
 
@@ -117,7 +117,7 @@ Inline link with icon. No container, no border. Text + icon in accent color, und
 Uppercase serif label with `tracking-widest` and a full bottom border (`border-b border-zinc-200 dark:border-zinc-700`). Minimal height — just enough to anchor the section.
 
 ### WorkHighlight
-Icon (carbon:software-resource-cluster, violet-500) + markdown content in a flex row. The icon sits at the top of the content, not centered.
+Icon (carbon:software-resource-cluster, amber-600/amber-400) + markdown content in a flex row. The icon sits at the top of the content, not centered.
 
 ### Links (ExternalLink)
 Inline accent-colored link with a `carbon:launch` suffix icon. Underline on hover. If no URL, renders as plain accent text without icon.
