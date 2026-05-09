@@ -253,7 +253,7 @@
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Present",
-      "description": "Comprehensive podcast management platform, but with cats 🐱. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
+      "description": "Comprehensive podcast management platform, but with cats. Built with **Vue.js 3** and **Vuetify 3** frontend consuming a **RESTful API backend in GoLang**. Features include **multi-user authentication**, **RSS feed processing**, **automated cron jobs**, and **universal search capabilities**.",
       "highlights": [
         "Vue.js",
         "Vuetify",

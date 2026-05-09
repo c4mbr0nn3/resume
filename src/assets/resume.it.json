@@ -253,7 +253,7 @@
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Presente",
-      "description": "Piattaforma completa di gestione podcast, ma con i gatti 🐱. Frontend in **Vue.js 3** e **Vuetify 3** che consuma un **backend RESTful API in GoLang**. Funzionalità: **autenticazione multi-utente**, **elaborazione feed RSS**, **cron job automatizzati** e **ricerca universale**.",
+      "description": "Piattaforma completa di gestione podcast, ma con i gatti. Frontend in **Vue.js 3** e **Vuetify 3** che consuma un **backend RESTful API in GoLang**. Funzionalità: **autenticazione multi-utente**, **elaborazione feed RSS**, **cron job automatizzati** e **ricerca universale**.",
       "highlights": [
         "Vue.js",
         "Vuetify",
