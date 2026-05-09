@@ -6,8 +6,8 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
-      name: 'Inter',
-      cssVariable: '--font-inter',
+      name: 'Work Sans',
+      cssVariable: '--font-work-sans',
       weights: [300, 400, 500, 600],
       styles: ['normal'],
       subsets: ['latin'],
@@ -16,8 +16,8 @@ export default defineConfig({
     },
     {
       provider: fontProviders.fontsource(),
-      name: 'Merriweather',
-      cssVariable: '--font-merriweather',
+      name: 'Spectral',
+      cssVariable: '--font-spectral',
       weights: [400, 700],
       styles: ['normal', 'italic'],
       subsets: ['latin'],
