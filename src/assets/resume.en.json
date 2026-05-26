@@ -43,8 +43,8 @@
         "*Backend:* Actively develop and maintain applications using **.NET 8**, **C#** and **Entity Framework Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
         "*Frontend:* Build responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
         "*Security:* Supported ISO 27001 certification process alongside CTO, ensuring compliance with security and data protection standards",
-"*Infrastructure:* Collaborate with CTO managing AWS infrastructure (S3, CloudWatch), deployment automation using **Docker containers**, and environment orchestration across development, staging, and production",
-"*Team Leadership:* Manage team workload, conduct performance reviews, and participate in hiring processes. Define project priorities with stakeholders and lead capacity planning across concurrent client projects, ensuring **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology",
+        "*Infrastructure:* Collaborate with CTO managing AWS infrastructure (S3, CloudWatch), deployment automation using **Docker containers**, and environment orchestration across development, staging, and production",
+        "*Team Leadership:* Manage team workload, conduct performance reviews, and participate in hiring processes. Define project priorities with stakeholders and lead capacity planning across concurrent client projects, ensuring **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology",
         "*Architecture & Testing:* Introduced **dependency injection** and incrementally restructured legacy codebase toward **clean architecture**. Integrated **unit tests** using **xUnit**, **NSubstitute**, and **Bogus** with **coverage reports** in GitLab CI pipelines"
       ]
     },
@@ -59,8 +59,7 @@
         "Migrated legacy ATS application to **Vue.js** and **Vuetify** with **.NET backend**, improving performance and user satisfaction significantly",
         "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
         "Led 5-person development team, managing technical delivery and code quality",
-        "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java 8** for regulatory compliance (**SA-CCR**, **FRTB**)",
-        "Served as functional analyst bridging business requirements and technical implementation"
+        "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java 8** for regulatory compliance (**SA-CCR**, **FRTB**)"
       ]
     },
     {
@@ -119,14 +118,7 @@
     {
       "name": "Backend Development",
       "level": "Advanced",
-      "keywords": [
-        "C#",
-        ".NET",
-        "EF Core",
-        "Java",
-        "GoLang",
-        "Python"
-      ]
+      "keywords": ["C#", ".NET", "EF Core", "Java", "GoLang", "Python"]
     },
     {
       "name": "Frontend Development",
@@ -144,41 +136,22 @@
     {
       "name": "Database Systems",
       "level": "Intermediate",
-      "keywords": [
-        "PostgreSQL",
-        "SQL Server",
-        "SQLite"
-      ]
+      "keywords": ["PostgreSQL", "SQL Server", "SQLite"]
     },
     {
       "name": "Cloud & DevOps",
       "level": "Intermediate",
-      "keywords": [
-        "AWS",
-        "Docker",
-        "Git",
-        "GitLab",
-        "GitHub"
-      ]
+      "keywords": ["AWS", "Docker", "Git", "GitLab", "GitHub"]
     },
     {
       "name": "Testing",
       "level": "Basic",
-      "keywords": [
-        "xUnit",
-        "NSubstitute",
-        "Bogus",
-        "Vitest"
-      ]
+      "keywords": ["xUnit", "NSubstitute", "Bogus", "Vitest"]
     },
     {
       "name": "Infrastructure",
       "level": "Basic",
-      "keywords": [
-        "Proxmox",
-        "opnSense",
-        "Linux"
-      ]
+      "keywords": ["Proxmox", "opnSense", "Linux"]
     },
     {
       "name": "Architecture & Concepts",
@@ -241,12 +214,7 @@
       "startDate": "Jul 2025",
       "endDate": "Jul 2025",
       "description": "Designed a scalable **microservice** that converts Markdown archives into branded PDFs. Built the **RESTful API** using **Python (FastAPI)** and **Uvicorn**, featuring stateless design for horizontal scaling. Implemented **AI-assisted development** workflows (using **Claude Code**) to accelerate the implementation of complex CSS paging logic and error handling. Containerized the full stack (**Vue 3** frontend + FastAPI backend) using **Docker Compose** and **Nginx** for production-ready deployment.",
-      "highlights": [
-        "Python",
-        "FastAPI",
-        "Vue.js",
-        "Docker"
-      ],
+      "highlights": ["Python", "FastAPI", "Vue.js", "Docker"],
       "url": "https://github.com/c4mbr0nn3/markdown-to-pdf"
     },
     {
