@@ -56,7 +56,7 @@
       "endDate": "Dic 2023",
       "summary": "Guida dello sviluppo di applicazioni finanziarie e iniziative di modernizzazione con tecnologie .NET e Vue.js per clienti bancari globali.",
       "highlights": [
-        "Migrazione dell'applicazione ATS legacy a **Vue.js** e **Vuetify** con **backend .NET**, migliorando significativamente le performance e la soddisfazione degli utenti",
+        "Migrazione dell'applicazione ATS legacy a **Vue.js 2** e **Vuetify 2** con **backend .NET 6**, ottimizzando le performance di **EF Core** tramite navigation properties, proiezioni `.Select()` e split queries, aumentando significativamente la soddisfazione degli utenti",
         "Progettazione e implementazione di endpoint **REST API** sicuri e meccanismi di autenticazione conformi a **OAuth / OIDC** durante la modernizzazione del sistema",
         "Guida di un team di sviluppo di 5 persone, con gestione della delivery tecnica e della qualità del codice",
         "Sviluppo e manutenzione di applicazioni CCR (Counterparty Credit Risk) con **Java 8** per la conformità normativa (**SA-CCR**, **FRTB**)"
