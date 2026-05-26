@@ -56,7 +56,7 @@
       "endDate": "Dec 2023",
       "summary": "Led development of financial applications and modernization initiatives using .NET and Vue.js technologies for global banking clients.",
       "highlights": [
-        "Migrated legacy ATS application to **Vue.js 2** and **Vuetify 2** with **.NET 6 backend**, optimizing **EF Core** performance via navigation properties, `.Select()` projections, and split queries, boosting user satisfaction significantly",
+        "Migrated legacy ATS application to **Vue.js 2** and **Vuetify 2** with **.NET 6 backend**, optimizing **EF Core** performance via navigation properties, projections, and split queries, boosting user satisfaction significantly",
         "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
         "Led 5-person development team, managing technical delivery and code quality",
         "Developed and maintained CCR (Counterparty Credit Risk) applications using **Java 8** for regulatory compliance (**SA-CCR**, **FRTB**)"
