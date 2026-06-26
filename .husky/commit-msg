@@ -1,1 +1,1 @@
-npm run commitmsg
+pnpm exec commitlint --edit $1
