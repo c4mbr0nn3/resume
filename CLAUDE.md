@@ -24,7 +24,7 @@ Always ask for explicit user confirmation before committing and pushing.
 
 ## Architecture
 
-Astro 6 site with Tailwind CSS v4, deployed to Netlify.
+Astro 7 site with Tailwind CSS v4, deployed to Netlify.
 
 **i18n:** Two locales — `en` (default, no prefix) and `it` (at `/it/`). Astro's built-in i18n handles routing (`prefixDefaultLocale: false`). Each locale has:
 - Resume data: `src/assets/resume.en.json` / `src/assets/resume.it.json` — JSON Resume schema subset (basics, work, education, skills, projects, languages)
