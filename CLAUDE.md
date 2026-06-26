@@ -14,7 +14,7 @@ pnpm lint       # eslint check
 pnpm lint:fix   # eslint auto-fix
 ```
 
-Package manager: **pnpm** (not npm/yarn). Node >=22.12.0 required.
+Package manager: **pnpm** (not npm/yarn). Node 24 (LTS) — version pinned via `.nvmrc` (`nvm use`).
 
 Commits must follow Conventional Commits (enforced by commitlint + husky).
 
