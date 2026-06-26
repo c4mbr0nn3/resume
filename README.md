@@ -21,11 +21,12 @@ You can find the JSON Resume schema [here](https://jsonresume.org/schema/).
 
 1. Fork this repository
 2. Clone the repository
-3. Install dependencies with `pnpm install`
-4. Customize the resume data in `src/assets/resume.en.json`
-5. Run the development server with `pnpm dev`
-6. Build the project with `pnpm build`
-7. Deploy the project to Netlify or your preferred hosting service
+3. Use Node 24 via `nvm use`
+4. Install dependencies with `pnpm install`
+5. Customize the resume data in `src/assets/resume.en.json`
+6. Run the development server with `pnpm dev`
+7. Build the project with `pnpm build`
+8. Deploy the project to Netlify or your preferred hosting service
 
 ## License
 
