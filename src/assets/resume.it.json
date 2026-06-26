@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Francesco Zorzi",
-    "label": "Software Engineer & Team Lead | .NET · Vue.js · Cloud",
+    "label": "Software Engineer | .NET · Vue.js · Cloud",
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
     "url": "https://francescozorzi.me/",
-    "summary": "**Software Engineer** con *oltre 5 anni di esperienza* nello sviluppo **.NET** e nelle **tecnologie web moderne**. Comprovata esperienza nella guida di team di sviluppo e nella consegna di soluzioni software scalabili nei settori dei *servizi finanziari* e delle *aziende tecnologiche emergenti*. Competenze in **C#**, **.NET 8**, **EF Core** e nello **sviluppo full-stack**, con forte attenzione alla qualità del codice e alle metodologie agili.",
+    "summary": "Software Engineer con oltre 5 anni di esperienza nello sviluppo **.NET** e nelle moderne tecnologie web. Ho realizzato soluzioni software scalabili nei settori dei servizi finanziari, delle startup tecnologiche e del SaaS per la fatturazione elettronica. Competenze in **C#**, **.NET**, **EF Core** e nello sviluppo full-stack, con forte attenzione alla qualità del codice e alle metodologie agili.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -40,7 +40,7 @@
       "endDate": "Presente",
       "summary": "Sviluppo di servizi backend per una piattaforma SaaS di fatturazione elettronica per clienti in Europa e nel mondo.",
       "highlights": [
-        "Sviluppo e manutenzione di endpoint **REST API** e **batch pianificati** con **.NET** (6–10), **EF Core** e **Dapper**",
+        "Sviluppo e manutenzione di endpoint **REST API** e **batch pianificati** con **.NET**, **EF Core** e **Dapper** su **SQL Server**",
         "Contributo all'evoluzione del prodotto di e-invoicing, lavorando sugli strati di accesso ai dati e sui flussi di integrazione"
       ]
     },
