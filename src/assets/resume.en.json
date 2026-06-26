@@ -5,7 +5,7 @@
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
     "url": "https://francescozorzi.me/",
-    "summary": "**Software Engineer** with *5+ years of experience* in **.NET development** and **modern web technologies**. Proven track record leading development teams and delivering scalable software solutions in *financial services* and *emerging tech companies*. Expertise in **C#**, **.NET 8**, **Entity Framework Core**, and **full-stack development** with strong focus on code quality and agile methodologies.",
+    "summary": "**Software Engineer** with *5+ years of experience* in **.NET development** and **modern web technologies**. Proven track record leading development teams and delivering scalable software solutions in *financial services* and *emerging tech companies*. Expertise in **C#**, **.NET 8**, **EF Core**, and **full-stack development** with strong focus on code quality and agile methodologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -33,14 +33,26 @@
   },
   "work": [
     {
+      "name": "Digital Technologies",
+      "position": "Senior Software Engineer",
+      "url": "https://digtechs.com/",
+      "startDate": "Jun 2026",
+      "endDate": "Present",
+      "summary": "Develop backend services for a SaaS electronic invoicing platform serving customers across Europe and worldwide.",
+      "highlights": [
+        "Build and maintain **REST API** endpoints and **scheduled batch tasks** using **.NET** (6–10), **EF Core**, and **Dapper**",
+        "Contribute to the evolution of the e-invoicing product, working across data access layers and integration workflows"
+      ]
+    },
+    {
       "name": "Technesthai (iason Group)",
       "position": "Software Engineer • Team Lead",
       "url": "https://www.technesthai.com/",
       "startDate": "Jan 2024",
-      "endDate": "Present",
+      "endDate": "May 2026",
       "summary": "Lead a team of developers in full-stack development using modern .NET technologies and cloud infrastructure. Collaborate closely with CTO to deliver scalable software solutions and establish development best practices.",
       "highlights": [
-        "Actively develop and maintain applications using **.NET 8**, **C#** and **Entity Framework Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
+        "Actively develop and maintain applications using **.NET 8**, **C#** and **EF Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
         "Build responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
         "Supported ISO 27001 certification process alongside CTO, ensuring compliance with security and data protection standards",
         "Collaborate with CTO managing AWS infrastructure (S3, CloudWatch), deployment automation using **Docker containers**, and environment orchestration across development, staging, and production",
