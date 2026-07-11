@@ -1,64 +1,54 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 Caveman mode must be always on.
 
 ## Commands
 
 ```bash
-pnpm dev        # start dev server
-pnpm build      # production build → dist/
-pnpm preview    # preview built output
+pnpm dev        # dev server
+pnpm build      # build → dist/
+pnpm preview    # preview build
 pnpm lint       # eslint check
 pnpm lint:fix   # eslint auto-fix
 ```
 
-Package manager: **pnpm** (not npm/yarn). Node 24 (LTS) — version pinned via `.nvmrc` (`nvm use`).
-
-Commits must follow Conventional Commits (enforced by commitlint + husky).
-
-Commits must be one line, no body.
-
-Always ask for explicit user confirmation before committing and pushing.
+**pnpm** only. Node 24 (`.nvmrc`, `nvm use`). Conventional Commits (commitlint + husky), one line, no body. Ask before committing/pushing.
 
 ## Architecture
 
-Astro 7 site with Tailwind CSS v4, deployed to Netlify.
+Astro 7 + Tailwind CSS v4 (Vite plugin, no `tailwind.config.*`), deployed to Netlify.
 
-**i18n:** Two locales — `en` (default, no prefix) and `it` (at `/it/`). Astro's built-in i18n handles routing (`prefixDefaultLocale: false`). Each locale has:
-- Resume data: `src/assets/resume.en.json` / `src/assets/resume.it.json` — JSON Resume schema subset (basics, work, education, skills, projects, languages)
-- UI strings: `src/i18n/en.json` / `src/i18n/it.json` — loaded via `src/i18n/utils.ts` → `useTranslations(locale)`
+**i18n:** `en` (default, no prefix) + `it` (`/it/`), Astro built-in i18n (`prefixDefaultLocale: false`). Each locale has resume data (`src/assets/resume.{en,it}.json`, JSON Resume subset: basics, work, education, skills, projects, languages) and UI strings (`src/i18n/{en,it}.json` via `src/i18n/utils.ts` → `useTranslations(locale)`).
 
-**Locale detection:** `src/pages/index.astro` contains inline JS that reads the `locale` cookie. If unset, it detects browser language and redirects to `/it/` if Italian; otherwise stays on `/`. The cookie persists the choice for 1 year.
+**Locale detection:** `src/pages/index.astro` inline JS reads `locale` cookie; if unset, detects browser language, redirects to `/it/` if Italian. Cookie persists 1 year.
 
-**Data flow:** Pages (`src/pages/index.astro`, `src/pages/it/index.astro`) import JSON data + call `useTranslations`, then pass everything as props down to `TheResume` → `Header` / `Summary` / `Content` (section components). Components are stateless; all data flows top-down as props.
+**Data flow:** Pages (`src/pages/index.astro`, `src/pages/it/index.astro`) import JSON + `useTranslations`, pass props to `TheResume` → `Header` / `Summary` / `Content` (section components). Stateless, top-down props.
 
-**Icons:** `src/lib/icons.js` maps skill/social names (lowercase) to iconify icon IDs. Used by badge/skill components via `astro-icon`. To add a new skill icon, add an entry here and ensure the corresponding `@iconify-json/*` package is installed.
+**Icons:** `src/lib/icons.js` maps skill/social names (lowercase) → iconify IDs, used via `astro-icon`. Add new icon: add entry + install `@iconify-json/*`.
 
-**Markdown:** Work and project descriptions support markdown via `src/lib/markdown.js` (markdown-it) and the `Markdown.astro` component.
+**Markdown:** Work/project descriptions use `src/lib/markdown.js` (markdown-it) + `Markdown.astro`.
 
-**CSS:** Single global stylesheet `src/assets/css/main.css`, Tailwind v4 via Vite plugin (no `tailwind.config.*`). Dark mode uses the `dark` class on `<html>` toggled by a theme cookie.
+**CSS:** Single stylesheet `src/assets/css/main.css`. Dark mode via `dark` class on `<html>` (theme cookie).
 
 ## Resume content
 
-To update resume content, edit `src/assets/resume.en.json` and `src/assets/resume.it.json`. The schema follows [JSON Resume](https://jsonresume.org/schema/) — only `basics`, `work`, `education`, `skills`, `languages`, and `projects` sections are implemented.
+Edit `src/assets/resume.{en,it}.json`. Schema: [JSON Resume](https://jsonresume.org/schema/) — only `basics`, `work`, `education`, `skills`, `languages`, `projects` implemented.
 
-## Available MCP Tools
+## MCP Tools
 
-| Tool | When to use |
-|------|-------------|
-| `Astro_docs_search_astro_docs` | Questions about Astro framework APIs, config, routing, i18n, or integrations |
-| `context7_resolve-library-id` + `context7_query-docs` | Need up-to-date docs/code examples for any JS/TS library (React, Tailwind, etc.) |
+| Tool | When |
+|------|------|
+| `Astro_docs_search_astro_docs` | Astro APIs, config, routing, i18n, integrations |
+| `context7_resolve-library-id` + `context7_query-docs` | Up-to-date JS/TS library docs (React, Tailwind, etc.) |
 
-## Available Skills
+## Skills
 
-| Skill | When to use |
-|-------|-------------|
-| `caveman` | Ultra-token-efficient responses; invoke with `/caveman [lite\|full\|ultra]` |
-| `caveman-commit` | Generate Conventional Commits; invoke with `/commit` |
-| `impeccable` | Frontend/UI design review, polish, animation, accessibility, theming, layout, responsive, UX critique |
+| Skill | When |
+|-------|------|
+| `caveman` | Token-efficient responses (`/caveman [lite\|full\|ultra]`) |
+| `caveman-commit` | Conventional Commits (`/commit`) |
+| `impeccable` | Frontend/UI design review, polish, accessibility, theming, layout, UX |
 
 ## Design Context
 
-Brand register: **Precise · Warm · Confident**. See `PRODUCT.md` for strategy and `DESIGN.md` for visual system (colors, typography, components). Both files live at the project root. Run `node .agents/skills/impeccable/scripts/load-context.mjs` from project root to load them into session context.
+Brand: **Precise · Warm · Confident**. See `PRODUCT.md` (strategy) + `DESIGN.md` (visual system) at root. Load: `node .agents/skills/impeccable/scripts/load-context.mjs`.
