@@ -11,6 +11,7 @@
 /* Container Utility - Centered with Auto Margins */
 @utility container {
   margin-inline: auto;
+  max-width: 80rem;
 }
 
 /* Theme toggle icon visibility */

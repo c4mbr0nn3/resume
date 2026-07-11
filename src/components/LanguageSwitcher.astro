@@ -9,7 +9,7 @@ const { currentLocale } = Astro.props
     id="theme-toggle"
     data-state="system"
     aria-label="Toggle color theme"
-    class="w-4 h-4 hover:text-stone-600 dark:hover:text-stone-300 transition-colors cursor-pointer"
+    class="w-6 h-6 p-1 hover:text-stone-600 dark:hover:text-stone-300 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400"
   >
     <span data-for="light"><Icon name="carbon:sun" /></span>
     <span data-for="dark"><Icon name="carbon:moon" /></span>
@@ -20,14 +20,14 @@ const { currentLocale } = Astro.props
   <a
     href="/"
     data-locale="en"
-    class={currentLocale === 'en' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors'}
+    class={currentLocale === 'en' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400'}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
   <span>/</span>
   <a
     href="/it/"
     data-locale="it"
-    class={currentLocale === 'it' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors'}
+    class={currentLocale === 'it' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400'}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
 </div>
