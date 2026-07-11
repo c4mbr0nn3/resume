@@ -5,11 +5,10 @@ const { content } = Astro.props
 const html = renderMarkdown(content)
 ---
 
-<div class="md-body font-light text-zinc-600 dark:text-zinc-300 leading-relaxed text-pretty" set:html={html} />
+<div class="md-body font-light text-stone-600 dark:text-stone-300 leading-relaxed text-pretty" set:html={html} />
 
 <style>
   .md-body :global(a) {
-    font-weight: bolder;
     color: var(--color-orange-600);
     text-decoration: underline;
     transition: color 0.2s;
@@ -26,6 +25,5 @@ const html = renderMarkdown(content)
   .md-body :global(em) {
     color: var(--color-amber-600);
     font-style: italic;
-    font-weight: 500;
   }
 </style>
