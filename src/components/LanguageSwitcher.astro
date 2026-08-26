@@ -1,40 +1,43 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { currentLocale } = Astro.props
+const { currentLocale, t } = Astro.props
 ---
 
-<div class="absolute top-4 right-4 flex items-center gap-1 text-xs text-stone-400 dark:text-stone-500">
+<nav
+  aria-label={t['nav.languageAndTheme']}
+  class="absolute right-4 top-4 flex items-center gap-1 text-xs text-stone-600 print:hidden dark:text-stone-400"
+>
   <button
     id="theme-toggle"
-    data-state="system"
-    aria-label="Toggle color theme"
-    class="w-6 h-6 p-1 hover:text-stone-600 dark:hover:text-stone-300 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400"
+    data-state="light"
+    aria-label={t['theme.toggle']}
+    aria-pressed="false"
+    class="h-6 w-6 cursor-pointer p-1 transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400"
   >
     <span data-for="light"><Icon name="carbon:sun" /></span>
     <span data-for="dark"><Icon name="carbon:moon" /></span>
-    <span data-for="system"><Icon name="carbon:screen" /></span>
   </button>
-  <span class="text-stone-300 dark:text-stone-600 select-none">|</span>
-  <Icon name="carbon:translate" class="w-4 h-4" />
+  <span class="select-none text-stone-400 dark:text-stone-600" aria-hidden="true">|</span>
+  <Icon name="carbon:translate" class="h-4 w-4" aria-hidden="true" />
   <a
     href="/"
     data-locale="en"
-    class={currentLocale === 'en' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400'}
+    class={`inline-flex min-h-6 min-w-6 items-center justify-center px-1 ${currentLocale === 'en' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
-  <span>/</span>
+  <span aria-hidden="true">/</span>
   <a
     href="/it/"
     data-locale="it"
-    class={currentLocale === 'it' ? 'text-orange-600 dark:text-orange-400 font-medium' : 'hover:text-stone-600 dark:hover:text-stone-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400'}
+    class={`inline-flex min-h-6 min-w-6 items-center justify-center px-1 ${currentLocale === 'it' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
-</div>
+</nav>
 
 <script>
   const btn = document.getElementById('theme-toggle') as HTMLButtonElement
-  const STATES = ['system', 'light', 'dark'] as const
+  const STATES = ['light', 'dark'] as const
   type ThemeState = typeof STATES[number]
 
   function getCookie(name: string): string | null {
@@ -44,24 +47,20 @@ const { currentLocale } = Astro.props
 
   function setTheme(state: ThemeState) {
     btn.dataset.state = state
+    btn.setAttribute('aria-pressed', String(state === 'dark'))
     document.cookie = `theme=${state}; max-age=31536000; path=/; SameSite=Lax; Secure`
-    const isDark = state === 'dark' || (state === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    document.documentElement.classList.toggle('dark', isDark)
+    document.documentElement.classList.toggle('dark', state === 'dark')
   }
 
   const saved = getCookie('theme') as ThemeState | null
-  btn.dataset.state = saved ?? 'system'
+  const initial: ThemeState = saved === 'dark' ? 'dark' : 'light'
+  btn.dataset.state = initial
+  btn.setAttribute('aria-pressed', String(initial === 'dark'))
 
   btn.addEventListener('click', () => {
     const current = btn.dataset.state as ThemeState
     const next = STATES[(STATES.indexOf(current) + 1) % STATES.length]
     setTheme(next)
-  })
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (btn.dataset.state === 'system') {
-      document.documentElement.classList.toggle('dark', e.matches)
-    }
   })
 
   document.querySelectorAll<HTMLAnchorElement>('a[data-locale]').forEach((link) => {

@@ -8,10 +8,10 @@ const { languages, t } = Astro.props
   <Title title={t.languages} />
   <div class="flex flex-col flex-wrap gap-3 mb-5">
     {languages.map((item: any) => (
-      <div class="flex items-center gap-1">
-        <h3 class="font-medium text-orange-600 dark:text-orange-400">{item.language}:</h3>
+      <p class="flex items-center gap-1">
+        <span class="font-medium text-orange-700 dark:text-orange-400">{item.language}:</span>
         <span class="font-light text-stone-600 dark:text-stone-400">{item.fluency}</span>
-      </div>
+      </p>
     ))}
   </div>
 </section>

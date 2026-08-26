@@ -7,18 +7,18 @@ const labelParts = basics.label.split('|').map((s: string) => s.trim())
 const location = `${basics.location.city}, ${basics.location.region}`
 ---
 
-<section>
-  <h1 class="text-5xl font-bold font-serif tracking-tight text-orange-700 dark:text-orange-400 pb-1 lg:text-6xl pr-16 sm:pr-0">
+<header>
+  <h1 class="pb-1 font-serif text-5xl font-bold tracking-tight text-orange-700 lg:text-6xl dark:text-orange-400">
     {name}
   </h1>
-  <div class="flex flex-col font-serif text-stone-500 dark:text-stone-400 pb-3 lg:text-lg lg:flex-row lg:gap-2">
+  <div class="flex flex-col pb-3 font-serif text-stone-500 lg:flex-row lg:gap-2 lg:text-lg dark:text-stone-400">
     <p class="flex flex-col lg:block">
       <span>{labelParts[0]}</span>
-      <span class="hidden lg:inline"> | </span>
+      <span class="hidden lg:inline" aria-hidden="true"> | </span>
       <span>{labelParts[1]}</span>
     </p>
-    <span class="hidden lg:inline">-</span>
+    <span class="hidden lg:inline" aria-hidden="true">-</span>
     <span>{location}</span>
   </div>
   <Contacts basics={basics} />
-</section>
+</header>

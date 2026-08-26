@@ -8,5 +8,8 @@
   "footer.forkText": "Puoi fare il fork del codice su",
   "footer.or": "o su",
   "footer.thanks": "Grazie a",
-  "footer.inspiration": "per l'ispirazione!"
+  "footer.inspiration": "per l'ispirazione!",
+  "theme.toggle": "Cambia tema colore",
+  "a11y.skipToContent": "Salta al contenuto principale",
+  "nav.languageAndTheme": "Lingua e tema"
 }
