@@ -9,7 +9,7 @@ const { basics, work, education, skills, projects, languages, t, currentLocale }
 
 <main id="main" class="relative w-full bg-white sm:rounded-xl sm:shadow-xl dark:bg-stone-900 dark:shadow-none dark:ring-1 dark:ring-stone-700/50">
   <LanguageSwitcher currentLocale={currentLocale} t={t} />
-  <div class="flex flex-col gap-5 p-5 sm:p-10 sm:gap-10">
+  <div class="flex flex-col gap-5 px-5 pb-5 pt-12 sm:p-10 sm:gap-10">
     <Header basics={basics} />
     <Summary basics={basics} />
     <Content work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} />
