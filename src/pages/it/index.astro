@@ -4,18 +4,17 @@ import TheFooter from '../../components/TheFooter.astro'
 import TheResume from '../../components/TheResume.astro'
 import { useTranslations } from '../../i18n/utils'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import { buildPersonSchema } from '../../lib/seo'
 
 const t = useTranslations('it')
 const { basics, work, education, skills, projects, languages } = resumeData
 
 const title = 'Francesco Zorzi | Software Engineer | Curriculum'
 const description = 'Senior Software Engineer specializzato in sviluppo backend .NET e SaaS e-invoicing. Competenze in C#, EF Core, Vue.js e sviluppo full-stack.'
+const jsonLd = buildPersonSchema(resumeData, 'it')
 ---
 
-<BaseLayout title={title} description={description} ogUrl="https://resume.francescozorzi.me/it/" lang="it">
+<BaseLayout title={title} description={description} lang="it" jsonLd={jsonLd} t={t}>
   <TheResume basics={basics} work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} currentLocale="it" />
   <TheFooter t={t} currentLocale="it" />
-  <script slot="body-scripts" is:inline>
-    document.cookie = 'locale=it; max-age=31536000; path=/; SameSite=Lax; Secure'
-  </script>
 </BaseLayout>

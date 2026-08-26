@@ -5,11 +5,21 @@ import '../assets/css/main.css'
 interface Props {
   title: string
   description: string
-  ogUrl: string
-  lang: string
+  lang: 'en' | 'it'
+  jsonLd?: Record<string, unknown>
+  noindex?: boolean
+  t: Record<string, string>
 }
 
-const { title, description, ogUrl, lang } = Astro.props
+const { title, description, lang, jsonLd, noindex = false, t } = Astro.props
+
+const site = Astro.site!
+const canonicalUrl = new URL(Astro.url.pathname, site)
+const enUrl = new URL('/', site)
+const itUrl = new URL('/it/', site)
+const ogImage = new URL('/og-image.jpg', site)
+const ogLocale = lang === 'it' ? 'it_IT' : 'en_US'
+const ogLocaleAlternate = lang === 'it' ? 'en_US' : 'it_IT'
 ---
 
 <!doctype html>
@@ -19,18 +29,31 @@ const { title, description, ogUrl, lang } = Astro.props
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="it" href={itUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="profile" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og-image.jpg" />
-    <meta property="og:url" content={ogUrl} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Francesco Zorzi" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlternate} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:image" content={ogImage} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <Font cssVariable="--font-work-sans" />
     <Font cssVariable="--font-spectral" />
     <Font cssVariable="--font-source-code-pro" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script defer src="https://analytics.zorygo.ovh/js/pa-rZeXMBjHeyBgH948AJs7u.js"></script>
     <script is:inline>
       window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }
@@ -40,14 +63,24 @@ const { title, description, ogUrl, lang } = Astro.props
     <script is:inline>
       (function () {
         var m = document.cookie.match(/(?:^|; )theme=([^;]*)/)
-        var theme = m ? decodeURIComponent(m[1]) : 'system'
-        if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        var theme = m ? decodeURIComponent(m[1]) : null
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          document.cookie = 'theme=' + theme + '; max-age=31536000; path=/; SameSite=Lax; Secure'
+        }
+        if (theme === 'dark') {
           document.documentElement.classList.add('dark')
         }
       })()
     </script>
   </head>
   <body class="bg-stone-100 dark:bg-stone-950">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-orange-700 focus:outline-2 focus:outline-orange-700 dark:focus:bg-stone-900 dark:focus:text-orange-400"
+    >
+      {t['a11y.skipToContent']}
+    </a>
     <div class="container sm:p-10 lg:p-20">
       <slot />
     </div>
