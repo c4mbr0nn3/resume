@@ -8,14 +8,14 @@ const { href, label } = Astro.props
 ? (
   <a
     href={href}
-    class="inline-flex items-center gap-1 text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:focus-visible:outline-orange-400"
+    class="inline-flex items-center gap-1 text-orange-700 hover:text-orange-800 dark:text-orange-400 dark:hover:text-orange-300 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:focus-visible:outline-orange-400"
     target="_blank"
     rel="noopener noreferrer"
   >
     <span>{label}</span>
-    <Icon name="carbon:launch" class="w-3.5 h-3.5" />
+    <Icon name="carbon:launch" class="w-3.5 h-3.5 print:hidden" />
   </a>
 )
 : (
-  <span class="text-orange-600 dark:text-orange-400">{label}</span>
+  <span class="text-orange-700 dark:text-orange-400">{label}</span>
 )}
