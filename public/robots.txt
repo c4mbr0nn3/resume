@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://resume.francescozorzi.me/sitemap-index.xml
