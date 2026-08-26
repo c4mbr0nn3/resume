@@ -208,12 +208,13 @@
       "name": "SplitDuo",
       "startDate": "Sep 2025",
       "endDate": "Present",
-      "description": "A lightweight, open-source expense splitting application written in **.NET 10**, **Nuxt 4** and **NuxtUI 4** designed for couples and two-person households. SplitDuo provides a simple, **self-hosted alternative to existing solutions like Splitwise and Cospend**.",
+      "description": "A lightweight, open-source, **self-hosted** expense-splitting app written in **.NET 10** with **EF Core 10** (backend) and **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), backed by **PostgreSQL 17** and deployed as a single **Docker** container. SplitDuo is a no-subscription alternative to Splitwise and Cospend, featuring **AI receipt scanning** via OpenAI-compatible endpoints, settlement-aware balance suggestions that minimize the number of transfers, subgroup \"alias mode,\" **TOTP 2FA** with refresh-token rotation, CSV import/export from Splitwise and Cospend, full **EN/IT i18n**, and an installable **PWA**.",
       "highlights": [
         ".NET",
         "EF Core",
         "Nuxt",
-        "JavaScript",
+        "Vue",
+        "TypeScript",
         "PostgreSQL",
         "Docker",
         "Tailwind CSS"

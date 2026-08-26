@@ -208,12 +208,13 @@
       "name": "SplitDuo",
       "startDate": "Set 2025",
       "endDate": "Presente",
-      "description": "Applicazione open-source leggera per la divisione delle spese, scritta in **.NET 10**, **Nuxt 4** e **NuxtUI 4**, pensata per coppie e nuclei familiari di due persone. SplitDuo è una **alternativa self-hosted a soluzioni esistenti come Splitwise e Cospend**.",
+      "description": "App open-source leggera e **self-hosted** per la divisione delle spese, scritta in **.NET 10** con **EF Core 10** (backend) e **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), con **PostgreSQL 17** e deploy come singolo container **Docker**. SplitDuo è un'alternativa senza abbonamento a Splitwise e Cospend, con **scansione scontrini via AI** tramite endpoint compatibili con OpenAI, suggerimenti di saldo che minimizzano il numero di trasferimenti, \"alias mode\" per sottogruppi, **2FA TOTP** con rotazione dei refresh token, import/export CSV da Splitwise e Cospend, **i18n EN/IT** completa e **PWA** installabile.",
       "highlights": [
         ".NET",
         "EF Core",
         "Nuxt",
-        "JavaScript",
+        "Vue",
+        "TypeScript",
         "PostgreSQL",
         "Docker",
         "Tailwind CSS"
