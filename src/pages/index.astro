@@ -4,29 +4,17 @@ import TheFooter from '../components/TheFooter.astro'
 import TheResume from '../components/TheResume.astro'
 import { useTranslations } from '../i18n/utils'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { buildPersonSchema } from '../lib/seo'
 
 const t = useTranslations('en')
 const { basics, work, education, skills, projects, languages } = resumeData
 
 const title = 'Francesco Zorzi | Software Engineer | Resume'
 const description = 'Senior Software Engineer specializing in .NET backend development and SaaS e-invoicing. Expertise in C#, EF Core, Vue.js, and full-stack development.'
+const jsonLd = buildPersonSchema(resumeData, 'en')
 ---
 
-<BaseLayout title={title} description={description} ogUrl="https://resume.francescozorzi.me/" lang="en">
+<BaseLayout title={title} description={description} lang="en" jsonLd={jsonLd} t={t}>
   <TheResume basics={basics} work={work} education={education} skills={skills} projects={projects} languages={languages} t={t} currentLocale="en" />
   <TheFooter t={t} currentLocale="en" />
-  <script slot="body-scripts" is:inline>
-    (function () {
-      var m = document.cookie.match(/(?:^|; )locale=([^;]*)/)
-      var saved = m ? decodeURIComponent(m[1]) : null
-      if (!saved) {
-        var lang = (navigator.language || '').slice(0, 2)
-        var locale = lang === 'it' ? 'it' : 'en'
-        document.cookie = 'locale=' + locale + '; max-age=31536000; path=/; SameSite=Lax; Secure'
-        if (locale === 'it') location.replace('/it/')
-      } else if (saved === 'it') {
-        location.replace('/it/')
-      }
-    })()
-  </script>
 </BaseLayout>
