@@ -1,8 +1,10 @@
+import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import icon from 'astro-icon'
 import { defineConfig, fontProviders } from 'astro/config'
 
 export default defineConfig({
+  site: 'https://resume.francescozorzi.me',
   fonts: [
     {
       provider: fontProviders.fontsource(),
@@ -40,6 +42,14 @@ export default defineConfig({
     locales: ['en', 'it'],
     routing: { prefixDefaultLocale: false },
   },
-  integrations: [icon()],
+  integrations: [
+    icon(),
+    sitemap({
+      i18n: {
+        defaultLocale: 'en',
+        locales: { en: 'en', it: 'it' },
+      },
+    }),
+  ],
   vite: { plugins: [tailwindcss()] },
 })

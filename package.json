@@ -15,6 +15,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "@iconify-json/carbon": "^1.2.25",
     "@iconify-json/devicon-plain": "^1.2.57",
     "@iconify-json/nonicons": "^1.2.2",
