@@ -1,22 +1,10 @@
 # CLAUDE.md
 
-Caveman mode must be always on.
-
-## Commands
-
-```bash
-pnpm dev        # dev server
-pnpm build      # build → dist/
-pnpm preview    # preview build
-pnpm lint       # eslint check
-pnpm lint:fix   # eslint auto-fix
-```
-
-**pnpm** only. Node 24 (`.nvmrc`, `nvm use`). Conventional Commits (commitlint + husky), one line, no body. Ask before committing/pushing.
+**pnpm** only. Node via `.nvmrc` (`nvm use`). Conventional Commits (commitlint + husky), one line, no body. Ask before committing/pushing.
 
 ## Architecture
 
-Astro 7 + Tailwind CSS v4 (Vite plugin, no `tailwind.config.*`), deployed to Netlify.
+Astro + Tailwind CSS v4 (Vite plugin, no `tailwind.config.*`), deployed to Netlify.
 
 **i18n:** `en` (default, no prefix) + `it` (`/it/`), Astro built-in i18n (`prefixDefaultLocale: false`). Each locale has resume data (`src/assets/resume.{en,it}.json`, JSON Resume subset: basics, work, education, skills, projects, languages) and UI strings (`src/i18n/{en,it}.json` via `src/i18n/utils.ts` → `useTranslations(locale)`).
 
@@ -43,12 +31,4 @@ Edit `src/assets/resume.{en,it}.json`. Schema: [JSON Resume](https://jsonresume.
 
 ## Skills
 
-| Skill | When |
-|-------|------|
-| `caveman` | Token-efficient responses (`/caveman [lite\|full\|ultra]`) |
-| `caveman-commit` | Conventional Commits (`/commit`) |
-| `impeccable` | Frontend/UI design review, polish, accessibility, theming, layout, UX |
-
-## Design Context
-
-Brand: **Precise · Warm · Confident**. See `PRODUCT.md` (strategy) + `DESIGN.md` (visual system) at root. Load: `node .agents/skills/impeccable/scripts/load-context.mjs`.
+_none installed_
