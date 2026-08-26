@@ -6,9 +6,9 @@
 
 Astro + Tailwind CSS v4 (Vite plugin, no `tailwind.config.*`), deployed to Netlify.
 
-**i18n:** `en` (default, no prefix) + `it` (`/it/`), Astro built-in i18n (`prefixDefaultLocale: false`). Each locale has resume data (`src/assets/resume.{en,it}.json`, JSON Resume subset: basics, work, education, skills, projects, languages) and UI strings (`src/i18n/{en,it}.json` via `src/i18n/utils.ts` → `useTranslations(locale)`).
+**i18n:** `en` (default, no prefix) + `it` (`/it/`), Astro built-in i18n (`prefixDefaultLocale: false`). UI strings: `src/i18n/{en,it}.json` via `src/i18n/utils.ts` → `useTranslations(locale)`. Locale detection: `src/pages/index.astro` inline JS reads `locale` cookie; if unset, detects browser language, redirects to `/it/` if Italian (cookie persists 1 year).
 
-**Locale detection:** `src/pages/index.astro` inline JS reads `locale` cookie; if unset, detects browser language, redirects to `/it/` if Italian. Cookie persists 1 year.
+**Resume data:** `src/assets/resume.{en,it}.json` — the files to edit for content changes. Schema: [JSON Resume](https://jsonresume.org/schema/); only `basics`, `work`, `education`, `skills`, `languages`, `projects` implemented.
 
 **Data flow:** Pages (`src/pages/index.astro`, `src/pages/it/index.astro`) import JSON + `useTranslations`, pass props to `TheResume` → `Header` / `Summary` / `Content` (section components). Stateless, top-down props.
 
@@ -18,17 +18,9 @@ Astro + Tailwind CSS v4 (Vite plugin, no `tailwind.config.*`), deployed to Netli
 
 **CSS:** Single stylesheet `src/assets/css/main.css`. Dark mode via `dark` class on `<html>` (theme cookie).
 
-## Resume content
-
-Edit `src/assets/resume.{en,it}.json`. Schema: [JSON Resume](https://jsonresume.org/schema/) — only `basics`, `work`, `education`, `skills`, `languages`, `projects` implemented.
-
 ## MCP Tools
 
 | Tool | When |
 |------|------|
 | `Astro_docs_search_astro_docs` | Astro APIs, config, routing, i18n, integrations |
-| `context7_resolve-library-id` + `context7_query-docs` | Up-to-date JS/TS library docs (React, Tailwind, etc.) |
-
-## Skills
-
-_none installed_
+| chrome-devtools-mcp | Live browser inspection, console errors, network requests, performance traces, screenshots |
