@@ -11,17 +11,65 @@
 /* Container Utility - Centered with Auto Margins */
 @utility container {
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 75rem;
 }
 
 /* Theme toggle icon visibility */
 #theme-toggle span { display: none; }
 #theme-toggle[data-state="light"]  span[data-for="light"]  { display: block; }
 #theme-toggle[data-state="dark"]   span[data-for="dark"]   { display: block; }
-#theme-toggle[data-state="system"] span[data-for="system"] { display: block; }
 
 /* Markdown dark mode overrides (targets set:html rendered content) */
 .dark .md-body strong { color: var(--color-orange-400); }
 .dark .md-body em { color: var(--color-amber-400); }
 .dark .md-body a { color: var(--color-orange-400); }
 .dark .md-body a:hover { color: var(--color-orange-300); }
+
+/* Print: resume must print cleanly to A4 + Letter, forced light */
+@media print {
+  @page {
+    size: auto;
+    margin: 12mm 14mm;
+  }
+  @page :first {
+    margin-top: 14mm;
+  }
+
+  html {
+    font-size: 10.5pt;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Strip card chrome */
+  .sm\:rounded-xl,
+  .sm\:shadow-xl,
+  .dark\:ring-1 {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
+  /* Force light rendering even if dark mode is active */
+  html.dark,
+  html.dark body {
+    background: #fff !important;
+  }
+  html.dark * {
+    background-color: transparent !important;
+    color: #000 !important;
+    border-color: #ccc !important;
+  }
+
+  /* Keep sections and items intact across pages */
+  section,
+  .mb-5 {
+    break-inside: avoid;
+  }
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+}
