@@ -5,9 +5,17 @@ import Contact from '../badge/Contact.astro'
 const { basics } = Astro.props
 const { email, url, profiles } = basics
 
+let hostname = url
+try {
+  hostname = new URL(url).hostname
+}
+catch {
+  // fall back to raw url string if malformed/missing
+}
+
 const contacts = [
   { icon: 'carbon:at', to: `mailto:${email}`, label: email },
-  { icon: 'carbon:link', to: url, label: new URL(url).hostname },
+  ...(url ? [{ icon: 'carbon:link', to: url, label: hostname }] : []),
   ...profiles.map((p: any) => ({
     icon: socialIcons[p.network.toLowerCase() as keyof typeof socialIcons],
     to: p.url,

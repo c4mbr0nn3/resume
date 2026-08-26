@@ -5,9 +5,9 @@ import Markdown from '../../Markdown.astro'
 const { content } = Astro.props
 ---
 
-<div class="flex gap-2">
-  <div class="mb-auto">
-    <Icon name="carbon:chevron-right" class="text-amber-600 dark:text-amber-400 mt-1" aria-hidden="true" />
-  </div>
+<li class="flex gap-2">
+  <span class="mb-auto">
+    <Icon name="carbon:chevron-right" class="mt-1 text-amber-600 dark:text-amber-400" aria-hidden="true" />
+  </span>
   <Markdown content={content} />
-</div>
+</li>

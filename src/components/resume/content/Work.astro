@@ -20,14 +20,14 @@ const { work, t } = Astro.props
         </p>
       </div>
       <p class="text-sm font-serif text-stone-500 dark:text-stone-400 font-medium">{item.position}</p>
-      <p class="mb-2 mt-1">
+      <div class="mb-2 mt-1">
         <Markdown content={item.summary} />
-      </p>
-      <p>
+      </div>
+      <ul class="flex flex-col gap-1">
         {item.highlights.map((content: string) => (
           <WorkHighlight content={content} />
         ))}
-      </p>
+      </ul>
     </div>
   ))}
 </section>
