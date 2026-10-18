@@ -1,28 +1,31 @@
 ---
 import ExternalLink from '../../ExternalLink.astro'
-import SkillList from '../../list/Skill.astro'
 import Markdown from '../../Markdown.astro'
 import Title from './Title.astro'
 
 const { projects, t } = Astro.props
 ---
 
-<section>
+<section data-reveal-group>
   <Title title={t.projects} />
-  {projects.map((item: any) => (
-    <div class="mb-5">
-      <div class="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-        <h3 class="text-lg font-semibold text-balance">
-          <ExternalLink href={item.url} label={item.name} />
-        </h3>
-        <p class="text-sm font-mono text-stone-600 dark:text-stone-400">
-          {item.startDate} - {item.endDate}
-        </p>
-      </div>
-      <div class="mb-2 mt-1">
+  <div data-reveal-list class="flex flex-col gap-8 lg:gap-10">
+    {projects.map((item: any) => (
+      <article class="entry max-w-[65ch] grid break-inside-avoid gap-2">
+        <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+          <h3 class="font-serif text-xl font-semibold text-balance text-stone-900 dark:text-stone-100">
+            <ExternalLink href={item.url} label={item.name} />
+          </h3>
+          <p class="text-sm tabular-nums text-stone-600 dark:text-stone-400">
+            {item.startDate} - {item.endDate}
+          </p>
+        </div>
         <Markdown content={item.description} />
-      </div>
-      <SkillList items={item.highlights} />
-    </div>
-  ))}
+        {item.highlights.length > 0 && (
+          <p class="skill-kw text-sm font-medium text-stone-600 dark:text-stone-400">
+            {item.highlights.join(' · ')}
+          </p>
+        )}
+      </article>
+    ))}
+  </div>
 </section>

@@ -1,16 +1,17 @@
 ---
-import SkillList from '../../list/Skill.astro'
 import Title from './Title.astro'
 
 const { skills, t } = Astro.props
 ---
 
-<section>
+<section data-reveal-group>
   <Title title={t.skills} />
-  {skills.map((item: any) => (
-    <div class="mb-5">
-      <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-400 mb-1">{item.name}</h3>
-      <SkillList items={item.keywords} />
-    </div>
-  ))}
+  <div data-reveal-list class="flex flex-col gap-4 lg:gap-[18px]">
+    {skills.map((item: any) => (
+      <div class="skill-row entry grid break-inside-avoid gap-0.5 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-x-10">
+        <h3 class="text-base font-semibold text-stone-900 dark:text-stone-100">{item.name}</h3>
+        <p class="skill-kw max-w-[65ch] font-light text-stone-600 dark:text-stone-300">{item.keywords.join(' · ')}</p>
+      </div>
+    ))}
+  </div>
 </section>

@@ -5,7 +5,7 @@ const { basics } = Astro.props
 ---
 
 {basics.summary && (
-  <section>
-    <Markdown content={basics.summary} />
+  <section data-reveal-group>
+    <Markdown content={basics.summary} class="max-w-[65ch] text-[17px] font-normal leading-[1.6] text-stone-700 dark:text-stone-200" />
   </section>
 )}

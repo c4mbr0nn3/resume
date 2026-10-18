@@ -26,16 +26,6 @@ export default defineConfig({
       display: 'swap',
       fallbacks: ['serif'],
     },
-    {
-      provider: fontProviders.fontsource(),
-      name: 'Source Code Pro',
-      cssVariable: '--font-source-code-pro',
-      weights: [400],
-      styles: ['normal'],
-      subsets: ['latin'],
-      display: 'swap',
-      fallbacks: ['monospace'],
-    },
   ],
   i18n: {
     defaultLocale: 'en',
