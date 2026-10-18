@@ -5,7 +5,7 @@
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
     "url": "https://francescozorzi.me/",
-    "summary": "Software Engineer with 9+ years of experience building .NET and modern web applications. Delivered scalable software solutions in financial services, emerging tech companies, and SaaS e-invoicing. Expertise in **C#**, **.NET**, **EF Core**, and full-stack development with a strong focus on code quality and agile methodologies.",
+    "summary": "Software Engineer with 9+ years of experience building .NET and modern web applications. Delivered scalable software solutions in financial services, tech startups, and SaaS e-invoicing. Expertise in **C#**, **.NET**, **EF Core**, and full-stack development with a strong focus on code quality and agile methodologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -123,7 +123,7 @@
     {
       "name": "Backend Development",
       "level": "Advanced",
-      "keywords": ["C#", ".NET", "EF Core", "Java", "GoLang", "Python"]
+      "keywords": ["C#", ".NET", "EF Core", "Java", "Go", "Python"]
     },
     {
       "name": "Frontend Development",
@@ -191,7 +191,7 @@
     },
     {
       "language": "English",
-      "fluency": "Proficient (C1)"
+      "fluency": "Advanced (C1)"
     }
   ],
   "projects": [
@@ -224,7 +224,7 @@
       "name": "Digital Signature POC",
       "startDate": "Nov 2025",
       "endDate": "Nov 2025",
-      "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features a zero-knowledge security model where **private keys never leave the client unencrypted**, using **Web Crypto API** for key generation and **AES-GCM encryption** with **PBKDF2 key derivation**. Includes complete key rotation workflow while maintaining historical signature verification.",
+      "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features client-side key custody: **private keys are generated in the browser** and never leave the client unencrypted, using the **Web Crypto API** for key generation and **AES-GCM encryption** with **PBKDF2 key derivation**. Includes complete key rotation workflow while maintaining historical signature verification.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -262,7 +262,7 @@
         "Vuetify",
         "Pinia",
         "JavaScript",
-        "GoLang",
+        "Go",
         "Gin",
         "GORM",
         "SQLite",
