@@ -21,7 +21,7 @@ export const skillIcons = {
   'gitlab': 'simple-icons:gitlab',
   'sqlite': 'simple-icons:sqlite',
   'sql server': 'devicon-plain:microsoftsqlserver',
-  'golang': 'simple-icons:go',
+  'go': 'simple-icons:go',
   'bash': 'simple-icons:gnubash',
   'linux': 'simple-icons:linux',
   'proxmox': 'simple-icons:proxmox',
