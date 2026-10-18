@@ -70,7 +70,8 @@
       "endDate": "Dec 2023",
       "summary": "Led development of internal tools and SaaS applications using .NET and Vue.js technologies for small and medium-sized Italian banks.",
       "highlights": [
-        "Migrated legacy ATS application to **Vue.js 2** and **Vuetify 2** with **.NET 6 backend**, optimizing **EF Core** performance via navigation properties, projections, and split queries, boosting user satisfaction significantly",
+        "Migrated legacy ATS application to **Vue.js 2** and **Vuetify 2** with **.NET 6 backend**, reworking the UI to be responsive across desktop screen sizes and optimizing **EF Core** performance via navigation properties, projections, and split queries",
+        "The UI rework and associated bug fixes lifted candidate **screening-test completion to nearly 100%**, and internal adoption went from no one using the platform to almost every manager involved in hiring",
         "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
         "Led a development team, managing technical delivery and code quality"
       ]
