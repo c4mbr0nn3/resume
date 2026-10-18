@@ -18,6 +18,8 @@ Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` v
 
 **Markdown:** Work/project descriptions use `src/lib/markdown.js` (markdown-it) + `Markdown.astro`.
 
+**Copy rules (content slop):** Every sentence names a thing, a number, or an owner — no stock phrases ("scalable solutions", "best practices", "closely collaborated"), no unquantified impact adverbs ("significantly", "drastically"), no vague objects ("various projects", "hands-on experience with..."). No em-dashes (`—`); en-dashes only for numeric ranges (`2–3`). **Bold discipline:** max 3 `**bold**` per text block, kept symmetrical across locales; never bold stack names/versions already listed in that entry's `highlights` chips; bold is for the metric, the scope, or the one distinctive item. EN and IT must tell the same story — same facts, same qualifiers.
+
 **CSS:** Single stylesheet `src/assets/css/main.css`; print rules force light A4/Letter output and pin reveal end-states. Dark mode via `dark` class on `<html>`: the `theme` cookie boots in `BaseLayout` (no-flash script) and toggles in `LanguageSwitcher`.
 
 **Motion:** Reveals are gated on `html.js`: sections carry `data-reveal-group`; items are direct children or `data-reveal-list` wrappers. First-load entrances use `.line-mask` (heading lines) and `data-rise` with `--i`. Keep content visible without JS and honor `prefers-reduced-motion`.
