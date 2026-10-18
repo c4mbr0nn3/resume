@@ -54,7 +54,7 @@
       "endDate": "Mag 2026",
       "summary": "Guida di un team di 5 persone nello sviluppo degli strumenti e dei prodotti proprietari dell'azienda in .NET e Vue.js. Contributo al percorso di certificazione ISO 27001 implementando i controlli di sicurezza critici del gestionale interno, con responsabilità sull'infrastruttura CI.",
       "highlights": [
-        "Sviluppo ed estensione degli strumenti per clienti **asset management** in **.NET** e **Vue.js 3**: nuovo reporting nei gestionali legacy interni, notifiche automatiche ai clienti e una **web app dedicata** per consultare il portafoglio on demand",
+        "Sviluppo ed estensione di strumenti **.NET** e **Vue.js** per clienti **asset management**: nuovo reporting nei gestionali legacy interni, notifiche automatiche ai clienti e una web app dedicata per consultare il portafoglio on demand",
         "Supporto al processo di certificazione ISO 27001 insieme al CTO, implementando i controlli di sicurezza critici del gestionale interno",
         "Gestione del carico di lavoro del team, conduzione di performance review e partecipazione ai processi di assunzione. Definizione delle priorità di progetto con gli stakeholder e pianificazione della capacità sui progetti clienti in parallelo, garantendo una **consegna puntuale al 95%+** con metodologia mista Agile/Waterfall",
         "Introduzione della **dependency injection** e ristrutturazione incrementale del codebase legacy verso una **clean architecture**. Integrazione di unit test con xUnit, NSubstitute e Bogus con report di copertura nelle pipeline GitLab CI"
@@ -68,7 +68,7 @@
       "endDate": "Dic 2023",
       "summary": "Guida dello sviluppo di strumenti interni e applicazioni SaaS con tecnologie .NET e Vue.js per piccole e medie banche italiane.",
       "highlights": [
-        "Migrazione dell'applicazione ATS legacy a **Vue.js 2** e Vuetify 2 con backend .NET 6, riprogettando la UI per renderla responsive sui diversi schermi desktop e ottimizzando le performance di **EF Core** tramite navigation properties, proiezioni e split queries",
+        "Migrazione dell'applicazione ATS legacy a **Vue.js** e Vuetify con backend .NET 6, riprogettando la UI per renderla responsive sui diversi schermi desktop e ottimizzando le performance di **EF Core** tramite navigation properties, proiezioni e split queries",
         "Il rework della UI e le relative correzioni di bug hanno portato il **completamento dei test di screening dei candidati a quasi il 100%**, e l'adozione interna è passata da nessun utilizzo a quasi tutti i manager coinvolti nelle assunzioni",
         "Progettazione e implementazione di endpoint REST API sicuri e meccanismi di autenticazione conformi a **OAuth / OIDC** durante la modernizzazione del sistema",
         "Guida di un team di sviluppo, con gestione della delivery tecnica e della qualità del codice"
