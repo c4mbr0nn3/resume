@@ -83,9 +83,9 @@
       "endDate": "Dec 2019",
       "summary": "Specialized in Counterparty Credit Risk calculations and regulatory implementations.",
       "highlights": [
-        "Developed and enhanced CCR applications using **Java 8**, focusing on exposure calculation algorithms for financial risk management",
+        "Developed and maintained **CCR** applications in **Java 8**, implementing exposure and adjustment calculations: **EPE**, **EEPE**, **CVA** and its bilateral counterpart **DVA**",
         "Managed 4-person team implementing application updates for evolving regulatory requirements",
-        "Reduced critical bugs through systematic debugging and code optimization"
+        "Investigated methodological issues reported by the business side — root-caused defects in the CCR calculation chain and shipped the fixes, handling **2–3 tickets per day**"
       ]
     }
   ],
