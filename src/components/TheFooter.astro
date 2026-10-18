@@ -9,27 +9,29 @@ const buildDate = new Date().toLocaleDateString(currentLocale === 'it' ? 'it-IT'
   <div class="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
     <p>{t['footer.lastUpdate']} {buildDate}</p>
     <span class="hidden sm:block" aria-hidden="true">-</span>
-    <p class="flex items-center">
-      {t['footer.forkText']}&nbsp;
+    <p class="flex flex-wrap items-center justify-center gap-1">
+      <span class="w-full sm:w-auto">{t['footer.forkText']}</span>
       <a
         href="https://gitlab.com/j1mm0/resume"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center gap-1 text-orange-700 hover:text-orange-800 hover:underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
+        class="inline-flex items-center gap-1 whitespace-nowrap text-orange-700 hover:text-orange-800 hover:underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
       >
         GitLab
         <Icon name="simple-icons:gitlab" />
       </a>
-      &nbsp;{t['footer.or']}&nbsp;
-      <a
-        href="https://github.com/c4mbr0nn3/resume"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center gap-1 text-orange-700 hover:text-orange-800 hover:underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
-      >
-        GitHub
-        <Icon name="simple-icons:github" />
-      </a>
+      <span class="inline-flex items-center gap-1 whitespace-nowrap">
+        {t['footer.or']}
+        <a
+          href="https://github.com/c4mbr0nn3/resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 whitespace-nowrap text-orange-700 hover:text-orange-800 hover:underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
+        >
+          GitHub
+          <Icon name="simple-icons:github" />
+        </a>
+      </span>
     </p>
   </div>
 </footer>
