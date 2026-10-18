@@ -219,21 +219,6 @@
       "url": "https://github.com/c4mbr0nn3/gh-release-notify"
     },
     {
-      "name": "Digital Signature POC",
-      "startDate": "Nov 2025",
-      "endDate": "",
-      "description": "Proof-of-concept full-stack che implementa la **firma digitale ECDSA lato client** per raccomandazioni di trading. Adotta la custodia lato client delle chiavi: le **chiavi private sono generate nel browser** e non lasciano mai il client non cifrate, usando la Web Crypto API per la generazione e la cifratura AES-GCM con derivazione PBKDF2. Include un flusso completo di rotazione delle chiavi mantenendo la verifica storica delle firme.",
-      "highlights": [
-        ".NET",
-        "EF Core",
-        "Nuxt",
-        "TypeScript",
-        "Tailwind CSS",
-        "SQLite"
-      ],
-      "url": "https://github.com/c4mbr0nn3/digital-signature-poc"
-    },
-    {
       "name": "SplitDuo",
       "startDate": "Set 2025",
       "endDate": "Presente",
@@ -249,6 +234,39 @@
         "Tailwind CSS"
       ],
       "url": "https://splitduoapp.netlify.app"
+    },
+    {
+      "name": "Infrastruttura Cloud Privata",
+      "startDate": "2020",
+      "endDate": "Presente",
+      "description": "Infrastruttura self-managed. Partito da Raspberry Pi e **Pi-Hole**, evoluto nella gestione di un **nodo Proxmox** con VM firewall opnSense dedicata e Proxmox Backup Server.",
+      "highlights": [
+        "Proxmox",
+        "Proxmox Backup Server",
+        "opnSense",
+        "Docker",
+        "Linux",
+        "Networking",
+        "Security",
+        "Virtualization",
+        "Backup Strategy"
+      ],
+      "url": null
+    },
+    {
+      "name": "Digital Signature POC",
+      "startDate": "Nov 2025",
+      "endDate": "",
+      "description": "Proof-of-concept full-stack che implementa la **firma digitale ECDSA lato client** per raccomandazioni di trading. Adotta la custodia lato client delle chiavi: le **chiavi private sono generate nel browser** e non lasciano mai il client non cifrate, usando la Web Crypto API per la generazione e la cifratura AES-GCM con derivazione PBKDF2. Include un flusso completo di rotazione delle chiavi mantenendo la verifica storica delle firme.",
+      "highlights": [
+        ".NET",
+        "EF Core",
+        "Nuxt",
+        "TypeScript",
+        "Tailwind CSS",
+        "SQLite"
+      ],
+      "url": "https://github.com/c4mbr0nn3/digital-signature-poc"
     },
     {
       "name": "PodCats",
@@ -268,24 +286,6 @@
         "GitLab CI"
       ],
       "url": "https://gitlab.com/j1mm0/podcats"
-    },
-    {
-      "name": "Infrastruttura Cloud Privata",
-      "startDate": "2020",
-      "endDate": "Presente",
-      "description": "Infrastruttura self-managed. Partito da Raspberry Pi e **Pi-Hole**, evoluto nella gestione di un **nodo Proxmox** con VM firewall opnSense dedicata e Proxmox Backup Server.",
-      "highlights": [
-        "Proxmox",
-        "Proxmox Backup Server",
-        "opnSense",
-        "Docker",
-        "Linux",
-        "Networking",
-        "Security",
-        "Virtualization",
-        "Backup Strategy"
-      ],
-      "url": null
     }
   ]
 }
