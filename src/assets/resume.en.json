@@ -5,7 +5,7 @@
     "image": "",
     "email": "francesco.zorzi.1@gmail.com",
     "url": "https://francescozorzi.me/",
-    "summary": "Software Engineer with 9+ years of experience building .NET and modern web applications. Delivered scalable software solutions in financial services, tech startups, and SaaS e-invoicing. Expertise in **C#**, **.NET**, **EF Core**, and full-stack development with a strong focus on code quality and agile methodologies.",
+    "summary": "Software Engineer with 9+ years of experience building .NET and modern web applications. Delivered scalable software solutions in financial services, tech startups, and SaaS e-invoicing. Expertise in C#, **.NET**, EF Core, and full-stack development with a strong focus on code quality and agile methodologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -41,9 +41,9 @@
       "summary": "Build backend services for a multi-country SaaS e-invoicing platform, owning high-volume batch processing for France and the pilot rollout in Slovakia.",
       "highlights": [
         "Own bulk invoice processing for the **France** e-invoicing system, handling client batches of up to **200k invoices** per submission; reworked the pipeline around a bulk approach that cut end-to-end batch time from **10+ hours to under 30 minutes**",
-        "Sole developer on the pilot rollout of the **Slovakia** e-invoicing system, deployed on **MySQL**; added **MySQL** support to the legacy middleware so it can integrate with the new market",
+        "Sole developer on the pilot rollout of the **Slovakia** e-invoicing system, deployed on MySQL; added **MySQL** support to the legacy middleware so it can integrate with the new market",
         "Implemented integration **REST APIs** against the **Swagger/OpenAPI** specifications published by the French and Slovak authorities, and set up automated tests that verify compliance with each standard",
-        "Build and maintain **REST API** endpoints and **scheduled batch tasks** using **.NET**, **EF Core**, and **Dapper**, backed by **SQL Server** and **MySQL**"
+        "Build and maintain **REST API** endpoints and **scheduled batch tasks** using .NET, EF Core, and Dapper, backed by SQL Server and MySQL"
       ]
     },
     {
@@ -54,13 +54,13 @@
       "endDate": "May 2026",
       "summary": "Led a 5-person team building the company's proprietary tools and products in .NET and Vue.js. Contributed to the ISO 27001 certification path by implementing the critical security controls in the internal management tool, and owned the CI infrastructure.",
       "highlights": [
-        "Developed and maintained applications using **.NET**, **C#** and **EF Core** with both **PostgreSQL** and **SQL Server** databases for clients in the **asset management** sector, extending their internal legacy tools with new reporting features",
+        "Developed and maintained applications using **.NET**, C# and EF Core with both PostgreSQL and SQL Server databases for clients in the **asset management** sector, extending their internal legacy tools with new reporting features",
         "Expanded the clients' ecosystem with custom tools: **automatic customer notifications** and a **dedicated web app** where customers can check their portfolio on demand",
-        "Built responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
+        "Built responsive user interfaces using **Vue.js 3**, Vuetify 3, and modern JavaScript with component-based architecture",
         "Supported ISO 27001 certification process alongside CTO by implementing the critical security controls of the internal management tool",
         "Collaborated with CTO managing AWS infrastructure (S3, CloudWatch), deployment automation using **Docker containers**, and environment orchestration across development, staging, and production",
-        "Managed team workload, conducted performance reviews, and participated in hiring processes. Defined project priorities with stakeholders and led capacity planning across concurrent client projects, ensuring **95%+ on-time delivery** through mixed **Agile/Waterfall** methodology",
-        "Introduced **dependency injection** and incrementally restructured legacy codebase toward **clean architecture**. Integrated **unit tests** using **xUnit**, **NSubstitute**, and **Bogus** with **coverage reports** in GitLab CI pipelines"
+        "Managed team workload, conducted performance reviews, and participated in hiring processes. Defined project priorities with stakeholders and led capacity planning across concurrent client projects, ensuring **95%+ on-time delivery** through mixed Agile/Waterfall methodology",
+        "Introduced **dependency injection** and incrementally restructured legacy codebase toward **clean architecture**. Integrated unit tests using xUnit, NSubstitute, and Bogus with coverage reports in GitLab CI pipelines"
       ]
     },
     {
@@ -71,9 +71,9 @@
       "endDate": "Dec 2023",
       "summary": "Led development of internal tools and SaaS applications using .NET and Vue.js technologies for small and medium-sized Italian banks.",
       "highlights": [
-        "Migrated legacy ATS application to **Vue.js 2** and **Vuetify 2** with **.NET 6 backend**, reworking the UI to be responsive across desktop screen sizes and optimizing **EF Core** performance via navigation properties, projections, and split queries",
+        "Migrated legacy ATS application to **Vue.js 2** and Vuetify 2 with .NET 6 backend, reworking the UI to be responsive across desktop screen sizes and optimizing **EF Core** performance via navigation properties, projections, and split queries",
         "The UI rework and associated bug fixes lifted candidate **screening-test completion to nearly 100%**, and internal adoption went from no one using the platform to almost every manager involved in hiring",
-        "Designed and implemented secure **REST API** endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
+        "Designed and implemented secure REST API endpoints and **OAuth / OIDC** compliant authentication mechanisms during system modernization",
         "Led a development team, managing technical delivery and code quality"
       ]
     },
@@ -85,7 +85,7 @@
       "endDate": "Dec 2019",
       "summary": "Specialized in Counterparty Credit Risk calculations and regulatory implementations.",
       "highlights": [
-        "Developed and maintained **CCR** applications in **Java 8**, implementing exposure and adjustment calculations: **EPE**, **EEPE**, **CVA** and its bilateral counterpart **DVA**",
+        "Developed and maintained CCR applications in Java 8, implementing exposure and adjustment calculations: **EPE**, **EEPE**, **CVA** and its bilateral counterpart **DVA**",
         "Managed 4-person team implementing application updates for evolving regulatory requirements",
         "Investigated methodological issues reported by the business side, root-caused defects in the CCR calculation chain and shipped the fixes, handling **2–3 tickets per day**"
       ]
@@ -200,7 +200,7 @@
       "name": "Agent Skills Bundle",
       "startDate": "Oct 2026",
       "endDate": "Present",
-      "description": "Personal, cross-harness **AI agent skill bundle** for **OpenCode** and **Claude Code**, vendoring four upstream open-source skill repositories pinned by commit SHA in a **YAML** manifest. Built **Bash**/**Python** validation tooling (manifest schema, frontmatter grammar, duplicate-name and broken-link checks) wired into **GitLab CI**, plus a scheduled upstream-sync pipeline that opens review-gated merge requests, **git-cliff** changelogs, and SemVer releases. Includes an original **seven-phase, human-gated feature workflow** skill orchestrating exploration, research, requirements, spec, plan, adversarial review, and implementation across both harnesses.",
+      "description": "Personal, cross-harness AI agent skill bundle for **OpenCode** and **Claude Code**, vendoring four upstream open-source skill repositories pinned by commit SHA in a YAML manifest. Built Bash/Python validation tooling (manifest schema, frontmatter grammar, duplicate-name and broken-link checks) wired into GitLab CI, plus a scheduled upstream-sync pipeline that opens review-gated merge requests, git-cliff changelogs, and SemVer releases. Includes an original **seven-phase, human-gated feature workflow** skill orchestrating exploration, research, requirements, spec, plan, adversarial review, and implementation across both harnesses.",
       "highlights": [
         "AI Agents",
         "OpenCode",
@@ -217,7 +217,7 @@
       "name": "GH Release Notify",
       "startDate": "Jul 2026",
       "endDate": "Present",
-      "description": "Long-running **Rust daemon** that polls a configurable list of GitHub repositories for new stable releases and sends plain-text email notifications via **SMTP**. Built on the **Tokio** async runtime and **reqwest**, with a fixed-interval or cron schedule, atomic JSON state to avoid duplicate alerts and retry on SMTP failure, optional GitHub token for higher rate limits, and graceful shutdown. Ships as a multi-arch **Docker/podman** container published to GHCR, with a **GitHub Actions** release pipeline and automated SemVer versioning from conventional commits.",
+      "description": "Long-running **Rust daemon** that polls a configurable list of GitHub repositories for new stable releases and sends plain-text email notifications via SMTP. Built on the **Tokio** async runtime and reqwest, with a fixed-interval or cron schedule, atomic JSON state to avoid duplicate alerts and retry on SMTP failure, optional GitHub token for higher rate limits, and graceful shutdown. Ships as a multi-arch Docker/podman container published to GHCR, with a GitHub Actions release pipeline and automated SemVer versioning from conventional commits.",
       "highlights": ["Rust", "Tokio", "Docker", "GitHub Actions", "SMTP"],
       "url": "https://github.com/c4mbr0nn3/gh-release-notify"
     },
@@ -225,7 +225,7 @@
       "name": "Digital Signature POC",
       "startDate": "Nov 2025",
       "endDate": "Nov 2025",
-      "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features client-side key custody: **private keys are generated in the browser** and never leave the client unencrypted, using the **Web Crypto API** for key generation and **AES-GCM encryption** with **PBKDF2 key derivation**. Includes complete key rotation workflow while maintaining historical signature verification.",
+      "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features client-side key custody: **private keys are generated in the browser** and never leave the client unencrypted, using the Web Crypto API for key generation and AES-GCM encryption with PBKDF2 key derivation. Includes complete key rotation workflow while maintaining historical signature verification.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -240,7 +240,7 @@
       "name": "SplitDuo",
       "startDate": "Sep 2025",
       "endDate": "Present",
-      "description": "A lightweight, open-source, **self-hosted** expense-splitting app written in **.NET 10** with **EF Core 10** (backend) and **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), backed by **PostgreSQL 17** and deployed as a single **Docker** container. SplitDuo is a no-subscription alternative to Splitwise and Cospend: **AI receipt scanning** via any OpenAI-compatible endpoint (bring your own key), settlement-aware balances that minimize the number of transfers, subgroup \"alias mode,\" **Quartz**-driven recurring expenses, expense attachments, **TOTP 2FA** with backup codes, JWT auth with **rotating refresh tokens** and reuse detection, CSV import/export from Splitwise and Cospend, EN/IT email notifications, full **EN/IT i18n**, and an installable **PWA**, covered by xUnit + **Testcontainers** integration tests and a CI pipeline with security and secret-scanning gates.",
+      "description": "A lightweight, open-source, **self-hosted** expense-splitting app written in .NET 10 with EF Core 10 (backend) and Nuxt 4 / Vue 3 / Nuxt UI v4 / TypeScript (frontend), backed by PostgreSQL 17 and deployed as a single Docker container. SplitDuo is a no-subscription alternative to Splitwise and Cospend: **AI receipt scanning** via any OpenAI-compatible endpoint (bring your own key), settlement-aware balances that minimize the number of transfers, subgroup \"alias mode,\" Quartz-driven recurring expenses, expense attachments, TOTP 2FA with backup codes, JWT auth with rotating refresh tokens and reuse detection, CSV import/export from Splitwise and Cospend, EN/IT email notifications, full EN/IT i18n, and an installable **PWA**, covered by xUnit + Testcontainers integration tests and a CI pipeline with security and secret-scanning gates.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -257,7 +257,7 @@
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Nov 2025",
-      "description": "Self-hosted, multi-user podcast manager, but with cats. **Vue 3** / **Vuetify 3** / **Pinia** frontend backed by a **Go** (**Gin** + **GORM**) REST API on **SQLite**. Imports podcast feeds via **RSS** (**gofeed**), discovers shows through the **iTunes Search API**, and streams episodes in-browser with **Howler.js**, plus **JWT auth**, resume-listening, favorites, a **cron**-driven feed poller with in-app notifications, and global fuzzy search (**Fuse.js**). Shipped as a multi-stage **Docker** image built and published through a **GitLab CI** (**Kaniko**) pipeline.",
+      "description": "Self-hosted, multi-user podcast manager, but with cats. Vue 3 / Vuetify 3 / Pinia frontend backed by a **Go** (Gin + GORM) REST API on SQLite. Imports podcast feeds via RSS (gofeed), discovers shows through the **iTunes Search API**, and streams episodes in-browser with Howler.js, plus JWT auth, resume-listening, favorites, a cron-driven feed poller with in-app notifications, and global fuzzy search (Fuse.js). Shipped as a multi-stage Docker image built and published through a GitLab CI (Kaniko) pipeline.",
       "highlights": [
         "Vue.js",
         "Vuetify",
@@ -276,7 +276,7 @@
       "name": "Private Cloud Infrastructure",
       "startDate": "2020",
       "endDate": "Present",
-      "description": "Self-managed infrastructure. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox node** with dedicated **opnSense firewall VM** and **Proxmox Backup Server**.",
+      "description": "Self-managed infrastructure. Started with Raspberry Pi and **Pi-Hole**, expanded to managing a **Proxmox node** with dedicated opnSense firewall VM and Proxmox Backup Server.",
       "highlights": [
         "Proxmox",
         "Proxmox Backup Server",
