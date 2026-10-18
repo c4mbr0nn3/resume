@@ -221,7 +221,7 @@
     {
       "name": "Digital Signature POC",
       "startDate": "Nov 2025",
-      "endDate": "Nov 2025",
+      "endDate": "",
       "description": "Full-stack proof-of-concept implementing secure **client-side ECDSA digital signing** for trade recommendations. Features client-side key custody: **private keys are generated in the browser** and never leave the client unencrypted, using the Web Crypto API for key generation and AES-GCM encryption with PBKDF2 key derivation. Includes complete key rotation workflow while maintaining historical signature verification.",
       "highlights": [
         ".NET",
