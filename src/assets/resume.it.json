@@ -87,7 +87,7 @@
       "highlights": [
         "Sviluppo e manutenzione delle applicazioni **CCR** in **Java 8**, implementando i calcoli di esposizione e adjustment: **EPE**, **EEPE**, **CVA** e la sua controparte bilaterale **DVA**",
         "Gestione di un team di 4 persone nell'implementazione degli aggiornamenti applicativi per requisiti normativi in evoluzione",
-        "Analisi delle anomalie metodologiche segnalate dal business — individuazione della root cause dei difetti nella catena di calcolo CCR e rilascio delle correzioni, gestendo **2–3 ticket al giorno**"
+        "Analisi delle anomalie metodologiche segnalate dal business, con individuazione della root cause dei difetti nella catena di calcolo CCR e rilascio delle correzioni, gestendo **2–3 ticket al giorno**"
       ]
     }
   ],
@@ -240,7 +240,7 @@
       "name": "SplitDuo",
       "startDate": "Set 2025",
       "endDate": "Presente",
-      "description": "App open-source leggera e **self-hosted** per la divisione delle spese, scritta in **.NET 10** con **EF Core 10** (backend) e **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), con **PostgreSQL 17** e deploy come singolo container **Docker**. SplitDuo è un'alternativa senza abbonamento a Splitwise e Cospend: **scansione scontrini via AI** tramite qualsiasi endpoint compatibile con OpenAI (bring your own key), saldi che minimizzano il numero di trasferimenti, \"alias mode\" per sottogruppi, spese ricorrenti gestite da **Quartz**, allegati alle spese, **2FA TOTP** con codici di backup, autenticazione JWT con **refresh token a rotazione** e rilevamento del riuso, import/export CSV da Splitwise e Cospend, notifiche email EN/IT, **i18n EN/IT** completa e **PWA** installabile — con test unitari xUnit, test di integrazione **Testcontainers** e pipeline CI con security e secret scanning.",
+      "description": "App open-source leggera e **self-hosted** per la divisione delle spese, scritta in **.NET 10** con **EF Core 10** (backend) e **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), con **PostgreSQL 17** e deploy come singolo container **Docker**. SplitDuo è un'alternativa senza abbonamento a Splitwise e Cospend: **scansione scontrini via AI** tramite qualsiasi endpoint compatibile con OpenAI (bring your own key), saldi che minimizzano il numero di trasferimenti, \"alias mode\" per sottogruppi, spese ricorrenti gestite da **Quartz**, allegati alle spese, **2FA TOTP** con codici di backup, autenticazione JWT con **refresh token a rotazione** e rilevamento del riuso, import/export CSV da Splitwise e Cospend, notifiche email EN/IT, **i18n EN/IT** completa e **PWA** installabile, con test unitari xUnit, test di integrazione **Testcontainers** e pipeline CI con security e secret scanning.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -257,7 +257,7 @@
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Nov 2025",
-      "description": "Gestore podcast self-hosted e multi-utente — ma con i gatti. Frontend in **Vue 3** / **Vuetify 3** / **Pinia** con backend **REST API in Go** (**Gin** + **GORM**) su **SQLite**. Importa feed podcast via **RSS** (**gofeed**), scopre nuovi show tramite la **iTunes Search API** e riproduce gli episodi nel browser con **Howler.js**; include **autenticazione JWT**, ripresa dell'ascolto, preferiti, un poller dei feed basato su **cron** con notifiche in-app e ricerca globale fuzzy (**Fuse.js**). Distribuito come immagine **Docker** multi-stage costruita e pubblicata tramite pipeline **GitLab CI** (**Kaniko**).",
+      "description": "Gestore podcast self-hosted e multi-utente, ma con i gatti. Frontend in **Vue 3** / **Vuetify 3** / **Pinia** con backend **REST API in Go** (**Gin** + **GORM**) su **SQLite**. Importa feed podcast via **RSS** (**gofeed**), scopre nuovi show tramite la **iTunes Search API** e riproduce gli episodi nel browser con **Howler.js**; include **autenticazione JWT**, ripresa dell'ascolto, preferiti, un poller dei feed basato su **cron** con notifiche in-app e ricerca globale fuzzy (**Fuse.js**). Distribuito come immagine **Docker** multi-stage costruita e pubblicata tramite pipeline **GitLab CI** (**Kaniko**).",
       "highlights": [
         "Vue.js",
         "Vuetify",
