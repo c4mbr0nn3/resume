@@ -97,10 +97,7 @@
       "studyType": "Laurea Triennale",
       "startDate": "Ott 2008",
       "endDate": "Set 2015",
-      "score": "",
-      "courses": [
-        "Solida base analitica e di problem-solving con matematica e principi ingegneristici"
-      ]
+      "score": ""
     },
     {
       "institution": "Università di Padova",
@@ -109,10 +106,7 @@
       "studyType": "Candidato Magistrale",
       "startDate": "Ott 2015",
       "endDate": "Giu 2017",
-      "score": "",
-      "courses": [
-        "Solida base analitica e di problem-solving con matematica e principi ingegneristici"
-      ]
+      "score": ""
     },
     {
       "institution": "ESILV - Parigi",
@@ -121,10 +115,7 @@
       "studyType": "Scambio Erasmus",
       "startDate": "Set 2016",
       "endDate": "Gen 2017",
-      "score": "",
-      "courses": [
-        "Esperienza internazionale in tecnologia e ingegneria finanziaria"
-      ]
+      "score": ""
     }
   ],
   "skills": [

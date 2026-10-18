@@ -97,10 +97,7 @@
       "studyType": "Bachelor",
       "startDate": "Oct 2008",
       "endDate": "Sep 2015",
-      "score": "",
-      "courses": [
-        "Strong analytical and problem-solving foundation with mathematics and engineering principles"
-      ]
+      "score": ""
     },
     {
       "institution": "Università di Padova",
@@ -109,10 +106,7 @@
       "studyType": "M.Sc. Candidate",
       "startDate": "Oct 2015",
       "endDate": "Jun 2017",
-      "score": "",
-      "courses": [
-        "Strong analytical and problem-solving foundation with mathematics and engineering principles"
-      ]
+      "score": ""
     },
     {
       "institution": "ESILV - Paris",
@@ -121,10 +115,7 @@
       "studyType": "Erasmus Exchange",
       "startDate": "Sep 2016",
       "endDate": "Jan 2017",
-      "score": "",
-      "courses": [
-        "International experience in financial technology and engineering"
-      ]
+      "score": ""
     }
   ],
   "skills": [
