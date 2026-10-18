@@ -123,7 +123,7 @@
     {
       "name": "Sviluppo Backend",
       "level": "Advanced",
-      "keywords": ["C#", ".NET", "EF Core", "Java", "GoLang", "Python"]
+      "keywords": ["C#", ".NET", "EF Core", "Java", "Go", "Python"]
     },
     {
       "name": "Sviluppo Frontend",
@@ -224,7 +224,7 @@
       "name": "Digital Signature POC",
       "startDate": "Nov 2025",
       "endDate": "Nov 2025",
-      "description": "Proof-of-concept full-stack che implementa la **firma digitale ECDSA lato client** per raccomandazioni di trading. Adotta un modello di sicurezza zero-knowledge in cui le **chiavi private non lasciano mai il client non cifrate**, usando la **Web Crypto API** per la generazione delle chiavi e la **cifratura AES-GCM** con **derivazione PBKDF2**. Include un flusso completo di rotazione delle chiavi mantenendo la verifica storica delle firme.",
+      "description": "Proof-of-concept full-stack che implementa la **firma digitale ECDSA lato client** per raccomandazioni di trading. Adotta la custodia lato client delle chiavi: le **chiavi private sono generate nel browser** e non lasciano mai il client non cifrate, usando la **Web Crypto API** per la generazione e la **cifratura AES-GCM** con **derivazione PBKDF2**. Include un flusso completo di rotazione delle chiavi mantenendo la verifica storica delle firme.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -262,7 +262,7 @@
         "Vuetify",
         "Pinia",
         "JavaScript",
-        "GoLang",
+        "Go",
         "Gin",
         "GORM",
         "SQLite",
