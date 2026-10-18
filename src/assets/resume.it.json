@@ -276,7 +276,7 @@
       "name": "Infrastruttura Cloud Privata",
       "startDate": "2020",
       "endDate": "Presente",
-      "description": "Infrastruttura self-managed. Partito da Raspberry Pi e **Pi-Hole**, evoluto nella gestione di un **nodo Proxmox** con **VM firewall opnSense** dedicata e **Proxmox Backup Server**. Esperienza pratica con **containerizzazione**, **networking**, **sicurezza** e **strategie di backup**.",
+      "description": "Infrastruttura self-managed. Partito da Raspberry Pi e **Pi-Hole**, evoluto nella gestione di un **nodo Proxmox** con **VM firewall opnSense** dedicata e **Proxmox Backup Server**.",
       "highlights": [
         "Proxmox",
         "Proxmox Backup Server",
