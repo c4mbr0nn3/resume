@@ -70,7 +70,8 @@
       "endDate": "Dic 2023",
       "summary": "Guida dello sviluppo di strumenti interni e applicazioni SaaS con tecnologie .NET e Vue.js per piccole e medie banche italiane.",
       "highlights": [
-        "Migrazione dell'applicazione ATS legacy a **Vue.js 2** e **Vuetify 2** con **backend .NET 6**, ottimizzando le performance di **EF Core** tramite navigation properties, proiezioni e split queries, aumentando significativamente la soddisfazione degli utenti",
+        "Migrazione dell'applicazione ATS legacy a **Vue.js 2** e **Vuetify 2** con **backend .NET 6**, riprogettando la UI per renderla responsive sui diversi schermi desktop e ottimizzando le performance di **EF Core** tramite navigation properties, proiezioni e split queries",
+        "Il rework della UI e le relative correzioni di bug hanno portato il **completamento dei test di screening dei candidati a quasi il 100%**, e l'adozione interna è passata da nessun utilizzo a quasi tutti i manager coinvolti nelle assunzioni",
         "Progettazione e implementazione di endpoint **REST API** sicuri e meccanismi di autenticazione conformi a **OAuth / OIDC** durante la modernizzazione del sistema",
         "Guida di un team di sviluppo, con gestione della delivery tecnica e della qualità del codice"
       ]
