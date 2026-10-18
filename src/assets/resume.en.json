@@ -190,6 +190,14 @@
   ],
   "projects": [
     {
+      "name": "GH Release Notify",
+      "startDate": "Jul 2026",
+      "endDate": "Present",
+      "description": "Long-running **Rust daemon** that polls a configurable list of GitHub repositories for new stable releases and sends plain-text email notifications via **SMTP**. Built on the **Tokio** async runtime and **reqwest**, with a fixed-interval or cron schedule, atomic JSON state to avoid duplicate alerts and retry on SMTP failure, optional GitHub token for higher rate limits, and graceful shutdown. Ships as a multi-arch **Docker/podman** container published to GHCR, with a **GitHub Actions** release pipeline and automated SemVer versioning from conventional commits.",
+      "highlights": ["Rust", "Tokio", "Docker", "GitHub Actions", "SMTP"],
+      "url": "https://github.com/c4mbr0nn3/gh-release-notify"
+    },
+    {
       "name": "Digital Signature POC",
       "startDate": "Nov 2025",
       "endDate": "Nov 2025",
@@ -220,14 +228,6 @@
         "Tailwind CSS"
       ],
       "url": "https://splitduoapp.netlify.app"
-    },
-    {
-      "name": "Markdown to PDF Microservice",
-      "startDate": "Jul 2025",
-      "endDate": "Jul 2025",
-      "description": "Designed a scalable **microservice** that converts Markdown archives into branded PDFs. Built the **RESTful API** using **Python (FastAPI)** and **Uvicorn**, featuring stateless design for horizontal scaling. Implemented **AI-assisted development** workflows (using **Claude Code**) to accelerate the implementation of complex CSS paging logic and error handling. Containerized the full stack (**Vue 3** frontend + FastAPI backend) using **Docker Compose** and **Nginx** for production-ready deployment.",
-      "highlights": ["Python", "FastAPI", "Vue.js", "Docker"],
-      "url": "https://github.com/c4mbr0nn3/markdown-to-pdf"
     },
     {
       "name": "PodCats",
