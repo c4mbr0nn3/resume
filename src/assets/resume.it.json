@@ -54,7 +54,8 @@
       "endDate": "Mag 2026",
       "summary": "Guida di un team di 5 persone nello sviluppo degli strumenti e dei prodotti proprietari dell'azienda in .NET e Vue.js. Contributo al percorso di certificazione ISO 27001 implementando i controlli di sicurezza critici del gestionale interno, con responsabilità sull'infrastruttura CI.",
       "highlights": [
-        "Sviluppo e manutenzione di applicazioni con **.NET**, **C#** ed **EF Core** su database **PostgreSQL** e **SQL Server** per vari progetti clienti",
+        "Sviluppo e manutenzione di applicazioni con **.NET**, **C#** ed **EF Core** su database **PostgreSQL** e **SQL Server** per clienti del settore **asset management**, estendendo i loro strumenti legacy interni con nuove funzionalità di reporting",
+        "Espansione dell'ecosistema dei clienti con strumenti custom: **notifiche automatiche ai clienti** e una **web app dedicata** in cui consultare il proprio portafoglio on demand",
         "Realizzazione di interfacce utente responsive con **Vue.js 3**, **Vuetify 3** e **JavaScript** moderno con architettura a componenti",
         "Supporto al processo di certificazione ISO 27001 insieme al CTO, implementando i controlli di sicurezza critici del gestionale interno",
         "Collaborazione con il CTO nella gestione dell'infrastruttura AWS (S3, CloudWatch), automazione dei deployment con **container Docker** e orchestrazione degli ambienti tra sviluppo, staging e produzione",

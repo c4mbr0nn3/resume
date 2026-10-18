@@ -54,7 +54,8 @@
       "endDate": "May 2026",
       "summary": "Led a 5-person team building the company's proprietary tools and products in .NET and Vue.js. Contributed to the ISO 27001 certification path by implementing the critical security controls in the internal management tool, and owned the CI infrastructure.",
       "highlights": [
-        "Developed and maintained applications using **.NET**, **C#** and **EF Core** with both **PostgreSQL** and **SQL Server** databases for various client projects",
+        "Developed and maintained applications using **.NET**, **C#** and **EF Core** with both **PostgreSQL** and **SQL Server** databases for clients in the **asset management** sector, extending their internal legacy tools with new reporting features",
+        "Expanded the clients' ecosystem with custom tools: **automatic customer notifications** and a **dedicated web app** where customers can check their portfolio on demand",
         "Built responsive user interfaces using **Vue.js 3**, **Vuetify 3**, and modern **JavaScript** with component-based architecture",
         "Supported ISO 27001 certification process alongside CTO by implementing the critical security controls of the internal management tool",
         "Collaborated with CTO managing AWS infrastructure (S3, CloudWatch), deployment automation using **Docker containers**, and environment orchestration across development, staging, and production",
