@@ -38,10 +38,12 @@
       "url": "https://digtechs.com/",
       "startDate": "Giu 2026",
       "endDate": "Presente",
-      "summary": "Sviluppo di servizi backend per una piattaforma SaaS di fatturazione elettronica per clienti in Europa e nel mondo.",
+      "summary": "Sviluppo di servizi backend per una piattaforma SaaS di fatturazione elettronica per più Paesi, con responsabilità sull'elaborazione batch ad alto volume per la Francia e sul progetto pilota in Slovacchia.",
       "highlights": [
-        "Sviluppo e manutenzione di endpoint **REST API** e **batch pianificati** con **.NET**, **EF Core** e **Dapper** su **SQL Server**",
-        "Contributo all'evoluzione del prodotto di e-invoicing, lavorando sugli strati di accesso ai dati e sui flussi di integrazione"
+        "Gestione dell'elaborazione batch delle fatture per il sistema di fatturazione elettronica **francese**, con batch clienti fino a **200.000 fatture** per invio; riprogettazione della pipeline con un approccio bulk che ha ridotto il tempo di elaborazione da **oltre 10 ore a meno di 30 minuti**",
+        "Unico sviluppatore sul progetto pilota del sistema di fatturazione elettronica **slovacco**, deployato su **MySQL**; aggiunta del supporto **MySQL** al middleware legacy per l'integrazione con il nuovo mercato",
+        "Implementazione delle **REST API** di integrazione secondo le specifiche **Swagger/OpenAPI** pubblicate dalle autorità francese e slovacca, con test automatici a garanzia della conformità a ciascuno standard",
+        "Sviluppo e manutenzione di endpoint **REST API** e **batch pianificati** con **.NET**, **EF Core** e **Dapper** su **SQL Server** e **MySQL**"
       ]
     },
     {
@@ -147,7 +149,7 @@
     {
       "name": "Database",
       "level": "Intermediate",
-      "keywords": ["PostgreSQL", "SQL Server", "SQLite"]
+      "keywords": ["PostgreSQL", "SQL Server", "MySQL", "SQLite"]
     },
     {
       "name": "Cloud & DevOps",
@@ -173,6 +175,7 @@
         "Clean Architecture",
         "Dependency Injection",
         "RESTful APIs",
+        "OpenAPI / Swagger",
         "OAuth / OIDC",
         "CI/CD Pipelines"
       ]

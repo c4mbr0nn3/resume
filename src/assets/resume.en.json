@@ -38,10 +38,12 @@
       "url": "https://digtechs.com/",
       "startDate": "Jun 2026",
       "endDate": "Present",
-      "summary": "Develop backend services for a SaaS electronic invoicing platform serving customers across Europe and worldwide.",
+      "summary": "Build backend services for a multi-country SaaS e-invoicing platform, owning high-volume batch processing for France and the pilot rollout in Slovakia.",
       "highlights": [
-        "Build and maintain **REST API** endpoints and **scheduled batch tasks** using **.NET**, **EF Core**, and **Dapper** with **SQL Server**",
-        "Contribute to the evolution of the e-invoicing product, working across data access layers and integration workflows"
+        "Own bulk invoice processing for the **France** e-invoicing system, handling client batches of up to **200k invoices** per submission; reworked the pipeline around a bulk approach that cut end-to-end batch time from **10+ hours to under 30 minutes**",
+        "Sole developer on the pilot rollout of the **Slovakia** e-invoicing system, deployed on **MySQL**; added **MySQL** support to the legacy middleware so it can integrate with the new market",
+        "Implemented integration **REST APIs** against the **Swagger/OpenAPI** specifications published by the French and Slovak authorities, and set up automated tests that verify compliance with each standard",
+        "Build and maintain **REST API** endpoints and **scheduled batch tasks** using **.NET**, **EF Core**, and **Dapper**, backed by **SQL Server** and **MySQL**"
       ]
     },
     {
@@ -147,7 +149,7 @@
     {
       "name": "Database Systems",
       "level": "Intermediate",
-      "keywords": ["PostgreSQL", "SQL Server", "SQLite"]
+      "keywords": ["PostgreSQL", "SQL Server", "MySQL", "SQLite"]
     },
     {
       "name": "Cloud & DevOps",
@@ -173,6 +175,7 @@
         "Clean Architecture",
         "Dependency Injection",
         "RESTful APIs",
+        "OpenAPI / Swagger",
         "OAuth / OIDC",
         "CI/CD Pipelines"
       ]
