@@ -176,6 +176,17 @@
         "OAuth / OIDC",
         "CI/CD Pipelines"
       ]
+    },
+    {
+      "name": "AI & Tooling per Agenti",
+      "level": "Intermediate",
+      "keywords": [
+        "Agenti AI",
+        "OpenCode",
+        "Claude Code",
+        "Agent Skills",
+        "Prompt Orchestration"
+      ]
     }
   ],
   "languages": [
@@ -189,6 +200,23 @@
     }
   ],
   "projects": [
+    {
+      "name": "Agent Skills Bundle",
+      "startDate": "Ott 2026",
+      "endDate": "Presente",
+      "description": "Bundle personale e cross-harness di **skill per agenti AI** per **OpenCode** e **Claude Code**, che importa quattro repository upstream open-source fissati per commit SHA in un manifest **YAML**. Include tooling di validazione in **Bash**/**Python** (schema del manifest, frontmatter, nomi duplicati e link rotti) integrato in **GitLab CI**, una pipeline schedulata di sync degli upstream che apre merge request soggette a review, changelog con **git-cliff** e release SemVer. Comprende inoltre una skill originale di **feature workflow in sette fasi con gate umani** che orchestra esplorazione, ricerca, requisiti, spec, piano, review avversariale e implementazione su entrambi gli harness.",
+      "highlights": [
+        "Agenti AI",
+        "OpenCode",
+        "Claude Code",
+        "Prompt Orchestration",
+        "GitLab CI",
+        "Bash",
+        "Python",
+        "YAML"
+      ],
+      "url": "https://gitlab.com/j1mm0/skills"
+    },
     {
       "name": "GH Release Notify",
       "startDate": "Lug 2026",
@@ -216,7 +244,7 @@
       "name": "SplitDuo",
       "startDate": "Set 2025",
       "endDate": "Presente",
-      "description": "App open-source leggera e **self-hosted** per la divisione delle spese, scritta in **.NET 10** con **EF Core 10** (backend) e **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), con **PostgreSQL 17** e deploy come singolo container **Docker**. SplitDuo è un'alternativa senza abbonamento a Splitwise e Cospend, con **scansione scontrini via AI** tramite endpoint compatibili con OpenAI, suggerimenti di saldo che minimizzano il numero di trasferimenti, \"alias mode\" per sottogruppi, **2FA TOTP** con rotazione dei refresh token, import/export CSV da Splitwise e Cospend, **i18n EN/IT** completa e **PWA** installabile.",
+      "description": "App open-source leggera e **self-hosted** per la divisione delle spese, scritta in **.NET 10** con **EF Core 10** (backend) e **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), con **PostgreSQL 17** e deploy come singolo container **Docker**. SplitDuo è un'alternativa senza abbonamento a Splitwise e Cospend: **scansione scontrini via AI** tramite qualsiasi endpoint compatibile con OpenAI (bring your own key), saldi che minimizzano il numero di trasferimenti, \"alias mode\" per sottogruppi, spese ricorrenti gestite da **Quartz**, allegati alle spese, **2FA TOTP** con codici di backup, autenticazione JWT con **refresh token a rotazione** e rilevamento del riuso, import/export CSV da Splitwise e Cospend, notifiche email EN/IT, **i18n EN/IT** completa e **PWA** installabile — con test unitari xUnit, test di integrazione **Testcontainers** e pipeline CI con security e secret scanning.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -232,17 +260,21 @@
     {
       "name": "PodCats",
       "startDate": "Nov 2022",
-      "endDate": "Presente",
-      "description": "Piattaforma completa di gestione podcast, ma con i gatti. Frontend in **Vue.js 3** e **Vuetify 3** che consuma un **backend RESTful API in GoLang**. Funzionalità: **autenticazione multi-utente**, **elaborazione feed RSS**, **cron job automatizzati** e **ricerca universale**.",
+      "endDate": "Nov 2025",
+      "description": "Gestore podcast self-hosted e multi-utente — ma con i gatti. Frontend in **Vue 3** / **Vuetify 3** / **Pinia** con backend **REST API in Go** (**Gin** + **GORM**) su **SQLite**. Importa feed podcast via **RSS** (**gofeed**), scopre nuovi show tramite la **iTunes Search API** e riproduce gli episodi nel browser con **Howler.js**; include **autenticazione JWT**, ripresa dell'ascolto, preferiti, un poller dei feed basato su **cron** con notifiche in-app e ricerca globale fuzzy (**Fuse.js**). Distribuito come immagine **Docker** multi-stage costruita e pubblicata tramite pipeline **GitLab CI** (**Kaniko**).",
       "highlights": [
         "Vue.js",
         "Vuetify",
+        "Pinia",
         "JavaScript",
         "GoLang",
+        "Gin",
+        "GORM",
         "SQLite",
-        "Docker"
+        "Docker",
+        "GitLab CI"
       ],
-      "url": "https://github.com/c4mbr0nn3/podcats"
+      "url": "https://gitlab.com/j1mm0/podcats"
     },
     {
       "name": "Infrastruttura Cloud Privata",
