@@ -87,7 +87,7 @@
       "highlights": [
         "Developed and maintained **CCR** applications in **Java 8**, implementing exposure and adjustment calculations: **EPE**, **EEPE**, **CVA** and its bilateral counterpart **DVA**",
         "Managed 4-person team implementing application updates for evolving regulatory requirements",
-        "Investigated methodological issues reported by the business side — root-caused defects in the CCR calculation chain and shipped the fixes, handling **2–3 tickets per day**"
+        "Investigated methodological issues reported by the business side, root-caused defects in the CCR calculation chain and shipped the fixes, handling **2–3 tickets per day**"
       ]
     }
   ],
@@ -240,7 +240,7 @@
       "name": "SplitDuo",
       "startDate": "Sep 2025",
       "endDate": "Present",
-      "description": "A lightweight, open-source, **self-hosted** expense-splitting app written in **.NET 10** with **EF Core 10** (backend) and **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), backed by **PostgreSQL 17** and deployed as a single **Docker** container. SplitDuo is a no-subscription alternative to Splitwise and Cospend: **AI receipt scanning** via any OpenAI-compatible endpoint (bring your own key), settlement-aware balances that minimize the number of transfers, subgroup \"alias mode,\" **Quartz**-driven recurring expenses, expense attachments, **TOTP 2FA** with backup codes, JWT auth with **rotating refresh tokens** and reuse detection, CSV import/export from Splitwise and Cospend, EN/IT email notifications, full **EN/IT i18n**, and an installable **PWA** — covered by xUnit + **Testcontainers** integration tests and a CI pipeline with security and secret-scanning gates.",
+      "description": "A lightweight, open-source, **self-hosted** expense-splitting app written in **.NET 10** with **EF Core 10** (backend) and **Nuxt 4** / **Vue 3** / **Nuxt UI v4** / **TypeScript** (frontend), backed by **PostgreSQL 17** and deployed as a single **Docker** container. SplitDuo is a no-subscription alternative to Splitwise and Cospend: **AI receipt scanning** via any OpenAI-compatible endpoint (bring your own key), settlement-aware balances that minimize the number of transfers, subgroup \"alias mode,\" **Quartz**-driven recurring expenses, expense attachments, **TOTP 2FA** with backup codes, JWT auth with **rotating refresh tokens** and reuse detection, CSV import/export from Splitwise and Cospend, EN/IT email notifications, full **EN/IT i18n**, and an installable **PWA**, covered by xUnit + **Testcontainers** integration tests and a CI pipeline with security and secret-scanning gates.",
       "highlights": [
         ".NET",
         "EF Core",
@@ -257,7 +257,7 @@
       "name": "PodCats",
       "startDate": "Nov 2022",
       "endDate": "Nov 2025",
-      "description": "Self-hosted, multi-user podcast manager — but with cats. **Vue 3** / **Vuetify 3** / **Pinia** frontend backed by a **Go** (**Gin** + **GORM**) REST API on **SQLite**. Imports podcast feeds via **RSS** (**gofeed**), discovers shows through the **iTunes Search API**, and streams episodes in-browser with **Howler.js** — plus **JWT auth**, resume-listening, favorites, a **cron**-driven feed poller with in-app notifications, and global fuzzy search (**Fuse.js**). Shipped as a multi-stage **Docker** image built and published through a **GitLab CI** (**Kaniko**) pipeline.",
+      "description": "Self-hosted, multi-user podcast manager, but with cats. **Vue 3** / **Vuetify 3** / **Pinia** frontend backed by a **Go** (**Gin** + **GORM**) REST API on **SQLite**. Imports podcast feeds via **RSS** (**gofeed**), discovers shows through the **iTunes Search API**, and streams episodes in-browser with **Howler.js**, plus **JWT auth**, resume-listening, favorites, a **cron**-driven feed poller with in-app notifications, and global fuzzy search (**Fuse.js**). Shipped as a multi-stage **Docker** image built and published through a **GitLab CI** (**Kaniko**) pipeline.",
       "highlights": [
         "Vue.js",
         "Vuetify",
