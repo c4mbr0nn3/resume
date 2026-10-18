@@ -4,14 +4,14 @@ import Title from './Title.astro'
 const { languages, t } = Astro.props
 ---
 
-<section>
+<section data-reveal-group>
   <Title title={t.languages} />
-  <div class="flex flex-col flex-wrap gap-3 mb-5">
+  <dl data-reveal-list class="flex flex-col gap-2">
     {languages.map((item: any) => (
-      <p class="flex items-center gap-1">
-        <span class="font-medium text-orange-700 dark:text-orange-400">{item.language}:</span>
-        <span class="font-light text-stone-600 dark:text-stone-400">{item.fluency}</span>
-      </p>
+      <div class="entry flex flex-wrap items-baseline gap-2">
+        <dt class="text-lg font-medium text-stone-900 dark:text-stone-100">{item.language}</dt>
+        <dd class="text-stone-600 dark:text-stone-400 font-light">— {item.fluency}</dd>
+      </div>
     ))}
-  </div>
+  </dl>
 </section>

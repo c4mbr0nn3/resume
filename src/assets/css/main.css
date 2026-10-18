@@ -5,19 +5,102 @@
 @theme inline {
   --font-serif: var(--font-spectral);
   --font-sans: var(--font-work-sans);
-  --font-mono: var(--font-source-code-pro);
 }
 
 /* Container Utility - Centered with Auto Margins */
 @utility container {
   margin-inline: auto;
-  max-width: 75rem;
+  max-width: 72rem;
+}
+
+/* Motion tokens */
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-press: 140ms;
+  --t-hover: 180ms;
 }
 
 /* Theme toggle icon visibility */
 #theme-toggle span { display: none; }
 #theme-toggle[data-state="light"]  span[data-for="light"]  { display: block; }
 #theme-toggle[data-state="dark"]   span[data-for="dark"]   { display: block; }
+
+/* Primary button: one fill colour, flat, square corners */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-inline: 1.375rem;
+  background-color: var(--color-orange-700);
+  color: var(--color-white);
+  font-weight: 500;
+  transition-property: transform, background-color;
+  transition-duration: var(--t-press), var(--t-hover);
+  transition-timing-function: var(--ease-out), ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover { background-color: var(--color-orange-800); }
+}
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-orange-700);
+  outline-offset: 2px;
+}
+.dark .btn-primary {
+  background-color: var(--color-orange-400);
+  color: var(--color-stone-950);
+}
+@media (hover: hover) and (pointer: fine) {
+  .dark .btn-primary:hover { background-color: var(--color-orange-300); }
+}
+.dark .btn-primary:focus-visible { outline-color: var(--color-orange-400); }
+
+/* Skill rows answer the pointer without looking like buttons */
+.skill-kw { transition: color var(--t-hover) ease; }
+@media (hover: hover) and (pointer: fine) {
+  .skill-row:hover .skill-kw { color: var(--color-stone-900); }
+  .dark .skill-row:hover .skill-kw { color: var(--color-stone-100); }
+}
+
+/* --- Motion layer ------------------------------------------------------- */
+/* Hidden states apply only once JS has marked the document (html.js);
+   every animation lives under prefers-reduced-motion: no-preference so
+   reduced-motion users and no-JS visitors get the finished static page. */
+
+/* Signature move: the name rises from behind its own baseline */
+@keyframes line-up {
+  to { transform: none; }
+}
+@keyframes rise {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js .line-mask > span {
+    transform: translateY(110%);
+    animation: line-up 900ms var(--ease-out) forwards;
+    animation-delay: 100ms;
+  }
+  .js [data-rise] {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: rise 800ms var(--ease-out) forwards;
+    animation-delay: calc(var(--i, 0) * 90ms + 150ms);
+  }
+
+  /* Section entrances: heading first, then entries, 80ms apart, rising 24px */
+  .js [data-reveal-group] .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out);
+    transition-delay: calc(var(--i, 0) * 80ms);
+  }
+  .js [data-reveal-group].is-in .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /* Markdown dark mode overrides (targets set:html rendered content) */
 .dark .md-body strong { color: var(--color-orange-400); }
@@ -44,13 +127,9 @@
     color: #000 !important;
   }
 
-  /* Strip card chrome */
-  .sm\:rounded-xl,
-  .sm\:shadow-xl,
-  .dark\:ring-1 {
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    border: none !important;
+  .container {
+    max-width: none !important;
+    padding: 0 !important;
   }
 
   /* Force light rendering even if dark mode is active */
@@ -64,9 +143,18 @@
     border-color: #ccc !important;
   }
 
-  /* Keep sections and items intact across pages */
-  section,
-  .mb-5 {
+  /* Never print a half-revealed page: end states pinned */
+  .reveal,
+  .line-mask > span,
+  [data-rise] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Keep entries intact across pages */
+  .entry {
     break-inside: avoid;
   }
   h1, h2, h3 {

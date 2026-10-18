@@ -1,5 +1,5 @@
 {
-  "work": "Work Experience",
+  "work": "Work experience",
   "projects": "Projects",
   "skills": "Skills",
   "education": "Education",
@@ -7,8 +7,6 @@
   "footer.lastUpdate": "Last update:",
   "footer.forkText": "You can fork the code on",
   "footer.or": "or on",
-  "footer.thanks": "Thanks to",
-  "footer.inspiration": "for the inspiration!",
   "theme.toggle": "Toggle color theme",
   "a11y.skipToContent": "Skip to main content",
   "nav.languageAndTheme": "Language and theme"

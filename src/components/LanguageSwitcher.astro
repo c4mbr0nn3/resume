@@ -5,32 +5,34 @@ const { currentLocale, t } = Astro.props
 ---
 
 <nav
+  data-rise
+  style="--i:0"
   aria-label={t['nav.languageAndTheme']}
-  class="absolute right-4 top-4 flex items-center gap-1 text-xs text-stone-600 print:hidden dark:text-stone-400"
+  class="absolute right-5 top-5 flex items-center gap-1.5 text-sm text-stone-600 print:hidden dark:text-stone-400"
 >
   <button
     id="theme-toggle"
     data-state="light"
     aria-label={t['theme.toggle']}
     aria-pressed="false"
-    class="h-6 w-6 cursor-pointer p-1 transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400"
+    class="h-7 w-7 cursor-pointer p-1 transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400"
   >
     <span data-for="light"><Icon name="carbon:sun" /></span>
     <span data-for="dark"><Icon name="carbon:moon" /></span>
   </button>
   <span class="select-none text-stone-400 dark:text-stone-600" aria-hidden="true">|</span>
-  <Icon name="carbon:translate" class="h-4 w-4" aria-hidden="true" />
+    <Icon name="carbon:translate" class="h-5 w-5" aria-hidden="true" />
   <a
     href="/"
     data-locale="en"
-    class={`inline-flex min-h-6 min-w-6 items-center justify-center px-1 ${currentLocale === 'en' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
+    class={`inline-flex min-h-7 min-w-7 items-center justify-center px-1 ${currentLocale === 'en' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
     aria-current={currentLocale === 'en' ? 'page' : undefined}
   >EN</a>
   <span aria-hidden="true">/</span>
   <a
     href="/it/"
     data-locale="it"
-    class={`inline-flex min-h-6 min-w-6 items-center justify-center px-1 ${currentLocale === 'it' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
+    class={`inline-flex min-h-7 min-w-7 items-center justify-center px-1 ${currentLocale === 'it' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
     aria-current={currentLocale === 'it' ? 'page' : undefined}
   >IT</a>
 </nav>

@@ -13,7 +13,7 @@ const { href, label } = Astro.props
     rel="noopener noreferrer"
   >
     <span>{label}</span>
-    <Icon name="carbon:launch" class="w-3.5 h-3.5 print:hidden" />
+    <Icon name="carbon:launch" class="w-3.5 h-3.5 print:hidden" aria-hidden="true" />
   </a>
 )
 : (

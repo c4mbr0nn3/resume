@@ -7,27 +7,33 @@ import WorkHighlight from './WorkHighlight.astro'
 const { work, t } = Astro.props
 ---
 
-<section>
+<section data-reveal-group>
   <Title title={t.work} />
-  {work.map((item: any) => (
-    <div class="mb-5">
-      <div class="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-        <h3 class="text-lg font-semibold text-balance">
-          <ExternalLink href={item.url} label={item.name} />
-        </h3>
-        <p class="text-sm font-mono text-stone-600 dark:text-stone-400">
-          {item.startDate} - {item.endDate}
-        </p>
-      </div>
-      <p class="text-sm font-serif text-stone-500 dark:text-stone-400 font-medium">{item.position}</p>
-      <div class="mb-2 mt-1">
-        <Markdown content={item.summary} />
-      </div>
-      <ul class="flex flex-col gap-1">
-        {item.highlights.map((content: string) => (
-          <WorkHighlight content={content} />
-        ))}
-      </ul>
-    </div>
-  ))}
+  <div data-reveal-list class="flex flex-col gap-8 lg:gap-10">
+    {work.map((item: any) => (
+      <article class="entry grid break-inside-avoid gap-1 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-x-10 sm:gap-y-0">
+        <div class="flex flex-col gap-1 sm:pt-1">
+          <p class="text-sm tabular-nums text-stone-600 dark:text-stone-400">
+            {item.startDate} - {item.endDate}
+          </p>
+          <p class="text-sm font-medium">
+            <ExternalLink href={item.url} label={item.name} />
+          </p>
+        </div>
+        <div class="max-w-[65ch]">
+          <h3 class="font-serif text-xl font-semibold text-balance text-stone-900 dark:text-stone-100">
+            {item.position}
+          </h3>
+          <div class="mt-2">
+            <Markdown content={item.summary} />
+          </div>
+          <ul class="mt-3 flex flex-col gap-1.5">
+            {item.highlights.map((content: string) => (
+              <WorkHighlight content={content} />
+            ))}
+          </ul>
+        </div>
+      </article>
+    ))}
+  </div>
 </section>

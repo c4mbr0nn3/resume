@@ -5,19 +5,21 @@ import Title from './Title.astro'
 const { education, t } = Astro.props
 ---
 
-<section>
+<section data-reveal-group>
   <Title title={t.education} />
-  {education.map((item: any) => (
-    <div class="mb-5">
-      <div class="flex flex-col gap-1">
-        <h3 class="text-lg font-semibold text-balance">
-          <ExternalLink href={item.url} label={item.institution} />
-        </h3>
-        <p class="text-sm font-mono text-stone-600 dark:text-stone-400">
-          {item.startDate} - {item.endDate}
-        </p>
-      </div>
-      <p class="font-light text-stone-600 dark:text-stone-400">{item.studyType} in {item.area}</p>
-    </div>
-  ))}
+  <div data-reveal-list class="flex flex-col gap-6">
+    {education.map((item: any) => (
+      <article class="entry break-inside-avoid grid gap-1">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <h3 class="text-base font-semibold text-balance">
+            <ExternalLink href={item.url} label={item.institution} />
+          </h3>
+          <p class="text-sm tabular-nums text-stone-600 dark:text-stone-400">
+            {item.startDate} - {item.endDate}
+          </p>
+        </div>
+        <p class="font-light text-stone-600 dark:text-stone-400">{item.studyType} in {item.area}</p>
+      </article>
+    ))}
+  </div>
 </section>

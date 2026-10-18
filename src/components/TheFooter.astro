@@ -5,7 +5,7 @@ const { t, currentLocale } = Astro.props
 const buildDate = new Date().toLocaleDateString(currentLocale === 'it' ? 'it-IT' : 'en-GB', { month: 'long', year: 'numeric' }).replace(/^\w/, c => c.toUpperCase())
 ---
 
-<footer class="text-center text-stone-500 dark:text-stone-400 font-light py-10 sm:pb-10 print:hidden">
+<footer data-reveal-group class="pb-6 pt-4 text-center font-normal text-stone-600 dark:text-stone-400 print:hidden">
   <div class="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
     <p>{t['footer.lastUpdate']} {buildDate}</p>
     <span class="hidden sm:block" aria-hidden="true">-</span>
@@ -31,17 +31,5 @@ const buildDate = new Date().toLocaleDateString(currentLocale === 'it' ? 'it-IT'
         <Icon name="simple-icons:github" />
       </a>
     </p>
-  </div>
-  <div class="text-xs mt-3 sm:mt-2">
-    {t['footer.thanks']}&nbsp;
-    <a
-      href="https://nathanfriend.io"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-orange-700 underline hover:text-orange-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
-    >
-      Nathan Friend&nbsp;
-    </a>
-    {t['footer.inspiration']}
   </div>
 </footer>

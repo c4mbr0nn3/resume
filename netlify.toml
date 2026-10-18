@@ -1,3 +1,12 @@
 [build]
 command = "pnpm build"
 publish = "dist"
+
+# Netlify only auto-serves the root 404.html. This rewrite gives unmatched
+# /it/* URLs the Italian 404 page while keeping the requested URL and a 404
+# status. Existing /it/ files keep winning (no force = true). Astro emits
+# the Italian page at /it/404/index.html.
+[[redirects]]
+from = "/it/*"
+to = "/it/404/index.html"
+status = 404

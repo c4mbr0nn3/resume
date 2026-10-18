@@ -48,3 +48,6 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
+# local design inspection artifacts
+.taste-skill/
+

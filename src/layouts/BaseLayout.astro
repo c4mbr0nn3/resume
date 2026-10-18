@@ -52,7 +52,6 @@ const ogLocaleAlternate = lang === 'it' ? 'en_US' : 'it_IT'
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <Font cssVariable="--font-work-sans" />
     <Font cssVariable="--font-spectral" />
-    <Font cssVariable="--font-source-code-pro" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script defer src="https://analytics.zorygo.ovh/js/pa-rZeXMBjHeyBgH948AJs7u.js"></script>
     <script is:inline>
@@ -61,7 +60,8 @@ const ogLocaleAlternate = lang === 'it' ? 'en_US' : 'it_IT'
       plausible.init()
     </script>
     <script is:inline>
-      (function () {
+      document.documentElement.classList.add('js')
+      ;(function () {
         var m = document.cookie.match(/(?:^|; )theme=([^;]*)/)
         var theme = m ? decodeURIComponent(m[1]) : null
         if (!theme) {
@@ -74,16 +74,62 @@ const ogLocaleAlternate = lang === 'it' ? 'en_US' : 'it_IT'
       })()
     </script>
   </head>
-  <body class="bg-stone-100 dark:bg-stone-950">
+  <body class="bg-white text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100 print:bg-white">
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-orange-700 focus:outline-2 focus:outline-orange-700 dark:focus:bg-stone-900 dark:focus:text-orange-400"
     >
       {t['a11y.skipToContent']}
     </a>
-    <div class="container sm:p-10 lg:p-20">
+    <div class="container px-5 pb-12 pt-6 sm:px-10 sm:pb-16 sm:pt-10 lg:px-14">
       <slot />
     </div>
     <slot name="body-scripts" />
   </body>
 </html>
+
+<script>
+  // Section entrances: mark elements as staggered reveal items and trigger
+  // the group once when it enters the viewport. Items are the group's direct
+  // children, except children carrying data-reveal-list, whose element
+  // children are the items (heading first, then entries). Children are only
+  // hidden by CSS after this script has tagged them, so no-JS visitors
+  // (and browsers without IntersectionObserver) see everything immediately.
+  const groups = document.querySelectorAll<HTMLElement>('[data-reveal-group]')
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in')
+            io.unobserve(entry.target)
+          }
+        }
+      },
+      { rootMargin: '0px 0px -12% 0px', threshold: 0.1 },
+    )
+
+    for (const group of groups) {
+      // A child carrying data-reveal-list is a wrapper, not an item:
+      // its element children become the reveal items, numbered in
+      // order after the heading (the group's first direct children).
+      const items: HTMLElement[] = []
+      for (const child of Array.from(group.children)) {
+        const el = child as HTMLElement
+        if (child.hasAttribute('data-reveal-list')) {
+          for (const item of Array.from(child.children)) {
+            items.push(item as HTMLElement)
+          }
+        } else {
+          items.push(el)
+        }
+      }
+      items.forEach((el, i) => {
+        el.classList.add('reveal')
+        el.style.setProperty('--i', String(i))
+      })
+      io.observe(group)
+    }
+  }
+</script>

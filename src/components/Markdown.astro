@@ -1,25 +1,28 @@
 ---
 import { renderMarkdown } from '../lib/markdown.js'
 
-const { content } = Astro.props
+const { content, class: className } = Astro.props
 const html = renderMarkdown(content)
 ---
 
-<div class="md-body font-light text-stone-600 dark:text-stone-300 leading-relaxed text-pretty" set:html={html} />
+<div
+  class:list={['md-body text-pretty', className ?? 'max-w-[65ch] text-[17px] font-normal leading-[1.6] text-stone-700 dark:text-stone-300']}
+  set:html={html}
+/>
 
 <style>
   .md-body :global(a) {
-    color: var(--color-orange-600);
+    color: var(--color-orange-700);
     text-decoration: underline;
     transition: color 0.2s;
   }
 
   .md-body :global(a:hover) {
-    color: var(--color-orange-700);
+    color: var(--color-orange-800);
   }
 
   .md-body :global(strong) {
-    color: var(--color-orange-600);
+    color: var(--color-orange-700);
   }
 
   .md-body :global(em) {

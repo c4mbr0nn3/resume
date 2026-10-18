@@ -1,0 +1,38 @@
+---
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro'
+import TheFooter from '../../components/TheFooter.astro'
+import { useTranslations } from '../../i18n/utils'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+const t = useTranslations('it')
+const title = 'Pagina non trovata | Francesco Zorzi'
+const description = 'La pagina che stai cercando non esiste.'
+---
+
+<BaseLayout title={title} description={description} lang="it" noindex={true} t={t}>
+  <main
+    id="main"
+    class="relative flex min-h-[68vh] flex-col items-start justify-center gap-4 text-stone-900 dark:text-stone-100"
+  >
+    <LanguageSwitcher currentLocale="it" t={t} />
+    <h1 class="pt-10 font-serif font-bold tracking-[-0.03em] text-stone-900 dark:text-stone-50">
+      <span class="block text-[clamp(4.5rem,12vw,10rem)] leading-[0.95]">
+        <span class="line-mask -mb-[0.09em] block overflow-hidden pb-[0.09em]"><span class="block">404</span></span>
+      </span>
+      <span class="block pt-2 text-4xl sm:text-5xl">
+        <span class="line-mask -mb-[0.09em] block overflow-hidden pb-[0.09em]"><span class="block">Pagina non trovata</span></span>
+      </span>
+    </h1>
+    <p data-rise style="--i:2" class="max-w-[60ch] text-lg text-stone-600 dark:text-stone-300">
+      La pagina che stai cercando non esiste o è stata spostata.
+    </p>
+    <nav data-reveal-group class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-3" aria-label="Torna al curriculum">
+      <a href="/it/" class="btn-primary">Curriculum (IT)</a>
+      <a
+        href="/"
+        class="inline-flex min-h-11 items-center text-orange-700 underline decoration-orange-700/40 underline-offset-4 transition-[color,text-decoration-color] duration-200 hover:text-orange-800 hover:decoration-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:decoration-orange-400/40 dark:hover:text-orange-300 dark:hover:decoration-orange-400 dark:focus-visible:outline-orange-400"
+      >Resume (EN)</a>
+    </nav>
+  </main>
+  <TheFooter t={t} currentLocale="it" />
+</BaseLayout>
