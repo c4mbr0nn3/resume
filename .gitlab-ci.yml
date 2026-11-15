@@ -1,5 +1,3 @@
-# Copy into the site repo as `.gitlab-ci.yml`.
-#
 # Builds the image from ./Dockerfile with buildah and pushes two tags to this
 # project's own registry: the immutable commit SHA (rollback handle) and
 # `latest`. CI_REGISTRY_IMAGE already resolves to

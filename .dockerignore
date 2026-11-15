@@ -1,5 +1,3 @@
-# Copy into the site repo as `.dockerignore`.
-#
 # Keeps the build context small, and keeps the local node_modules out of the
 # image so it cannot shadow the pnpm install inside the build stage.
 **/node_modules

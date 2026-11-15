@@ -1,5 +1,3 @@
-# Copy into the site repo as `Dockerfile`.
-#
 # The image is only the built static site on top of the stock Caddy image.
 # The server config is NOT baked in: this stack mounts Caddyfile.<site-a> /
 # Caddyfile.<site-b> at runtime, so header and redirect changes do not need a
