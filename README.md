@@ -1,6 +1,6 @@
 # Astro Resume
 
-This is my personal resume built with Astro and Tailwind CSS. It is hosted on Netlify and can be viewed [here](https://resume.francescozorzi.me/).
+This is my personal resume built with Astro and Tailwind CSS. It is built into a Caddy Docker image by `.gitlab-ci.yml` and can be viewed [here](https://resume.francescozorzi.me/).
 
 If you would like to use this as a template for your own resume, feel free to fork this repository and customize it to your liking.
 
@@ -26,7 +26,7 @@ You can find the JSON Resume schema [here](https://jsonresume.org/schema/).
 5. Customize the resume data in `src/assets/resume.en.json`
 6. Run the development server with `pnpm dev`
 7. Build the project with `pnpm build`
-8. Deploy the project to Netlify or your preferred hosting service
+8. Deploy with the included `Dockerfile` (Caddy serving `dist/`) or use your preferred hosting service
 
 ## License
 

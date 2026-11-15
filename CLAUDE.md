@@ -4,7 +4,7 @@
 
 ## Architecture
 
-Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` via `@theme`), deployed to Netlify.
+Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` via `@theme inline`). Deployed as a Caddy image: `.gitlab-ci.yml` builds `Dockerfile` and pushes it to the GitLab registry; the VPS runs it with a runtime-mounted Caddyfile from the infra repo.
 
 **i18n:** `en` (default, no prefix) + `it` (`/it/`), configured in `astro.config.mjs`. UI strings: `src/i18n/{en,it}.json` via `src/i18n/utils.ts` → `useTranslations(locale)`. Language switching is manual via `LanguageSwitcher`: clicking EN/IT writes a `locale` cookie that nothing reads (no auto-redirect).
 
@@ -20,11 +20,11 @@ Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` v
 
 **Copy rules (content slop):** Every sentence names a thing, a number, or an owner — no stock phrases ("scalable solutions", "best practices", "closely collaborated"), no unquantified impact adverbs ("significantly", "drastically"), no vague objects ("various projects", "hands-on experience with..."). No em-dashes (`—`); en-dashes only for numeric ranges (`2–3`). **Bold discipline:** max 3 `**bold**` per text block, kept symmetrical across locales; never bold stack names/versions already listed in that entry's `highlights` chips; bold is for the metric, the scope, or the one distinctive item. EN and IT must tell the same story — same facts, same qualifiers.
 
-**CSS:** Single stylesheet `src/assets/css/main.css`; print rules force light A4/Letter output and pin reveal end-states. Dark mode via `dark` class on `<html>`: the `theme` cookie boots in `BaseLayout` (no-flash script) and toggles in `LanguageSwitcher`.
+**CSS:** Single stylesheet `src/assets/css/main.css`; print rules force light output at the printer's page size and pin reveal end-states. Dark mode via `dark` class on `<html>`: the `theme` cookie boots in `BaseLayout` (no-flash script) and toggles in `LanguageSwitcher`.
 
 **Motion:** Reveals are gated on `html.js`: sections carry `data-reveal-group`; items are direct children or `data-reveal-list` wrappers. First-load entrances use `.line-mask` (heading lines) and `data-rise` with `--i`. Keep content visible without JS and honor `prefers-reduced-motion`.
 
-**404:** root + `/it/404/`; `netlify.toml` rewrites unmatched `/it/*` to the Italian page with status 404 (Netlify only auto-serves the root 404).
+**404:** root + `/it/404/`; unmatched `/it/*` URLs return the Italian 404 page with status 404, via the Caddyfile mounted at runtime (infra repo). `netlify.toml` is legacy and excluded from the Docker image.
 
 ## Verify
 
