@@ -13,12 +13,13 @@
 stages:
   - build
 
+variables:
+  STORAGE_DRIVER: vfs
+  BUILDAH_ISOLATION: chroot
+  BUILDAH_FORMAT: docker
+
 default:
   image: quay.io/buildah/stable:v1.45.1-immutable
-  variables:
-    STORAGE_DRIVER: vfs
-    BUILDAH_ISOLATION: chroot
-    BUILDAH_FORMAT: docker
   before_script:
     - echo "$CI_JOB_TOKEN" | buildah login --username "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
 
