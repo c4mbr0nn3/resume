@@ -1,0 +1,38 @@
+# Copy into the site repo as `.gitlab-ci.yml`.
+#
+# Builds the image from ./Dockerfile with buildah and pushes two tags to this
+# project's own registry: the immutable commit SHA (rollback handle) and
+# `latest`. CI_REGISTRY_IMAGE already resolves to
+# registry.gitlab.com/<namespace>/<project>.
+#
+# No `services:` block and no privileged runner: buildah has no daemon. Shared
+# runners cannot mount overlay filesystems, so the build uses the vfs storage
+# driver and chroot isolation. That is slower than overlayfs but needs no
+# extra capabilities. Build time is a few minutes per pipeline.
+#
+# Deploying is a tag change on the VPS: see the infra repo's deploy notes.
+
+stages:
+  - build
+
+default:
+  image: quay.io/buildah/stable:v1.45.1-immutable
+  variables:
+    STORAGE_DRIVER: vfs
+    BUILDAH_ISOLATION: chroot
+    BUILDAH_FORMAT: docker
+  before_script:
+    - echo "$CI_JOB_TOKEN" | buildah login --username "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+
+build:
+  stage: build
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - >
+      buildah bud
+      --tag "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA"
+      --tag "$CI_REGISTRY_IMAGE:latest"
+      .
+    - buildah push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA"
+    - buildah push "$CI_REGISTRY_IMAGE:latest"
