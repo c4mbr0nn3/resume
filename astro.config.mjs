@@ -7,24 +7,72 @@ export default defineConfig({
   site: 'https://resume.francescozorzi.me',
   fonts: [
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.local(),
       name: 'Work Sans',
       cssVariable: '--font-work-sans',
-      weights: [300, 400, 500, 600],
-      styles: ['normal'],
-      subsets: ['latin'],
-      display: 'swap',
       fallbacks: ['sans-serif'],
+      options: {
+        variants: [
+          {
+            src: ['./src/assets/fonts/work-sans-latin-300-normal.woff2'],
+            weight: 300,
+            style: 'normal',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/work-sans-latin-400-normal.woff2'],
+            weight: 400,
+            style: 'normal',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/work-sans-latin-500-normal.woff2'],
+            weight: 500,
+            style: 'normal',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/work-sans-latin-600-normal.woff2'],
+            weight: 600,
+            style: 'normal',
+            display: 'swap',
+          },
+        ],
+      },
     },
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.local(),
       name: 'Spectral',
       cssVariable: '--font-spectral',
-      weights: [400, 700],
-      styles: ['normal', 'italic'],
-      subsets: ['latin'],
-      display: 'swap',
       fallbacks: ['serif'],
+      options: {
+        variants: [
+          {
+            src: ['./src/assets/fonts/spectral-latin-400-normal.woff2'],
+            weight: 400,
+            style: 'normal',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/spectral-latin-400-italic.woff2'],
+            weight: 400,
+            style: 'italic',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/spectral-latin-700-normal.woff2'],
+            weight: 700,
+            style: 'normal',
+            display: 'swap',
+          },
+          {
+            src: ['./src/assets/fonts/spectral-latin-700-italic.woff2'],
+            weight: 700,
+            style: 'italic',
+            display: 'swap',
+          },
+        ],
+      },
     },
   ],
   i18n: {
@@ -35,6 +83,7 @@ export default defineConfig({
   integrations: [
     icon(),
     sitemap({
+      filter: page => !page.includes('/pdf'),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en', it: 'it' },

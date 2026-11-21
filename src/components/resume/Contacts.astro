@@ -1,6 +1,11 @@
 ---
+import type { ResumeBasics } from '../../lib/resume'
 import { socialIcons } from '../../lib/icons.js'
 import Contact from '../badge/Contact.astro'
+
+interface Props {
+  basics: ResumeBasics
+}
 
 const { basics } = Astro.props
 const { email, url, profiles } = basics
@@ -20,7 +25,7 @@ const contacts = [
   ...(url
     ? [websiteLink]
     : []),
-  ...profiles.map((p: any) => ({
+  ...profiles.map(p => ({
     icon: socialIcons[p.network.toLowerCase() as keyof typeof socialIcons],
     to: p.url,
     label: p.username,

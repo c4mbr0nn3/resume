@@ -28,7 +28,7 @@ Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` v
 
 ## Verify
 
-No test suite. Before reporting done: `pnpm lint` clean and `pnpm build` succeeds; use the chrome-devtools MCP for runtime and visual checks.
+No test suite. Before reporting done: `pnpm lint`, `pnpm check` and `pnpm build` all clean; use the chrome-devtools MCP for runtime and visual checks. A local `docker build` now requires `pnpm pdf` first to produce `resume.pdf`, and `pnpm pdf:verify` checks page count, size and font subsetting (needs poppler).
 
 ## MCP Tools
 

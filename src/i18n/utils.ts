@@ -6,3 +6,5 @@ const translations = { en, it }
 export function useTranslations(locale: 'en' | 'it') {
   return translations[locale] ?? translations.en
 }
+
+export type Translations = ReturnType<typeof useTranslations>

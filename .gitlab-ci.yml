@@ -9,8 +9,14 @@
 # extra capabilities. Build time is a few minutes per pipeline.
 #
 # Deploying is a tag change on the VPS: see the infra repo's deploy notes.
+#
+# The pdf render lives in its own job, not inside `build`: Chromium would have
+# to be installed inside the buildah vfs build stage and, because --layers is
+# off, nothing would be cached between jobs anyway. A dedicated Playwright
+# image keeps the two toolchains apart and ships Chromium preinstalled.
 
 stages:
+  - pdf
   - build
 
 variables:
@@ -18,13 +24,64 @@ variables:
   BUILDAH_ISOLATION: chroot
   BUILDAH_FORMAT: docker
 
+# No global `default:` image: the pdf job runs in the Playwright image where
+# buildah does not exist, so each job declares its own. Only image-agnostic
+# defaults stay here.
+
 default:
-  image: quay.io/buildah/stable:v1.45.1-immutable
+  interruptible: true
+
+pdf:
+  stage: pdf
+  image: mcr.microsoft.com/playwright:v1.65.1-noble
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  variables:
+    HUSKY: '0'
   before_script:
-    - echo "$CI_JOB_TOKEN" | buildah login --username "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+    - npm i -g pnpm@11.11.0
+    # The image has no `sudo` and no USER directive, so it runs as root: plain
+    # apt works. If a future image switches user this fails loudly, which is
+    # what we want rather than a silently missing poppler.
+    - apt-get update && apt-get install -y --no-install-recommends poppler-utils
+    - pnpm config set store-dir .pnpm-store
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
+  script:
+    - pnpm install --frozen-lockfile
+    - pnpm build
+    - node scripts/render-pdf.mjs
+    - node scripts/verify-pdf.mjs
+  artifacts:
+    paths:
+      - resume.pdf
+    expire_in: 1 week
 
 build:
   stage: build
+  # Restore the buildah image: the global `default:` no longer carries it, and a
+  # job without `image:` falls back to the runner's default (ruby), where
+  # `buildah login` dies. Per-job `image:` always wins over `default:`, so this
+  # does not affect the pdf job.
+  image: quay.io/buildah/stable:v1.45.1-immutable
+  # A deterministic render failure must not be retried; only infrastructure
+  # flakiness is worth a second attempt.
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  # The build context must already contain resume.pdf, produced by the pdf job
+  # and downloaded into $CI_PROJECT_DIR as an artifact.
+  needs:
+    - job: pdf
+      artifacts: true
+  before_script:
+    - echo "$CI_JOB_TOKEN" | buildah login --username "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:

@@ -1,5 +1,12 @@
 ---
+import type { Translations } from '../../../i18n/utils'
+import type { ResumeLanguage } from '../../../lib/resume'
 import Title from './Title.astro'
+
+interface Props {
+  languages: ResumeLanguage[]
+  t: Translations
+}
 
 const { languages, t } = Astro.props
 ---
@@ -7,10 +14,10 @@ const { languages, t } = Astro.props
 <section data-reveal-group>
   <Title title={t.languages} />
   <dl data-reveal-list class="flex flex-col gap-2">
-    {languages.map((item: any) => (
+    {languages.map(item => (
       <div class="entry flex flex-wrap items-baseline gap-2">
         <dt class="text-lg font-medium text-stone-900 dark:text-stone-100">{item.language}</dt>
-        <dd class="text-stone-600 dark:text-stone-400 font-light">— {item.fluency}</dd>
+        <dd class="text-stone-600 dark:text-stone-400 font-light"><span aria-hidden="true">·</span> {item.fluency}</dd>
       </div>
     ))}
   </dl>

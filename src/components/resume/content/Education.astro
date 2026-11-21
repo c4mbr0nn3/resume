@@ -1,6 +1,13 @@
 ---
+import type { Translations } from '../../../i18n/utils'
+import type { ResumeEducation } from '../../../lib/resume'
 import ExternalLink from '../../ExternalLink.astro'
 import Title from './Title.astro'
+
+interface Props {
+  education: ResumeEducation[]
+  t: Translations
+}
 
 const { education, t } = Astro.props
 ---
@@ -8,7 +15,7 @@ const { education, t } = Astro.props
 <section data-reveal-group>
   <Title title={t.education} />
   <div data-reveal-list class="flex flex-col gap-6">
-    {education.map((item: any) => (
+    {education.map(item => (
       <article class="entry break-inside-avoid grid gap-1">
         <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
           <h3 class="text-base font-semibold text-balance">

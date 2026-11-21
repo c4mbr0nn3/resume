@@ -25,6 +25,8 @@ logs
 
 # build output
 dist/
+/resume.pdf
+/.pnpm-store
 
 # generated types
 .astro/

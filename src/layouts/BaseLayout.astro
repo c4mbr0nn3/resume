@@ -56,24 +56,32 @@ const ogLocaleAlternate = isIt ? 'en_US' : 'it_IT'
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script defer src="https://analytics.francescozorzi.me/js/pa-rZeXMBjHeyBgH948AJs7u.js"></script>
     <script is:inline>
-      window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }
-      plausible.init = plausible.init || function (i) { plausible.o = i || {} }
+      window.plausible = window.plausible || function (...args) {
+        (plausible.q = plausible.q || []).push(args)
+      }
+      plausible.init = plausible.init || function (i) {
+        plausible.o = i || {}
+      }
       plausible.init()
     </script>
     <script is:inline>
-      document.documentElement.classList.add('js')
-      ;(function () {
-        var m = document.cookie.match(/(?:^|; )theme=([^;]*)/)
-        var theme = m ? decodeURIComponent(m[1]) : null
-        if (!theme) {
-          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-          document.cookie = 'theme=' + theme + '; max-age=31536000; path=/; SameSite=Lax; Secure'
-        }
-        if (theme === 'dark') {
-          document.documentElement.classList.add('dark')
-        }
-      })()
-    </script>
+document.documentElement.classList.add('js')
+;(function () {
+  const m = document.cookie.match(/(?:^|; )theme=([^;]*)/)
+  let theme = m
+    ? decodeURIComponent(m[1])
+    : null
+  if (!theme) {
+    theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
+    document.cookie = `theme=${theme}; max-age=31536000; path=/; SameSite=Lax; Secure`
+  }
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark')
+  }
+})()
+</script>
   </head>
   <body class="bg-white text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100 print:bg-white">
     <a
@@ -90,47 +98,48 @@ const ogLocaleAlternate = isIt ? 'en_US' : 'it_IT'
 </html>
 
 <script>
-  // Section entrances: mark elements as staggered reveal items and trigger
-  // the group once when it enters the viewport. Items are the group's direct
-  // children, except children carrying data-reveal-list, whose element
-  // children are the items (heading first, then entries). Children are only
-  // hidden by CSS after this script has tagged them, so no-JS visitors
-  // (and browsers without IntersectionObserver) see everything immediately.
-  const groups = document.querySelectorAll<HTMLElement>('[data-reveal-group]')
+ // Section entrances: mark elements as staggered reveal items and trigger
+ // the group once when it enters the viewport. Items are the group's direct
+ // children, except children carrying data-reveal-list, whose element
+ // children are the items (heading first, then entries). Children are only
+ // hidden by CSS after this script has tagged them, so no-JS visitors
+ // (and browsers without IntersectionObserver) see everything immediately.
+ const groups = document.querySelectorAll<HTMLElement>('[data-reveal-group]')
 
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-in')
-            io.unobserve(entry.target)
-          }
-        }
-      },
-      { rootMargin: '0px 0px -12% 0px', threshold: 0.1 },
-    )
+ if ('IntersectionObserver' in window) {
+   const io = new IntersectionObserver(
+     (entries) => {
+       for (const entry of entries) {
+         if (entry.isIntersecting) {
+           entry.target.classList.add('is-in')
+           io.unobserve(entry.target)
+         }
+       }
+     },
+     { rootMargin: '0px 0px -12% 0px', threshold: 0.1 },
+   )
 
-    for (const group of groups) {
-      // A child carrying data-reveal-list is a wrapper, not an item:
-      // its element children become the reveal items, numbered in
-      // order after the heading (the group's first direct children).
-      const items: HTMLElement[] = []
-      for (const child of Array.from(group.children)) {
-        const el = child as HTMLElement
-        if (child.hasAttribute('data-reveal-list')) {
-          for (const item of Array.from(child.children)) {
-            items.push(item as HTMLElement)
-          }
-        } else {
-          items.push(el)
-        }
-      }
-      items.forEach((el, i) => {
-        el.classList.add('reveal')
-        el.style.setProperty('--i', String(i))
-      })
-      io.observe(group)
-    }
-  }
+   for (const group of groups) {
+     // A child carrying data-reveal-list is a wrapper, not an item:
+     // its element children become the reveal items, numbered in
+     // order after the heading (the group's first direct children).
+     const items: HTMLElement[] = []
+     for (const child of Array.from(group.children)) {
+       const el = child as HTMLElement
+       if (child.hasAttribute('data-reveal-list')) {
+         for (const item of Array.from(child.children)) {
+           items.push(item as HTMLElement)
+         }
+       }
+       else {
+         items.push(el)
+       }
+     }
+     items.forEach((el, i) => {
+       el.classList.add('reveal')
+       el.style.setProperty('--i', String(i))
+     })
+     io.observe(group)
+   }
+ }
 </script>

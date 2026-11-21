@@ -8,7 +8,7 @@
 # error ("short-name resolution enforced").
 #
 # j1mm0/resume builds with pnpm and allowlists esbuild/sharp in
-# pnpm-workspace.yaml, so use pnpm 10+. Adjust the install/build lines if the
+# pnpm-workspace.yaml, so use pnpm 11+. Adjust the install/build lines if the
 # other site uses npm. HUSKY=0 keeps the `prepare` script from failing when
 # .git is not in the build context.
 
@@ -16,11 +16,20 @@
 FROM docker.io/library/node:24-alpine AS build
 WORKDIR /app
 ENV HUSKY=0
-RUN npm install -g pnpm@10
+RUN npm install -g pnpm@11.11.0
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
-RUN pnpm build
+# Fail loudly on a stale PDF: in CI the artifact is downloaded after the clone,
+# so it is newer than src/; a local build that skipped `pnpm pdf` is not.
+RUN test -s resume.pdf \
+  && test -z "$(find src -newer resume.pdf | head -n1)" \
+  || { echo "resume.pdf is missing or older than src/; run 'pnpm pdf' first" >&2; exit 1; }
+# The /pdf/ route exists only to feed the CI render job and must not ship.
+RUN pnpm build && rm -rf dist/pdf
 
 FROM docker.io/library/caddy:2-alpine
 COPY --from=build /app/dist /srv
+# resume.pdf is supplied by the CI artifact from the `pdf` job; a local build
+# requires `pnpm pdf` first so the file exists in the build context.
+COPY resume.pdf /srv/resume.pdf
