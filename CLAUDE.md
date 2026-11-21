@@ -24,7 +24,7 @@ Astro + Tailwind CSS v4 (Vite plugin; theme lives in `src/assets/css/main.css` v
 
 **Motion:** Reveals are gated on `html.js`: sections carry `data-reveal-group`; items are direct children or `data-reveal-list` wrappers. First-load entrances use `.line-mask` (heading lines) and `data-rise` with `--i`. Keep content visible without JS and honor `prefers-reduced-motion`.
 
-**404:** root + `/it/404/`; unmatched `/it/*` URLs return the Italian 404 page with status 404, via the Caddyfile mounted at runtime (infra repo). `netlify.toml` is legacy and excluded from the Docker image.
+**404:** root + `/it/404/`; unmatched `/it/*` URLs return the Italian 404 page with status 404, via the Caddyfile mounted at runtime (infra repo).
 
 ## Verify
 

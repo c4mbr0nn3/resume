@@ -6,6 +6,4 @@
 .gitlab-ci.yml
 .astro
 dist
-netlify.toml
-public/_headers
 *.md
