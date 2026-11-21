@@ -1,12 +1,6 @@
-interface ResumeData {
-  basics: any
-  work?: any[]
-  education?: any[]
-  skills?: any[]
-  languages?: any[]
-}
+import type { Resume } from './resume'
 
-export function buildPersonSchema(resume: ResumeData, locale: 'en' | 'it') {
+export function buildPersonSchema(resume: Resume, locale: 'en' | 'it') {
   const { basics, work = [], education = [], skills = [], languages = [] } = resume
   const site = 'https://resume.francescozorzi.me'
   const url = locale === 'it'
@@ -32,31 +26,31 @@ export function buildPersonSchema(resume: ResumeData, locale: 'en' | 'it') {
           },
         }
       : {}),
-    ...(basics.profiles?.length
+    ...(basics.profiles.length
       ? {
-          sameAs: basics.profiles.map((p: any) => p.url),
+          sameAs: basics.profiles.map(p => p.url),
         }
       : {}),
     ...(skills.length
       ? {
           knowsAbout: [
-            ...new Set(skills.flatMap((s: any) => s.keywords ?? [])),
+            ...new Set(skills.flatMap(s => s.keywords)),
           ].slice(0, 40),
         }
       : {}),
     ...(languages.length
       ? {
-          knowsLanguage: languages.map((l: any) => l.language),
+          knowsLanguage: languages.map(l => l.language),
         }
       : {}),
     ...(education.length
       ? {
-          alumniOf: education.map((e: any) => ({ '@type': 'EducationalOrganization', 'name': e.institution })),
+          alumniOf: education.map(e => ({ '@type': 'EducationalOrganization', 'name': e.institution })),
         }
       : {}),
     ...(work.length
       ? {
-          worksFor: work.filter((w: any) => !w.endDate || w.endDate === 'Present').map((w: any) => ({ '@type': 'Organization', 'name': w.name })),
+          worksFor: work.filter(w => !w.endDate || w.endDate === 'Present').map(w => ({ '@type': 'Organization', 'name': w.name })),
         }
       : {}),
   }
