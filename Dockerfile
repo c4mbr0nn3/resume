@@ -20,11 +20,10 @@ RUN npm install -g pnpm@11.11.0
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
-# Fail loudly on a stale PDF: in CI the artifact is downloaded after the clone,
-# so it is newer than src/; a local build that skipped `pnpm pdf` is not.
-RUN test -s resume.pdf \
-  && test -z "$(find src -newer resume.pdf | head -n1)" \
-  || { echo "resume.pdf is missing or older than src/; run 'pnpm pdf' first" >&2; exit 1; }
+# resume.pdf comes from the `pdf` job's artifact; a local build needs `pnpm pdf`
+# first. Do not compare mtimes: artifact extraction keeps the file's original
+# timestamp, which is always older than the git checkout in CI.
+RUN test -s resume.pdf || { echo "resume.pdf is missing; run 'pnpm pdf' before docker build" >&2; exit 1; }
 # The /pdf/ route exists only to feed the CI render job and must not ship.
 RUN pnpm build && rm -rf dist/pdf
 
