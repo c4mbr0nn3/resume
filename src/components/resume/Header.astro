@@ -1,13 +1,22 @@
 ---
+import type { Translations } from '../../i18n/utils'
+import type { ResumeBasics } from '../../lib/resume'
+import { Icon } from 'astro-icon/components'
 import Contacts from './Contacts.astro'
 
-const { basics } = Astro.props
+interface Props {
+  basics: ResumeBasics
+  t: Translations
+}
+
+const { basics, t } = Astro.props
 const name = basics.name
 const labelParts = basics.label.split('|').map((s: string) => s.trim())
 const location = `${basics.location.city}, ${basics.location.region}`
 ---
 
-<header>
+{/* Header's bottom boundary is deliberately tighter than the section gap: it is an identity block, not a content section (print:mb-0 keeps the PDF's pinned rhythm). */}
+<header class="-mb-8 lg:-mb-16 print:mb-0">
   <h1 class="font-serif text-[clamp(2.75rem,8vw,6.75rem)] font-bold leading-[1.02] tracking-[-0.03em] text-stone-900 dark:text-stone-50">
     <span class="line-mask -mb-[0.09em] block overflow-hidden pb-[0.09em]">
       <span class="block">{name}</span>
@@ -20,5 +29,16 @@ const location = `${basics.location.city}, ${basics.location.region}`
   </p>
   <div data-rise style="--i:3">
     <Contacts basics={basics} />
+  </div>
+  <div data-rise style="--i:4" class="print:hidden">
+    <a
+      href="/resume.pdf"
+      download
+      type="application/pdf"
+      class="mt-2 -mb-2 py-2 inline-flex w-fit items-center gap-2 text-sm text-orange-700 transition-colors hover:text-orange-800 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:text-orange-400 dark:hover:text-orange-300 dark:focus-visible:outline-orange-400"
+    >
+      <Icon name="carbon:download" class="h-4 w-4" aria-hidden="true" />
+      <span class="font-light">{t['cv.download']}</span>
+    </a>
   </div>
 </header>
