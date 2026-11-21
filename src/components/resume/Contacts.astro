@@ -13,9 +13,13 @@ catch {
   // fall back to raw url string if malformed/missing
 }
 
+const websiteLink = { icon: 'carbon:link', to: url, label: hostname }
+
 const contacts = [
   { icon: 'carbon:at', to: `mailto:${email}`, label: email },
-  ...(url ? [{ icon: 'carbon:link', to: url, label: hostname }] : []),
+  ...(url
+    ? [websiteLink]
+    : []),
   ...profiles.map((p: any) => ({
     icon: socialIcons[p.network.toLowerCase() as keyof typeof socialIcons],
     to: p.url,

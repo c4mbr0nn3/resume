@@ -4,6 +4,12 @@ import Markdown from '../../Markdown.astro'
 import Title from './Title.astro'
 
 const { projects, t } = Astro.props
+
+function formatDateRange(start: string, end?: string) {
+  if (end && end !== start)
+    return `${start} - ${end}`
+  return start
+}
 ---
 
 <section data-reveal-group>
@@ -16,7 +22,7 @@ const { projects, t } = Astro.props
             <ExternalLink href={item.url} label={item.name} />
           </h3>
           <p class="text-sm tabular-nums text-stone-600 dark:text-stone-400">
-            {item.endDate && item.endDate !== item.startDate ? `${item.startDate} - ${item.endDate}` : item.startDate}
+            {formatDateRange(item.startDate, item.endDate)}
           </p>
         </div>
         <Markdown content={item.description} />

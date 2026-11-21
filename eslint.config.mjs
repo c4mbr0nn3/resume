@@ -1,3 +1,7 @@
 import antfu from '@antfu/eslint-config'
 
-export default antfu({ astro: true, vue: false, ignores: ['.taste-skill/**'] })
+export default antfu({
+  astro: true,
+  vue: false,
+  ignores: ['.taste-skill/**'],
+})

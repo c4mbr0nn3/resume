@@ -2,6 +2,12 @@
 import { Icon } from 'astro-icon/components'
 
 const { currentLocale, t } = Astro.props
+
+const isEn = currentLocale === 'en'
+const isIt = currentLocale === 'it'
+const linkClass = 'inline-flex min-h-7 min-w-7 items-center justify-center px-1'
+const activeClass = 'font-medium text-orange-700 dark:text-orange-400'
+const idleClass = 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'
 ---
 
 <nav
@@ -25,15 +31,15 @@ const { currentLocale, t } = Astro.props
   <a
     href="/"
     data-locale="en"
-    class={`inline-flex min-h-7 min-w-7 items-center justify-center px-1 ${currentLocale === 'en' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
-    aria-current={currentLocale === 'en' ? 'page' : undefined}
+    class={`${linkClass} ${isEn ? activeClass : idleClass}`}
+    aria-current={isEn ? 'page' : undefined}
   >EN</a>
   <span aria-hidden="true">/</span>
   <a
     href="/it/"
     data-locale="it"
-    class={`inline-flex min-h-7 min-w-7 items-center justify-center px-1 ${currentLocale === 'it' ? 'font-medium text-orange-700 dark:text-orange-400' : 'transition-colors hover:text-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700 dark:hover:text-stone-200 dark:focus-visible:outline-orange-400'}`}
-    aria-current={currentLocale === 'it' ? 'page' : undefined}
+    class={`${linkClass} ${isIt ? activeClass : idleClass}`}
+    aria-current={isIt ? 'page' : undefined}
   >IT</a>
 </nav>
 

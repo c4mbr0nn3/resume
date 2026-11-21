@@ -2,7 +2,8 @@
 import { Icon } from 'astro-icon/components'
 
 const { t, currentLocale } = Astro.props
-const buildDate = new Date().toLocaleDateString(currentLocale === 'it' ? 'it-IT' : 'en-GB', { month: 'long', year: 'numeric' }).replace(/^\w/, c => c.toUpperCase())
+const isIt = currentLocale === 'it'
+const buildDate = new Date().toLocaleDateString(isIt ? 'it-IT' : 'en-GB', { month: 'long', year: 'numeric' }).replace(/^\w/, c => c.toUpperCase())
 ---
 
 <footer data-reveal-group class="pb-6 pt-4 text-center font-normal text-stone-600 dark:text-stone-400 print:hidden">

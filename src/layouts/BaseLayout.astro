@@ -18,8 +18,9 @@ const canonicalUrl = new URL(Astro.url.pathname, site)
 const enUrl = new URL('/', site)
 const itUrl = new URL('/it/', site)
 const ogImage = new URL('/og-image.jpg', site)
-const ogLocale = lang === 'it' ? 'it_IT' : 'en_US'
-const ogLocaleAlternate = lang === 'it' ? 'en_US' : 'it_IT'
+const isIt = lang === 'it'
+const ogLocale = isIt ? 'it_IT' : 'en_US'
+const ogLocaleAlternate = isIt ? 'en_US' : 'it_IT'
 ---
 
 <!doctype html>
